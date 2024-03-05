@@ -6,3 +6,4 @@ taglist = ['ORIGINALDATE', 'MUSICBRAINZ_ALBUMID',
         'ALBUM', 'MUSICBRAINZ_TRACKID',
         'MUSICBRAINZ_ARTISTID', 'ARTIST', 'ARTISTSORT',
         'TITLE']
+queue = 'workerqueue'
