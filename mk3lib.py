@@ -1,5 +1,4 @@
 from mutagen.easyid3 import EasyID3
-from mutagen.mp3 import MP3
 from mutagen.flac import FLAC
 from mutagen.id3 import ID3, APIC
 from pydub import AudioSegment
@@ -42,8 +41,8 @@ class Mp3Compiler:
     in_file = ''
     out_path = ''
     overwrite = False
-    bitrate = "320"
-    # bitrate = "192"
+    bitrate = "320k"
+    # bitrate = "192k"
     taglist = config.taglist
 
     def make(self):
