@@ -61,7 +61,6 @@ class Mp3Compiler:
         audio_info_mp3.save()
         ### picture
         path_cover = os.path.join(full_path_in[:-(len(self.in_file))],'cover.jpg')
-        print(path_cover)
         audio_picture = ID3(out_mp3_full)
         with open(path_cover, 'rb') as albumart:
             audio_picture['APIC'] = APIC(
