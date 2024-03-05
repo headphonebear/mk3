@@ -27,6 +27,7 @@ class WorkerQueue:
         return(True)
     def get_next(self):
         from_redis = self.redis.lpop(self.name)
+        # todo fix error on empty return
         self.path = json.loads(from_redis)[0]
         self.file = json.loads(from_redis)[1]
         return(self.path,self.file)
