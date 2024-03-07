@@ -6,9 +6,7 @@ import mk3lib
 
 redis = redis.Redis()
 
-myworkerqueue = mk3lib.WorkerQueue()
-myworkerqueue.mk3_source = config.mk3_source
-myworkerqueue.name = config.queue
-myworkerqueue.redis = redis
+myworkerqueue = mk3lib.WorkerQueue(config.queue,config.mk3_source,redis,"\.jpg$|\.flac$")
+
 redis.delete(myworkerqueue.name)
 myworkerqueue.create_queue()

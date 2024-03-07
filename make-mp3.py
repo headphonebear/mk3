@@ -6,14 +6,9 @@ import mk3lib
 
 redis = redis.Redis()
 
-myworkerqueue = mk3lib.WorkerQueue()
-myworkerqueue.mk3_source = config.mk3_source
-myworkerqueue.name = config.queue
-myworkerqueue.redis = redis
+myworkerqueue = mk3lib.WorkerQueue(config.queue,config.mk3_source,redis)
 
-mynewmp3 = mk3lib.Mp3Compiler()
-mynewmp3.mk3_source = config.mk3_source
-mynewmp3.out_path = config.mp3_out
+mynewmp3 = mk3lib.Mp3Compiler(config.mk3_source, config.mp3_out)
 
 myresult = True
 

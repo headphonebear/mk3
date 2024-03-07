@@ -2,7 +2,6 @@ from mutagen.easyid3 import EasyID3
 from mutagen.flac import FLAC
 from mutagen.id3 import ID3, APIC
 from pydub import AudioSegment
-import redis
 import json
 import os
 import re
@@ -10,13 +9,15 @@ import config
 
 
 class WorkerQueue:
-    mk3_source = ''
-    name = ''
-    # regex = '\.jpg$'
-    regex = '\.flac$'
-    redis = ''
 
-    # regex = '\.jpg$|\.flac$'
+    def __init__(self, name="", mk3_source="", redis="", regex="\.jpg$|\.flac$"):
+        self.name = name
+        self.mk3_source = mk3_source
+        self.redis = redis
+        self.regex = regex
+        self.path = ''
+        self.file = ''
+
     def create_queue(self):
         mk3_tree = os.walk(self.mk3_source)
         for path, directories, files in mk3_tree:
@@ -36,14 +37,15 @@ class WorkerQueue:
 
 
 class Mp3Compiler:
-    mk3_source = ''
-    in_path = ''
-    in_file = ''
-    out_path = ''
-    overwrite = False
-    bitrate = "320k"
-    # bitrate = "192k"
-    taglist = config.taglist
+
+    def __init__(self, mk3_source="", out_path="", overwrite=False, bitrate="320k"):
+        self.mk3_source = mk3_source
+        self.out_path = out_path
+        self.overwrite = overwrite
+        self.bitrate = bitrate
+        self.taglist = config.taglist
+        self.in_path = ''
+        self.in_file = ''
 
     def make(self):
         # making paths
