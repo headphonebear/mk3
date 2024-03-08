@@ -35,7 +35,6 @@ class WorkerQueue:
         self.file = json.loads(from_redis)[1]
         return self.path, self.file
 
-
 class Mp3Compiler:
 
     def __init__(self, mk3_source="", out_path="", overwrite=False, bitrate="320k"):
@@ -47,28 +46,52 @@ class Mp3Compiler:
         self.in_path = ''
         self.in_file = ''
 
-    def make(self):
-        # making paths
+    def probe_file(self):
+        full_path_in = self.in_path + '/' + self.in_file
+        full_path_clean = full_path_in[(len(self.mk3_source)):]
+        path_clean = full_path_clean[:-(len(self.in_file))]
+        out_mp3_full = (self.out_path + path_clean + self.in_file)[:-4] + "mp3"
+        if os.path.isfile(out_mp3_full):
+            return True
+        else:
+            return False
+
+    def probe_folder(self):
         full_path_in = self.in_path + '/' + self.in_file
         full_path_clean = full_path_in[(len(self.mk3_source)):]
         path_clean = full_path_clean[:-(len(self.in_file))]
         out_mp3 = self.out_path + path_clean
-        out_mp3_full = (self.out_path + path_clean + self.in_file)[:-4] + "mp3"
-        # check for mp3, check for folder, create mp3
-        if os.path.isfile(out_mp3_full):
-            return False
-        flac_in = AudioSegment.from_file(full_path_in, "flac")
         if not os.path.exists(out_mp3):
             os.makedirs(out_mp3)
+        return ()
+
+    def compile(self):
+        full_path_in = self.in_path + '/' + self.in_file
+        full_path_clean = full_path_in[(len(self.mk3_source)):]
+        path_clean = full_path_clean[:-(len(self.in_file))]
+        out_mp3_full = (self.out_path + path_clean + self.in_file)[:-4] + "mp3"
+        flac_in = AudioSegment.from_file(full_path_in, "flac")
         flac_in.export(out_mp3_full, format="mp3", bitrate=self.bitrate)
-        # tagging
+        return ()
+
+    def copy_tags(self):
+        full_path_in = self.in_path + '/' + self.in_file
+        full_path_clean = full_path_in[(len(self.mk3_source)):]
+        path_clean = full_path_clean[:-(len(self.in_file))]
+        out_mp3_full = (self.out_path + path_clean + self.in_file)[:-4] + "mp3"
         audio_info_flac = FLAC(full_path_in)
         audio_info_mp3 = EasyID3(out_mp3_full)
         for tag in self.taglist:
             audio_info_mp3[tag] = audio_info_flac[tag]
         audio_info_mp3.save()
-        # picture
+        return ()
+
+    def add_picture(self):
+        full_path_in = self.in_path + '/' + self.in_file
         path_cover = os.path.join(full_path_in[:-(len(self.in_file))], 'cover.jpg')
+        full_path_clean = full_path_in[(len(self.mk3_source)):]
+        path_clean = full_path_clean[:-(len(self.in_file))]
+        out_mp3_full = (self.out_path + path_clean + self.in_file)[:-4] + "mp3"
         audio_picture = ID3(out_mp3_full)
         with open(path_cover, 'rb') as albumart:
             audio_picture['APIC'] = APIC(
@@ -78,4 +101,4 @@ class Mp3Compiler:
                 data=albumart.read()
             )
         audio_picture.save()
-        return True
+        return ()
