@@ -26,7 +26,6 @@ class WorkerQueue:
             files = sorted(files)
             for file in files:
                 if re.search(self.regex, file):
-                    print(path)
                     self.redis.rpush(self.name, json.dumps((path[len(self.mk3_source):]+"/", file)))
         return True
 
