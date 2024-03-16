@@ -5,15 +5,15 @@ from pydub import AudioSegment
 import json
 import os
 import re
+import redis
 import config
-
 
 class WorkerQueue:
 
-    def __init__(self, name="", mk3_source="", redis="", regex="\.jpg$|\.flac$"):
+    def __init__(self, name="", mk3_source="", regex="\.jpg$|\.flac$"):
         self.name = name
         self.mk3_source = mk3_source
-        self.redis = redis
+        self.redis = redis.Redis()
         self.regex = regex
         self.path = ''
         self.file = ''
@@ -30,40 +30,31 @@ class WorkerQueue:
 
     def get_next(self):
         from_redis = self.redis.lpop(self.name)
-        # todo fix error on empty return
-        self.path = json.loads(from_redis)[0]
-        self.file = json.loads(from_redis)[1]
-        return self.path, self.file
+        if (from_redis != None):
+            self.path = json.loads(from_redis)[0]
+            self.file = json.loads(from_redis)[1]
+            return self.path, self.file
+        else:
+            return 'Done'
 
 class Mp3Compiler:
 
-    def __init__(self, mk3_source="", out_path="", overwrite=False, bitrate="320k"):
+    def __init__(self, mk3_source="", out_path="", in_path="", in_file="", overwrite=False, bitrate="320k"):
         self.mk3_source = mk3_source
         self.out_path = out_path
         self.overwrite = overwrite
         self.bitrate = bitrate
         self.taglist = config.taglist
-        self.in_path = ''
-        self.in_file = ''
-
+        self.in_path = in_path
+        self.in_file = in_file
         self.full_path_in = self.in_path + '/' + self.in_file
-        self.full_path_clean = -self.full_path_in[(len(self.mk3_source)):]
+        self.full_path_clean = self.full_path_in[(len(self.mk3_source)):]
         self.path_clean =self.full_path_clean[:-(len(self.in_file))]
         self.out_mp3 = self.out_path + self.path_clean
-        self.out_mp3_full = (self.out_path + path_clean + self.in_file)[:-4] + "mp3"
-
-    def probe_file(self):
-        if os.path.isfile(self.out_mp3_full):
-            return True
-        else:
-            return False
-
-    def probe_folder(self):
-        if not os.path.exists(self.out_mp3):
-            os.makedirs(self.out_mp3)
-        return ()
+        self.out_mp3_full = (self.out_path + self.path_clean + self.in_file)[:-4] + "mp3"
 
     def compile(self):
+        print(self.full_path_in)
         flac_in = AudioSegment.from_file(self.full_path_in, "flac")
         flac_in.export(self.out_mp3_full, format="mp3", bitrate=self.bitrate)
         return ()

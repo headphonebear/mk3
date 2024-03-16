@@ -1,7 +1,9 @@
-import redis
 
-redis = redis.Redis()
+import config
+import mk3lib
 
-print (redis.lpop('newqueue'))
-print (redis.lpop('newqueue'))
-print (redis.lpop('newqueue'))
+myworkerqueue = mk3lib.WorkerQueue(config.queue)
+
+print (myworkerqueue.get_next())
+print (myworkerqueue.get_next())
+print (myworkerqueue.get_next())
