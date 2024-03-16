@@ -9,3 +9,13 @@ Purely hobby at this point. But I want to finally get better in things I started
 
 Jan. 21, 2024
 
+ ## What it does so far
+
+Creates a redis worker queue (path and filename) out of a file tree with flacs and jpgs.
+
+Takes a flac file and creates a mp3-file in a new position.
+
+Adds cover.jpg from same source as flac-file folder to mp3-file.
+
+Copies tags from flac to mp3.
+

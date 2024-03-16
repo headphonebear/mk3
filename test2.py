@@ -1,11 +1,15 @@
-import redis
 
-redis = redis.Redis()
+import config
+import mk3lib
+
+myworkerqueue = mk3lib.WorkerQueue(config.queue)
 
 while True:
-    thingy = redis.lpop('workerqueue')
-    if thingy == None:
+    result = myworkerqueue.get_next()
+    if result == 'Done':
         break
-    print (thingy)
+    print(result)
+
+
 
 
