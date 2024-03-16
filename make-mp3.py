@@ -4,6 +4,9 @@ import config
 import mk3lib
 import os
 
+up_counter = 0
+new_counter = 0
+update = True
 myworkerqueue = mk3lib.WorkerQueue(config.queue,config.mk3_source,"\.flac$")
 
 while (True):
@@ -16,7 +19,15 @@ while (True):
             mynewmp3.compile()
             mynewmp3.copy_tags()
             mynewmp3.add_picture()
+            new_counter = new_counter + 1
+        else:
+            if update == True:
+                mynewmp3.copy_tags()
+                mynewmp3.add_picture()
+            up_counter = up_counter + 1
     else:
         break
 
 print("Done")
+print("New", new_counter)
+print("Updated", up_counter)
