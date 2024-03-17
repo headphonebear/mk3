@@ -7,3 +7,4 @@ taglist = ['ORIGINALDATE', 'MUSICBRAINZ_ALBUMID',
         'MUSICBRAINZ_ARTISTID', 'ARTIST', 'ARTISTSORT',
         'TITLE']
 queue = 'workerqueue'
+index_name = 'mk3brain'

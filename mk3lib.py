@@ -1,4 +1,6 @@
+from datetime import datetime
 from mutagen.easyid3 import EasyID3
+from elasticsearch import Elasticsearch
 from mutagen.flac import FLAC
 from mutagen.mp3 import MP3
 from mutagen.id3 import ID3, APIC
@@ -87,8 +89,26 @@ class flactag:
         self.in_path = in_path
         self.in_file = in_file
 
-    def read(self):
+    def readfull(self):
         flac_fullpath = self.mk3_source_path + self.in_path + self.in_file
         audio_info_flac = FLAC(flac_fullpath)
-        print(audio_info_flac)
+        return(json.dumps(audio_info_flac.tags))
 
+    def read_songid(self):
+        flac_fullpath = self.mk3_source_path + self.in_path + self.in_file
+        audio_info_flac = FLAC(flac_fullpath)
+        return audio_info_flac.tags["MUSICBRAINZ_RELEASETRACKID"]
+
+class scatterbrain:
+
+    def __init__(self):
+        self.elasearch = Elasticsearch("http://localhost:9200")
+        self.index_name = config.index_name
+        # self.elasearch.indices.create(index=self.index_name)
+        # todo: create if not present
+
+    def drop_flac(self,song_id,tag_json_string):
+        self.elasearch.index(
+            index=self.index_name,
+            id=song_id,
+            document=tag_json_string)
