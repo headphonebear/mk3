@@ -108,7 +108,10 @@ class scatterbrain:
         # todo: create if not present
 
     def drop_flac(self,song_id,tag_json_string):
-        self.elasearch.index(
+        print(song_id)
+        print(tag_json_string)
+        self.elasearch.bulk(
             index=self.index_name,
-            id=song_id,
-            document=tag_json_string)
+            body=tag_json_string,
+            doc_type=None
+        )
