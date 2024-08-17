@@ -13,7 +13,7 @@ import config
 
 class WorkerQueue:
 
-    def __init__(self, name="", mk3_source="", regex="\.jpg$|\.flac$"):
+    def __init__(self, name="", mk3_source="", regex="\\.jpg$|\\.flac$"):
         self.name = name
         self.mk3_source = mk3_source
         self.redis = redis.Redis()
@@ -92,7 +92,7 @@ class flactag:
     def readfull(self):
         flac_fullpath = self.mk3_source_path + self.in_path + self.in_file
         audio_info_flac = FLAC(flac_fullpath)
-        return(json.dumps(audio_info_flac.tags))
+        return json.dumps(audio_info_flac.tags, sort_keys=True, indent=4)
 
     def read_songid(self):
         flac_fullpath = self.mk3_source_path + self.in_path + self.in_file

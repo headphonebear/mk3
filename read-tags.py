@@ -6,7 +6,7 @@ import json
 import os
 
 update = True
-myworkerqueue = mk3lib.WorkerQueue(config.queue,config.mk3_source,"\.flac$")
+myworkerqueue = mk3lib.WorkerQueue(config.queue,config.mk3_source,"\\.flac$")
 
 while (True):
     myresult = myworkerqueue.get_next()
