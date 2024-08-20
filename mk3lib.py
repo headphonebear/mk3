@@ -150,3 +150,15 @@ class Musicbrainz:
                 if any(release.get('status') == "Official" for release in releases):
                     rgid_list.append(rg['id'])
         return rgid_list
+
+    def get_album_by_rgid(self, rgid):
+        album = {}
+        result = musicbrainzngs.get_release_group_by_id(rgid, includes=["artists"])
+        release_group = result['release-group']
+        artist_name = release_group['artist-credit'][0]['artist']['name'] if 'artist-credit' in release_group and len(release_group['artist-credit']) > 0 else "Unknown"
+        first_release_date = release_group.get('first-release-date', '')
+        release_year = first_release_date.split('-')[0] if first_release_date else 'Unknown'
+        album['artist'] = artist_name
+        album['title'] = release_group['title']
+        album['year'] = release_year
+        return album
