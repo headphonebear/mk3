@@ -1,10 +1,10 @@
-from datetime import datetime
 from mutagen.easyid3 import EasyID3
 from elasticsearch import Elasticsearch
 from mutagen.flac import FLAC
 from mutagen.mp3 import MP3
 from mutagen.id3 import ID3, APIC
 from pydub import AudioSegment
+import musicbrainzngs
 import json
 import os
 import re
@@ -115,3 +115,38 @@ class scatterbrain:
             body=tag_json_string,
             doc_type=None
         )
+
+class Musicbrainz:
+
+    def __init__(self):
+        self.musicbrainzngs_app = config.musicbrainzngs_app
+        self.musicbrainzngs_version = config.musicbrainzngs_version
+        self.musicbrainzngs_contact = config.musicbrainzngs_contact
+
+    def handshake(self):
+        musicbrainzngs.set_useragent(self.musicbrainzngs_app, self.musicbrainzngs_version, self.musicbrainzngs_contact)
+
+    def get_rgid_from_series(self, series=''):
+        rgid_list = []
+        result = musicbrainzngs.get_series_by_id(series, includes=['release-group-rels'])
+        for rg in result['series'].get('release_group-relation-list', []):
+            rgid_list.append(rg['release-group']['id'])
+        return rgid_list
+
+    def get_rgid_from_artist(self, artist):
+        rgid_list = []
+
+        result = musicbrainzngs.browse_release_groups(artist=artist, offset=0, limit=100)
+        release_groups = result.get('release-group-list', [])
+
+        for rg in release_groups:
+            if rg.get('primary-type') == "Album" and not rg.get('secondary-type-list'):
+                # Fetch releases for this release group
+                rg_id = rg['id']
+                rg_details = musicbrainzngs.get_release_group_by_id(rg_id, includes=["releases"])
+                releases = rg_details.get('release-group', {}).get('release-list', [])
+
+                # Check if any release in this group is "Official"
+                if any(release.get('status') == "Official" for release in releases):
+                    rgid_list.append(rg['id'])
+        return rgid_list

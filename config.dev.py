@@ -8,3 +8,6 @@ taglist = ['ORIGINALDATE', 'MUSICBRAINZ_ALBUMID',
         'TITLE']
 queue = 'workerqueue'
 index_name = 'mk3brain'
+musicbrainzngs_app = 'exampleapp'
+musicbrainzngs_version = '0.1'
+musicbrainzngs_contact = 'example@example.com'
