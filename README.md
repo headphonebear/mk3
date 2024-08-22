@@ -13,7 +13,7 @@ As usual with projects like these and brainz like mine and work like in IT, this
 
 Aug. 22, 2024
 
- ## What it does so far - aug. 2024
+ ## What it does so far - Aug. 2024
 
 Extracts tags from flac
 
