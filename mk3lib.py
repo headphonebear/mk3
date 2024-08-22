@@ -10,6 +10,7 @@ import os
 import re
 import redis
 import config
+import psycopg2
 
 class WorkerQueue:
 
@@ -97,7 +98,18 @@ class flactag:
     def read_songid(self):
         flac_fullpath = self.mk3_source_path + self.in_path + self.in_file
         audio_info_flac = FLAC(flac_fullpath)
-        return audio_info_flac.tags["MUSICBRAINZ_RELEASETRACKID"]
+        return audio_info_flac.tags["MUSICBRAINZ_RELEASETRACKID"][0]
+
+    def read_albumartistids(self):
+        flac_fullpath = self.mk3_source_path + self.in_path + self.in_file
+        audio_info_flac = FLAC(flac_fullpath)
+        return audio_info_flac.tags["MUSICBRAINZ_ALBUMARTISTID"]
+
+    def read_albumartist(self):
+        flac_fullpath = self.mk3_source_path + self.in_path + self.in_file
+        audio_info_flac = FLAC(flac_fullpath)
+        return audio_info_flac.tags["ALBUMARTIST"][0]
+
 
 class scatterbrain:
 
@@ -128,24 +140,24 @@ class Musicbrainz:
 
     def get_rgid_from_series(self, series=''):
         rgid_list = []
+        counter = 0
         result = musicbrainzngs.get_series_by_id(series, includes=['release-group-rels'])
         for rg in result['series'].get('release_group-relation-list', []):
             rgid_list.append(rg['release-group']['id'])
+            counter = counter + 1
+        print(counter)
         return rgid_list
 
     def get_rgid_from_artist(self, artist):
         rgid_list = []
-
         result = musicbrainzngs.browse_release_groups(artist=artist, offset=0, limit=100)
         release_groups = result.get('release-group-list', [])
-
         for rg in release_groups:
             if rg.get('primary-type') == "Album" and not rg.get('secondary-type-list'):
                 # Fetch releases for this release group
-                rg_id = rg['id']
-                rg_details = musicbrainzngs.get_release_group_by_id(rg_id, includes=["releases"])
+                rgid = rg['id']
+                rg_details = musicbrainzngs.get_release_group_by_id(rgid, includes=["releases"])
                 releases = rg_details.get('release-group', {}).get('release-list', [])
-
                 # Check if any release in this group is "Official"
                 if any(release.get('status') == "Official" for release in releases):
                     rgid_list.append(rg['id'])
@@ -162,3 +174,87 @@ class Musicbrainz:
         album['title'] = release_group['title']
         album['year'] = release_year
         return album
+
+class Mk3Catalog:
+
+    def __init__(self):
+        self.psql_host = config.psql_host
+        self.psql_port = config.psql_port
+        self.psql_dbname = config.psql_dbname
+        self.psql_user = config.psql_user
+        self.psql_password = config.psql_password
+
+    def add_wanted_release(self, rgid, title, artist_id, artist_name, year):
+        self.conn = psycopg2.connect(
+            host=self.psql_host,
+            port=self.psql_port,
+            dbname=self.psql_dbname,
+            user=self.psql_user,
+            password=self.psql_password
+            )
+        cur = self.conn.cursor()
+        insert_query = """
+            INSERT INTO wanted_releases (rgid, title, artist_id, artist_name, year)
+            VALUES (%s, %s, %s, %s, %s)
+            ON CONFLICT (rgid) DO NOTHING
+        """
+        try:
+            cur.execute(insert_query, (rgid, title, artist_id, artist_name, year))
+            self.conn.commit()
+            if cur.rowcount > 0:
+                return 1
+            else:
+                return 0
+        except Exception as e:
+            self.conn.rollback()
+            return "Error!"
+        finally:
+            cur.close()
+            self.conn.close()
+
+    def grab_data(self, table):
+        self.conn = psycopg2.connect(
+            host=self.psql_host,
+            port=self.psql_port,
+            dbname=self.psql_dbname,
+            user=self.psql_user,
+            password=self.psql_password
+        )
+        cur = self.conn.cursor()
+        select_query = f"SELECT * FROM {table};"
+        try:
+            cur.execute(select_query)
+            rows = cur.fetchall()
+            self.conn.commit()
+            return rows
+        except Exception as e:
+            self.conn.rollback()
+            print(f"Error: {e}")
+            return "Error!"
+        finally:
+            cur.close()
+            self.conn.close()
+
+class CatalogQueue:
+
+    def __init__(self):
+        self.redis = redis.Redis()
+
+    def rgid_put(self, rgid):
+
+        if not self.redis.sismember('release_set', rgid):
+            # Add ID to the set to ensure uniqueness
+            self.redis.sadd('release_set', rgid)
+            # Add ID to the queue
+            self.redis.rpush('release_queue', rgid)
+            return True  # Indicate that the ID was added
+        return False  # Indicate that the ID was already present
+
+    def rgid_get(self):
+
+        rgid = self.redis.lpop('release_queue')
+        if rgid:
+            release_group_id = rgid.decode('utf-8')
+            return release_group_id
+        return None
+

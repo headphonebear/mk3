@@ -8,6 +8,13 @@ taglist = ['ORIGINALDATE', 'MUSICBRAINZ_ALBUMID',
         'TITLE']
 queue = 'workerqueue'
 index_name = 'mk3brain'
+# musicbrainz
 musicbrainzngs_app = 'exampleapp'
 musicbrainzngs_version = '0.1'
 musicbrainzngs_contact = 'example@example.com'
+# postgresql
+psql_host = "localhost"
+psql_port = 5432
+psql_dbname = "mk3"
+psql_user = "postgres"
+psql_password = "musicbrainz"
