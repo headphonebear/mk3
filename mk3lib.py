@@ -4,6 +4,7 @@ from mutagen.flac import FLAC
 from mutagen.mp3 import MP3
 from mutagen.id3 import ID3, APIC
 from pydub import AudioSegment
+from typing import Optional, List, Dict
 import musicbrainzngs
 import json
 import os
@@ -13,8 +14,7 @@ import config
 import psycopg2
 
 class WorkerQueue:
-
-    def __init__(self, name="", mk3_source="", regex="\\.jpg$|\\.flac$"):
+    def __init__(self, name:str="", mk3_source:str="", regex:str="\\.jpg$|\\.flac$"):
         self.name = name
         self.mk3_source = mk3_source
         self.redis = redis.Redis()
@@ -42,8 +42,7 @@ class WorkerQueue:
             return 'Done'
 
 class Mp3Compiler:
-
-    def __init__(self, mk3_source_path="", mp3_new_path="", in_path="", in_file="", overwrite=False, bitrate="320k"):
+    def __init__(self, mk3_source_path:str="", mp3_new_path:str="", in_path:str="", in_file:str="", overwrite=False, bitrate:str="320k"):
         self.mk3_source_path = mk3_source_path
         self.mp3_new_path = mp3_new_path
         self.in_path = in_path
@@ -84,7 +83,6 @@ class Mp3Compiler:
         return ()
 
 class flactag:
-
     def __init__(self,mk3_source_path=config.mk3_source, in_path='', in_file=''):
         self.mk3_source_path = mk3_source_path
         self.in_path = in_path
@@ -112,7 +110,6 @@ class flactag:
 
 
 class scatterbrain:
-
     def __init__(self):
         self.elasearch = Elasticsearch("http://localhost:9200")
         self.index_name = config.index_name
@@ -129,54 +126,86 @@ class scatterbrain:
         )
 
 class Musicbrainz:
-
     def __init__(self):
         self.musicbrainzngs_app = config.musicbrainzngs_app
         self.musicbrainzngs_version = config.musicbrainzngs_version
         self.musicbrainzngs_contact = config.musicbrainzngs_contact
+        self.redis_conn = redis.Redis(host='localhost', port=6379, db=0)
+
+    def _get_cached_data(self, key: str) -> Optional[Dict]:
+        data = self.redis_conn.get(key)
+        if data:
+            return json.loads(data)
+        return None
+
+    def _set_cache_data(self, key: str, data: Dict, expiration: int = config.cache):
+        self.redis_conn.setex(key, expiration, json.dumps(data))
 
     def handshake(self):
         musicbrainzngs.set_useragent(self.musicbrainzngs_app, self.musicbrainzngs_version, self.musicbrainzngs_contact)
 
-    def get_rgid_from_series(self, series=''):
+    def get_rgid_from_series(self, series: str = ''):
+        cache_key = f"series:{series}"
+        cached_result = self._get_cached_data(cache_key)
+        if cached_result:
+            return cached_result
+
         rgid_list = []
-        counter = 0
-        result = musicbrainzngs.get_series_by_id(series, includes=['release-group-rels'])
-        for rg in result['series'].get('release_group-relation-list', []):
-            rgid_list.append(rg['release-group']['id'])
-            counter = counter + 1
-        print(counter)
+        try:
+            result = musicbrainzngs.get_series_by_id(series, includes=['release-group-rels'])
+            for rg in result['series'].get('release_group-relation-list', []):
+                rgid_list.append(rg['release-group']['id'])
+        except musicbrainzngs.WebServiceError as e:
+            print(f"Error fetching data: {e}")
+        self._set_cache_data(cache_key, rgid_list)
         return rgid_list
 
-    def get_rgid_from_artist(self, artist):
+    def get_rgid_from_artist(self, artist:str):
+        cache_key = f"artist:{artist}"
+        cached_result = self._get_cached_data(cache_key)
+        if cached_result:
+            return cached_result
+
         rgid_list = []
-        result = musicbrainzngs.browse_release_groups(artist=artist, offset=0, limit=100)
-        release_groups = result.get('release-group-list', [])
-        for rg in release_groups:
-            if rg.get('primary-type') == "Album" and not rg.get('secondary-type-list'):
-                # Fetch releases for this release group
-                rgid = rg['id']
-                rg_details = musicbrainzngs.get_release_group_by_id(rgid, includes=["releases"])
-                releases = rg_details.get('release-group', {}).get('release-list', [])
-                # Check if any release in this group is "Official"
-                if any(release.get('status') == "Official" for release in releases):
-                    rgid_list.append(rg['id'])
+        try:
+            result = musicbrainzngs.browse_release_groups(artist=artist, offset=0, limit=100)
+            release_groups = result.get('release-group-list', [])
+            for rg in release_groups:
+                if rg.get('primary-type') == "Album" and not rg.get('secondary-type-list'):
+                    # Fetch releases for this release group
+                    rgid = rg['id']
+                    rg_details = musicbrainzngs.get_release_group_by_id(rgid, includes=["releases"])
+                    releases = rg_details.get('release-group', {}).get('release-list', [])
+                    # Check if any release in this group is "Official"
+                    if any(release.get('status') == "Official" for release in releases):
+                        rgid_list.append(rg['id'])
+        except musicbrainzngs.WebServiceError as e:
+            print(f"Error fetching data: {e}")
+        self._set_cache_data(cache_key, rgid_list)
         return rgid_list
 
-    def get_album_by_rgid(self, rgid):
+    def get_album_by_rgid(self, rgid: str) -> Dict[str, str]:
+        cache_key = f"album:{rgid}"
+        cached_result = self._get_cached_data(cache_key)
+        if cached_result:
+            return cached_result
+
         album = {}
-        result = musicbrainzngs.get_release_group_by_id(rgid, includes=["artists"])
-        release_group = result['release-group']
-        artist_name = release_group['artist-credit'][0]['artist']['name'] if 'artist-credit' in release_group and len(release_group['artist-credit']) > 0 else "Unknown"
-        first_release_date = release_group.get('first-release-date', '')
-        release_year = first_release_date.split('-')[0] if first_release_date else 'Unknown'
-        album['artist'] = artist_name
-        album['title'] = release_group['title']
-        album['year'] = release_year
+        try:
+            result = musicbrainzngs.get_release_group_by_id(rgid, includes=["artists"])
+            release_group = result['release-group']
+            artist_name = release_group['artist-credit'][0]['artist']['name'] if 'artist-credit' in release_group and len(release_group['artist-credit']) > 0 else "Unknown"
+            first_release_date = release_group.get('first-release-date', '')
+            release_year = first_release_date.split('-')[0] if first_release_date else 'Unknown'
+            album['artist'] = artist_name
+            album['title'] = release_group['title']
+            album['year'] = release_year
+        except musicbrainzngs.WebServiceError as e:
+            print(f"Error fetching data: {e}")
+        self._set_cache_data(cache_key, album)
         return album
 
 class Mk3Catalog:
-
     def __init__(self):
         self.psql_host = config.psql_host
         self.psql_port = config.psql_port
@@ -184,7 +213,7 @@ class Mk3Catalog:
         self.psql_user = config.psql_user
         self.psql_password = config.psql_password
 
-    def add_wanted_release(self, rgid, title, artist_id, artist_name, year):
+    def add_wanted_release(self, rgid: str, title: str, artist_id:str, artist_name:str, year:str):
         self.conn = psycopg2.connect(
             host=self.psql_host,
             port=self.psql_port,
@@ -212,7 +241,7 @@ class Mk3Catalog:
             cur.close()
             self.conn.close()
 
-    def grab_data(self, table):
+    def grab_data(self, table:str) -> list:
         self.conn = psycopg2.connect(
             host=self.psql_host,
             port=self.psql_port,
@@ -236,7 +265,6 @@ class Mk3Catalog:
             self.conn.close()
 
 class CatalogQueue:
-
     def __init__(self):
         self.redis = redis.Redis()
 
