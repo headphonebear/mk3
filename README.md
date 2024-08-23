@@ -1,4 +1,7 @@
 # mk3
+
+Important note: This code is work in progress and not done at all.
+
 Skripts to tinker with my music collection
 
 Here I want to rewrite or refactor my already existing code fragments into reusable code. Goal is to build a software base to use for often dreamed future projects around my music collection.
