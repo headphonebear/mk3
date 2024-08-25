@@ -36,5 +36,15 @@ Dockerfile
 
 A bit elasticsearch
 
+Turned the big mk3lib.py into a structured module. Needs a config.py outside. 
+
+ ## My next steps ##
+
+Cleaning up, making folders, documentation (!), example scripts. Slowing down to make things right.
+
+Turning my beginner's oops into advanced oops.
+
+Then more database stuff.
+
 
 

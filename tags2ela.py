@@ -2,11 +2,10 @@
 
 import config
 import mk3lib
-import json
 
 ela = mk3lib.scatterbrain()
 update = True
-myworkerqueue = mk3lib.WorkerQueue(config.queue,config.mk3_source,"\.flac$")
+myworkerqueue = mk3lib.WorkerQueue(config.queue, config.mk3_source, "\.flac$")
 
 while (True):
     myresult = myworkerqueue.get_next()

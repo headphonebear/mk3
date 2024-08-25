@@ -8,7 +8,7 @@ my_elas = Elasticsearch("http://localhost:9200")
 print(my_elas.info())
 
 update = True
-myworkerqueue = mk3lib.WorkerQueue(config.queue,config.mk3_source,"\\.flac$")
+myworkerqueue = mk3lib.WorkerQueue(config.queue, config.mk3_source, "\\.flac$")
 counter = 0
 
 while (True):
