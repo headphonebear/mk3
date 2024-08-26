@@ -9,7 +9,7 @@ my_artist_list = set()
 
 x = 0
 
-while (True):
+while True:
     my_result = my_worker_queue.get_next()
     if my_result != 'Done':
         my_flac = mk3lib.flactag.flactag(config.mk3_source, my_result[0], my_result[1])
