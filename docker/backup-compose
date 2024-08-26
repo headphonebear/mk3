@@ -1,0 +1,61 @@
+services:
+  cache:
+    image: 'docker.dragonflydb.io/dragonflydb/dragonfly'
+    ulimits:
+      memlock: -1
+    ports:
+      - "6379:6379"
+    volumes:
+      - dragonflydata:/data
+  elasticsearch:
+    image: elasticsearch:8.8.0
+    ports:
+      - 9200:9200
+      - 9300:9300
+    networks:
+      - elastic
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.7.1
+    container_name: kibana
+    environment:
+      XPACK_ENCRYPTEDSAVEDOBJECTS_ENCRYPTIONKEY: d1a66dfd-c4d3-4a0a-8290-2abcb83ab3aa
+    ports:
+      - 5601:5601
+    networks:
+      - elastic
+    deploy:
+      resources:
+          limits:
+            cpus: '2.0'
+          reservations:
+            cpus: '1.0'
+  db:
+    image: postgres:16.4-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=musicbrainz
+    ports:
+      - '5432:5432'
+    volumes:
+      - db:/var/lib/postgresql/data
+
+volumes:
+  dragonflydata:
+    driver: local # Define the driver and options under the volume name
+    driver_opts:
+      type: none
+      device: /srv/dragonflydb
+      o: bind
+  db:
+    driver: local # Define the driver and options under the volume name
+    driver_opts:
+      type: none
+      device: /srv/postgres16
+      o: bind
+
+networks:
+  elastic:
