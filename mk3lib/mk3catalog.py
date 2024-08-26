@@ -1,6 +1,6 @@
 import config
 import psycopg2
-
+import psycopg2.sql
 
 class Mk3Catalog:
     def __init__(self):
@@ -10,7 +10,7 @@ class Mk3Catalog:
         self.psql_user = config.psql_user
         self.psql_password = config.psql_password
 
-    def add_wanted_release(self, rgid: str):
+    def add_rgid_to_table(self, rgid: str, table_name: str):
         self.conn = psycopg2.connect(
             host=self.psql_host,
             port=self.psql_port,
@@ -19,11 +19,11 @@ class Mk3Catalog:
             password=self.psql_password
             )
         cur = self.conn.cursor()
-        insert_query = """
-            INSERT INTO wanted_releases (rgid)
+        insert_query = psycopg2.sql.SQL("""
+            INSERT INTO {} (rgid)
             VALUES (%s)
             ON CONFLICT (rgid) DO NOTHING
-        """
+        """).format(psycopg2.sql.Identifier(table_name))
         try:
             cur.execute(insert_query, (rgid,))
             self.conn.commit()

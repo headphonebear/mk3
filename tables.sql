@@ -11,3 +11,8 @@ CREATE TABLE wanted_series (
     series_id UUID PRIMARY KEY,
     name TEXT NOT NULL
 );
+
+CREATE TABLE owned_releases (
+    rgid UUID PRIMARY KEY
+);
+

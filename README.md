@@ -44,7 +44,7 @@ Cleaning up, making folders, documentation (!), example scripts. Slowing down to
 
 Turning my beginner's oops into advanced oops.
 
-Then more database stuff.
+Fix database class (open/close connections), then add more database stuff.
 
 
 

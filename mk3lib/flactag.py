@@ -24,6 +24,11 @@ class flactag:
         audio_info_flac = FLAC(flac_fullpath)
         return audio_info_flac.tags["MUSICBRAINZ_ALBUMARTISTID"]
 
+    def read_rgid(self):
+        flac_fullpath = self.mk3_source_path + self.in_path + self.in_file
+        audio_info_flac = FLAC(flac_fullpath)
+        return audio_info_flac.tags["MUSICBRAINZ_RELEASEGROUPID"][0]
+
     def read_albumartist(self):
         flac_fullpath = self.mk3_source_path + self.in_path + self.in_file
         audio_info_flac = FLAC(flac_fullpath)
