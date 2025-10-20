@@ -1,50 +1,217 @@
-# mk3
+# 🎵 mk3 - Music Collection Toolkit
 
-Important note: This code is work in progress and not done at all.
+![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Status](https://img.shields.io/badge/status-work%20in%20progress-orange.svg)
 
-Skripts to tinker with my music collection
+> **A powerful Python toolkit for managing, processing, and enriching your music collection**
 
-Here I want to rewrite or refactor my already existing code fragments into reusable code. Goal is to build a software base to use for often dreamed future projects around my music collection.
+mk3 is a comprehensive music collection management system that handles FLAC-to-MP3 conversion, metadata enrichment via MusicBrainz, and provides powerful search capabilities through Elasticsearch integration.
 
-I'm using Python, thinking about more docker and maybe kubernetes (if I see any useful reason for it besides playing with it!), AI in limited directions (I will not let AI make "music in the style of x with y as a singer and sounding like z in the 70s on his best album")
+## 🚀 What it does
 
-Purely hobby at this point. But I want to finally get better in things I started long ago, instead of starting something new. 
+- **🎧 Audio Processing**: Convert FLAC files to MP3 with tag preservation and cover art
+- **🔍 Metadata Enrichment**: Automatic MusicBrainz integration for comprehensive album/artist data
+- **⚡ Queue Processing**: Redis-based worker queues for efficient batch operations
+- **🗄️ Data Management**: PostgreSQL storage for collection catalogs and metadata
+- **🔎 Search & Discovery**: Elasticsearch integration for advanced music discovery
+- **🐳 Containerized**: Docker support for easy deployment and scaling
 
-Jan. 21, 2024
+## 📋 Architecture Overview
 
-As usual with projects like these and brainz like mine and work like in IT, this project had an unsuspected break. During this time I coded uncoordinated new features into the elasticsearch-branch I made. Today I merged a bunch of these features (without my local test scripts they seem not like much), and will go on a lil less chaotic and planned from here. But hey - my shøt works. 
+```
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   FLAC Files    │───▶│   mk3 Library   │───▶│   MP3 Output    │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+                               │
+                               ▼
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   PostgreSQL    │◀───│  Redis Queue   │───▶│ Elasticsearch   │
+│   (Metadata)    │    │   (Processing) │    │   (Search)      │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+                               ▲
+                               │
+                    ┌─────────────────┐
+                    │  MusicBrainz    │
+                    │    (API)        │
+                    └─────────────────┘
+```
 
-Aug. 22, 2024
+## 🛠️ Core Modules
 
- ## What it does so far - Aug. 2024
+### `mk3lib/`
+- **`flactag.py`** - FLAC metadata extraction with Redis caching
+- **`musicbrainz.py`** - MusicBrainz API integration with smart caching
+- **`mk3_compiler.py`** - Audio conversion and processing pipeline
+- **`mk3catalog.py`** - PostgreSQL database operations
+- **`scatterbrain.py`** - Elasticsearch indexing and search
+- **`worker_queue.py`** - Redis queue management
+- **`catalog_queue.py`** - Collection cataloging workflows
 
-Extracts tags from flac
+### `tools/`
+- **`make-mp3.py`** - Convert FLAC to MP3 with metadata
+- **`make-worker-queue.py`** - Generate processing queues
+- **`make_owned_list.py`** - Generate collection inventories
+- **`make_shoppinglist.py`** - Track missing albums
+- **`tags2ela.py`** - Index metadata to Elasticsearch
 
-Creates a redis worker queue (path and filename) out of a file tree with flacs and jpgs.
+## 🚀 Quick Start
 
-Takes a flac file and creates a mp3-file in a new position.
+### Prerequisites
 
-Adds cover.jpg from same source as flac-file folder to mp3-file.
+- Python 3.8+
+- Redis server
+- PostgreSQL database
+- Elasticsearch (optional, for search features)
+- FFmpeg (for audio conversion)
 
-Copies tags from flac to mp3.
+### Installation
 
-Communicates with Musicbrainz (sends and receives IDs and data)
+1. **Clone the repository**
+```bash
+git clone https://github.com/headphonebear/mk3.git
+cd mk3
+```
 
-Writes and reads data into PostgreSQL
+2. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
 
-Dockerfile
+3. **Configure your setup**
+```bash
+cp config.dev.py config.py
+# Edit config.py with your paths and database settings
+```
 
-A bit elasticsearch
+4. **Set up the database**
+```bash
+psql -U postgres -d mk3 -f tables.sql
+```
 
-Turned the big mk3lib.py into a structured module. Needs a config.py outside. 
+### Docker Setup
 
- ## My next steps ##
+```bash
+# Build and run with Docker
+docker-compose up -d
 
-Cleaning up, making folders, documentation (!), example scripts. Slowing down to make things right.
+# Or build manually
+docker build -t mk3 .
+docker run -v /path/to/music:/music mk3
+```
 
-Turning my beginner's oops into advanced oops.
+## 📖 Usage Examples
 
-Fix database class (open/close connections), then add more database stuff.
+### Basic FLAC to MP3 Conversion
+```python
+from mk3lib.flactag import flactag
+from mk3lib.mk3_compiler import Mk3Compiler
 
+# Read FLAC tags
+flac = flactag(in_path="/album/", in_file="track.flac")
+tags = flac.readfull()
 
+# Convert to MP3
+compiler = Mk3Compiler()
+compiler.compile_mp3("/path/to/flac", "/path/to/mp3")
+```
 
+### MusicBrainz Integration
+```python
+from mk3lib.musicbrainz import Musicbrainz
+
+mb = Musicbrainz()
+mb.handshake()
+
+# Get album info by release group ID
+album_info = mb.get_album_by_rgid("your-rgid-here")
+print(f"Album: {album_info['title']} by {album_info['artist']} ({album_info['year']})")
+```
+
+### Queue Processing
+```python
+from mk3lib.worker_queue import WorkerQueue
+
+# Create processing queue
+queue = WorkerQueue()
+queue.add_files_to_queue("/path/to/flac/collection")
+
+# Process queue items
+while not queue.is_empty():
+    item = queue.get_next()
+    # Process your files here
+```
+
+## 🔧 Configuration
+
+Edit `config.py` to match your setup:
+
+```python
+# Music collection paths
+mk3_source = '/path/to/flac/collection/'
+mp3_out = '/path/to/mp3/output/'
+
+# Database settings
+psql_host = "localhost"
+psql_dbname = "mk3"
+psql_user = "your_user"
+psql_password = "your_password"
+
+# MusicBrainz API
+musicbrainzngs_app = 'your_app_name'
+musicbrainzngs_contact = 'your@email.com'
+```
+
+## 📚 Database Schema
+
+The system uses PostgreSQL tables defined in `tables.sql`:
+
+- Collection catalogs and metadata storage
+- Artist and album relationships
+- Processing queue states
+- Search index mappings
+
+## 🔍 Features in Detail
+
+### Smart Caching
+- Redis-based caching for MusicBrainz API calls
+- FLAC metadata caching to speed up repeated operations
+- Configurable cache expiration
+
+### Batch Processing
+- Queue-based processing for large collections
+- Resumable operations
+- Progress tracking and error handling
+
+### Metadata Enrichment
+- Automatic MusicBrainz lookups
+- Tag standardization and cleanup
+- Cover art preservation and embedding
+
+## 🚧 Development Status
+
+This project is actively developed as a hobby project. Current focus areas:
+
+- [ ] Improved error handling and logging
+- [ ] Web interface for collection management
+- [ ] Enhanced Docker orchestration
+- [ ] API development for external integrations
+- [ ] Advanced search and filtering capabilities
+
+## 🤝 Contributing
+
+This is a personal hobby project, but suggestions and improvements are welcome! 
+
+## 📝 License
+
+MIT License - Feel free to use and modify for your own music collection needs.
+
+## 🎵 Philosophy
+
+> "Finally getting better at things I started long ago, instead of starting something new."
+
+This project represents a commitment to refining and perfecting existing ideas rather than constantly chasing new ones. It's about building something solid, useful, and maintainable for long-term music collection management.
+
+---
+
+**Note**: This software is work in progress. Expect rough edges, but also expect a system that gets better with every commit! 🚀
