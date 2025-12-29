@@ -1,0 +1,23 @@
+# Audio Processing & Metadata
+mutagen>=1.47.0              # FLAC/MP3 tag reading/writing - dein Herzstück!
+
+# Database & Caching
+psycopg2-binary>=2.9.0       # PostgreSQL adapter (binary für easy install)
+redis>=5.0.0                 # Redis für Queue & Caching
+
+# MusicBrainz API
+musicbrainzngs>=0.7.1        # Für deine schöne MusicBrainz integration
+
+# Search & Analytics
+elasticsearch>=8.0.0         # Für dein "scatterbrain" module (love it!)
+
+# Audio Conversion (falls du ffmpeg nutzt)
+ffmpeg-python>=0.2.0         # Optional, falls du's für MP3 conversion brauchst
+
+# Development & Quality
+pytest>=7.0.0                # Für Tests (falls du welche schreibst)
+black>=22.0.0                # Code formatting
+flake8>=5.0.0                # Linting
+
+# Type Hints
+typing-extensions>=4.0.0     # Für moderne type hints
