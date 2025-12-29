@@ -29,4 +29,4 @@ class WorkerQueue:
             self.file = json.loads(from_redis)[1]
             return self.path, self.file
         else:
-            return 'Done'
+            return ('Done', 'Done')  # ← TUPLE statt String!
