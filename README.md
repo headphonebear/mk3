@@ -198,6 +198,21 @@ This project is actively developed as a hobby project. Current focus areas:
 - [ ] API development for external integrations
 - [ ] Advanced search and filtering capabilities
 
+## 🎵 Production Deployment
+
+This toolkit is used in production as part of the **[Homehill](https://github.com/headphonebear/homehill)** infrastructure.
+
+The **mk3 Music Server** runs on Alpine Linux with:
+- **Jellyfin** for media streaming
+- **Navidrome** for Subsonic API compatibility
+- **DragonflyDB** for high-performance caching
+- **Traefik** for reverse proxy
+
+**See the full deployment guide:**  
+👉 **[homehill/servers/mk3/](https://github.com/headphonebear/homehill/tree/main/servers/mk3)**
+
+*Architecture by Ana 🦊 | Music curation by Headphonebear 🐻*
+
 ## 🤝 Contributing
 
 This is a personal hobby project, but suggestions and improvements are welcome! 
