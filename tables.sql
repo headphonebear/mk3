@@ -50,7 +50,7 @@ CREATE TABLE tracks (
     title              TEXT NOT NULL,             -- TITLE
     artist             TEXT NOT NULL,             -- ARTIST (may differ from album_artist: feat./classical)
     artist_sort        TEXT,                      -- ARTISTSORT
-    artist_mbid        UUID,                      -- MUSICBRAINZ_ARTISTID
+    artist_mbid        UUID[],                    -- MUSICBRAINZ_ARTISTID (array: feat. tracks credit >1 artist → keep them all, searchable)
     disc_number        INT,                       -- DISCNUMBER
     track_number       INT,                       -- TRACKNUMBER
     isrc               TEXT,                      -- ISRC
@@ -60,6 +60,10 @@ CREATE TABLE tracks (
 -- WHY an explicit index: a FK does not create one on its own, and
 -- "give me every track of this album" is THE hot query.
 CREATE INDEX tracks_rgid_idx ON tracks (rgid);
+
+-- GIN index so array-containment stays fast: "every track involving artist X"
+-- is  WHERE artist_mbid @> ARRAY['<mbid>']::uuid[]  — the whole point of the array.
+CREATE INDEX tracks_artist_mbid_idx ON tracks USING gin (artist_mbid);
 
 -- ── track_paths — where the file lives (storage fact, kept out of the catalog) ─
 -- Separate table so the MB "truth" (tracks) stays free of machine-local paths:
