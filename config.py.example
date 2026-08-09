@@ -1,5 +1,7 @@
-# path to root folder with flac files / music collection
-mk3_source = '/path-to-flac-root/'
+# Root of the mk3 namespace. track_paths.relpath is stored relative to THIS,
+# so the collection can move (dock -> USB -> NAS) by only changing this line.
+# On chick this is the copied collection:
+mk3_source = '/mnt/music/mk3/'
 mp3_out = '/path-to-mp3/'
 taglist = ['ORIGINALDATE', 'MUSICBRAINZ_ALBUMID',
         'MUSICBRAINZ_ALBUMARTISTID', 'ALBUMARTIST', 'ALBUMARTISTSORT',
@@ -12,9 +14,9 @@ index_name = 'mk3brain'
 musicbrainzngs_app = 'exampleapp'
 musicbrainzngs_version = '0.1'
 musicbrainzngs_contact = 'example@example.com'
-# postgresql
-psql_host = "localhost"
+# postgresql (chick — runner connects to the local container over TCP)
+psql_host = "127.0.0.1"
 psql_port = 5432
 psql_dbname = "mk3"
-psql_user = "postgres"
-psql_password = "musicbrainz"
+psql_user = "mk3"
+psql_password = "change-me"   # real value ONLY in local config.py (gitignored)
