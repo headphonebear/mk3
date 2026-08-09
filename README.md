@@ -1,232 +1,99 @@
-# 🎵 mk3 - Music Collection Toolkit
+# mk3 — a music-collection catalog
 
-![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
+![Python](https://img.shields.io/badge/python-3.12-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Status](https://img.shields.io/badge/status-work%20in%20progress-orange.svg)
 
-> **A powerful Python toolkit for managing, processing, and enriching your music collection**
+A small toolkit that turns a shelf of CDs into a database you can actually ask
+questions of. **Not a player — a catalog.** It reads the tags off ripped FLAC
+files and builds a PostgreSQL catalog of the collection.
 
-mk3 is a comprehensive music collection management system that handles FLAC-to-MP3 conversion, metadata enrichment via MusicBrainz, and provides powerful search capabilities through Elasticsearch integration.
+## The idea
 
-## 🚀 What it does
+A CD is a wonderful, dumb data store. Great sound, zero metadata — no index,
+no "what else is on this label", no "every studio album by this artist". Just
+audio. mk3 is the index the disc never came with.
 
-- **🎧 Audio Processing**: Convert FLAC files to MP3 with tag preservation and cover art
-- **🔍 Metadata Enrichment**: Automatic MusicBrainz integration for comprehensive album/artist data
-- **⚡ Queue Processing**: Redis-based worker queues for efficient batch operations
-- **🗄️ Data Management**: PostgreSQL storage for collection catalogs and metadata
-- **🔎 Search & Discovery**: Elasticsearch integration for advanced music discovery
-- **🐳 Containerized**: Docker support for easy deployment and scaling
+The whole thing rests on one rule: **MusicBrainz is the source of truth.** Every
+album is keyed by its MusicBrainz *Release Group* ID, every track by its
+*Release-Track* ID. Nothing is invented. Because the keys are real MusicBrainz
+IDs, the collection's own house rules become database constraints:
 
-## 📋 Architecture Overview
+- FLAC only,
+- must be tagged against MusicBrainz,
+- must have a Release Group — twice I've created one on MusicBrainz just so an
+  album could qualify,
+- and only things that actually sit on the shelf.
 
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   FLAC Files    │───▶│   mk3 Library   │───▶│   MP3 Output    │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-                               │
-                               ▼
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   PostgreSQL    │◀───│  Redis Queue   │───▶│ Elasticsearch   │
-│   (Metadata)    │    │   (Processing) │    │   (Search)      │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-                               ▲
-                               │
-                    ┌─────────────────┐
-                    │  MusicBrainz    │
-                    │    (API)        │
-                    └─────────────────┘
-```
+If a file breaks a rule, it simply can't enter the catalog. The discipline of
+the collection *is* the schema.
 
-## 🛠️ Core Modules
+## How it works
 
-### `mk3lib/`
-- **`flactag.py`** - FLAC metadata extraction with Redis caching
-- **`musicbrainz.py`** - MusicBrainz API integration with smart caching
-- **`mk3_compiler.py`** - Audio conversion and processing pipeline
-- **`mk3catalog.py`** - PostgreSQL database operations
-- **`scatterbrain.py`** - Elasticsearch indexing and search
-- **`worker_queue.py`** - Redis queue management
-- **`catalog_queue.py`** - Collection cataloging workflows
+Three tables carry the core — the CDs on the wall, as data:
 
-### `tools/`
-- **`make-mp3.py`** - Convert FLAC to MP3 with metadata
-- **`make-worker-queue.py`** - Generate processing queues
-- **`make_owned_list.py`** - Generate collection inventories
-- **`make_shoppinglist.py`** - Track missing albums
-- **`tags2ela.py`** - Index metadata to Elasticsearch
+- **`albums`** — one row per Release Group (title, album artist, year, label,
+  barcode, …).
+- **`tracks`** — one row per physical track, linked to its album; keeps the
+  MusicBrainz recording ID and the AcoustID fingerprint for later.
+- **`track_paths`** — where each file lives, stored *relative* to a configurable
+  music root, so the collection can move (dock → USB → NAS) without rewriting a
+  single row.
 
-## 🚀 Quick Start
+Filling them is one boring, reliable pass: the **runner** walks the collection,
+reads each FLAC's tags (mutagen), and upserts album/track/path (psycopg2). No
+queue, no network — a local tag scan is neither slow nor rate-limited. It ships
+as a small container, so it can later graduate to a proper service.
 
-### Prerequisites
+The stack:
 
-- Python 3.8+
-- Redis server
-- PostgreSQL database
-- Elasticsearch (optional, for search features)
-- FFmpeg (for audio conversion)
+- **PostgreSQL** — the catalog itself (the facts).
+- **Valkey** (Redis-compatible) — reserved for the *slow* jobs still to come
+  (MusicBrainz enrichment, FLAC→MP3), not the catalog fill.
+- Both run on **chick**, the dev server in my
+  [homehill](https://github.com/headphonebear/homehill) homelab.
 
-### Installation
+## Status & roadmap
 
-1. **Clone the repository**
-```bash
-git clone https://github.com/headphonebear/mk3.git
-cd mk3
-```
+**Works today:** the catalog. A full run indexes the whole collection cleanly —
+because the tags are disciplined, it lands with zero errors.
 
-2. **Install dependencies**
-```bash
-pip install -r requirements.txt
-```
+**Next, roughly in order:**
 
-3. **Configure your setup**
-```bash
-cp config.dev.py config.py
-# Edit config.py with your paths and database settings
-```
+- **Shopping lists** — set arithmetic over MusicBrainz: "every studio album by
+  X" minus "what I own", plus reference lists (Rolling Stone's 500,
+  *1001 Albums You Must Hear Before You Die*).
+- **Enrichment** — a proper artists table, and genre/geography pulled from
+  MusicBrainz / Wikipedia / Discogs, stored *as claims with provenance* rather
+  than one forced truth.
+- **Search & similarity** — vector search (Qdrant) for "sounds like" and
+  playlist suggestions.
+- **Visualization** — the collection as something you can look at, in a browser.
 
-4. **Set up the database**
-```bash
-psql -U postgres -d mk3 -f tables.sql
-```
+It's a hobby project, built on slow evenings, one thing at a time. Expect rough
+edges — and expect it to get a little better with every commit.
 
-### Docker Setup
+## A peek at the data
 
-```bash
-# Build and run with Docker
-docker-compose up -d
+Because a catalog only earns its keep once it can answer questions. A snapshot —
+the top of the shelf by album count:
 
-# Or build manually
-docker build -t mk3 .
-docker run -v /path/to/music:/music mk3
-```
+| Artist | Albums |
+|---|---|
+| David Bowie | 28 |
+| Genesis | 21 |
+| Peter Gabriel | 15 |
+| Pink Floyd | 14 |
+| The Beatles | 13 |
 
-## 📖 Usage Examples
+…and the whole collection skews warmly toward the 70s–90s, peaking in the 1990s.
 
-### Basic FLAC to MP3 Conversion
-```python
-from mk3lib.flactag import flactag
-from mk3lib.mk3_compiler import Mk3Compiler
+## Credits
 
-# Read FLAC tags
-flac = flactag(in_path="/album/", in_file="track.flac")
-tags = flac.readfull()
+By **headphonebear** — the design, the ideas, and all the bugs are mine. Built
+with **Claude**. And thanks to **Ana** for the refactoring and design review
+that helped move the early code to OOP.
 
-# Convert to MP3
-compiler = Mk3Compiler()
-compiler.compile_mp3("/path/to/flac", "/path/to/mp3")
-```
+## License
 
-### MusicBrainz Integration
-```python
-from mk3lib.musicbrainz import Musicbrainz
-
-mb = Musicbrainz()
-mb.handshake()
-
-# Get album info by release group ID
-album_info = mb.get_album_by_rgid("your-rgid-here")
-print(f"Album: {album_info['title']} by {album_info['artist']} ({album_info['year']})")
-```
-
-### Queue Processing
-```python
-from mk3lib.worker_queue import WorkerQueue
-
-# Create processing queue
-queue = WorkerQueue()
-queue.add_files_to_queue("/path/to/flac/collection")
-
-# Process queue items
-while not queue.is_empty():
-    item = queue.get_next()
-    # Process your files here
-```
-
-## 🔧 Configuration
-
-Edit `config.py` to match your setup:
-
-```python
-# Music collection paths
-mk3_source = '/path/to/flac/collection/'
-mp3_out = '/path/to/mp3/output/'
-
-# Database settings
-psql_host = "localhost"
-psql_dbname = "mk3"
-psql_user = "your_user"
-psql_password = "your_password"
-
-# MusicBrainz API
-musicbrainzngs_app = 'your_app_name'
-musicbrainzngs_contact = 'your@email.com'
-```
-
-## 📚 Database Schema
-
-The system uses PostgreSQL tables defined in `tables.sql`:
-
-- Collection catalogs and metadata storage
-- Artist and album relationships
-- Processing queue states
-- Search index mappings
-
-## 🔍 Features in Detail
-
-### Smart Caching
-- Redis-based caching for MusicBrainz API calls
-- FLAC metadata caching to speed up repeated operations
-- Configurable cache expiration
-
-### Batch Processing
-- Queue-based processing for large collections
-- Resumable operations
-- Progress tracking and error handling
-
-### Metadata Enrichment
-- Automatic MusicBrainz lookups
-- Tag standardization and cleanup
-- Cover art preservation and embedding
-
-## 🚧 Development Status
-
-This project is actively developed as a hobby project. Current focus areas:
-
-- [ ] Improved error handling and logging
-- [ ] Web interface for collection management
-- [ ] Enhanced Docker orchestration
-- [ ] API development for external integrations
-- [ ] Advanced search and filtering capabilities
-
-## 🎵 Production Deployment
-
-This toolkit is used in production as part of the **[Homehill](https://github.com/headphonebear/homehill)** infrastructure.
-
-The **mk3 Music Server** runs on Alpine Linux with:
-- **Jellyfin** for media streaming
-- **Navidrome** for Subsonic API compatibility
-- **DragonflyDB** for high-performance caching
-- **Traefik** for reverse proxy
-
-**See the full deployment guide:**  
-👉 **[homehill/servers/mk3/](https://github.com/headphonebear/homehill/tree/main/servers/mk3)**
-
-*Architecture by Ana 🦊 | Music curation by Headphonebear 🐻*
-
-## 🤝 Contributing
-
-This is a personal hobby project, but suggestions and improvements are welcome! 
-
-## 📝 License
-
-MIT License - Feel free to use and modify for your own music collection needs.
-
-## 🎵 Philosophy
-
-> "Finally getting better at things I started long ago, instead of starting something new."
-
-This project represents a commitment to refining and perfecting existing ideas rather than constantly chasing new ones. It's about building something solid, useful, and maintainable for long-term music collection management.
-
----
-
-**Note**: This software is work in progress. Expect rough edges, but also expect a system that gets better with every commit! 🚀
+MIT — use and adapt it for your own collection.
