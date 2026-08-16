@@ -77,3 +77,41 @@ CREATE TABLE track_paths (
     -- Policy as constraint: mk3 is FLAC-only.
     CONSTRAINT flac_only CHECK (lower(relpath) LIKE '%.flac')
 );
+
+
+-- ╔══════════════════════════════════════════════════════════════════════════╗
+-- ║  mk3 — shopping-list curation (black/whitelists over the generated wants)  ║
+-- ╚══════════════════════════════════════════════════════════════════════════╝
+--
+-- The wanted/shopping list is GENERATED, not stored: the MusicBrainz studio-album
+-- filter + Official-release check, minus whatever `albums` already holds. These
+-- three tables are the human/AI *judgments* layered over that automatic result —
+-- the few calls no rule can make, persisted so each is decided exactly once (the
+-- crystallized memory of the review step). All UUID, so they stay MBID-clean like
+-- the core; deliberately NO FK to albums, because a curation entry is precisely
+-- about things you do NOT (yet) own.
+
+-- ── blacklist_artists — artists the "+N owned → auto-want" rule must skip ─────
+-- e.g. Frank Zappa: >5 owned would auto-generate ~100 wanted Release Groups.
+-- Listing him here opts him out of the *automatic* side entirely; hand-picked
+-- wants for him can still arrive via the whitelist below.
+CREATE TABLE blacklist_artists (
+    artist_mbid UUID PRIMARY KEY   -- MUSICBRAINZ_ALBUMARTISTID to skip in auto-generation
+);
+
+-- ── blacklist_rgids — single Release Groups to drop from the generated wants ──
+-- e.g. "David Bowie Narrates Prokofiev's Peter and the Wolf": an Official release,
+-- so the Official-check keeps it, but not an album to want. One RGID, gone.
+CREATE TABLE blacklist_rgids (
+    rgid UUID PRIMARY KEY          -- MUSICBRAINZ_RELEASEGROUPID to exclude
+);
+
+-- ── whitelist_rgids — Release Groups to ADD to the wants, no questions asked ──
+-- The mirror of the blacklist and the *last* step in building the list: these
+-- bypass every filter and land on the shopping list directly (e.g. the non-
+-- Official "1980 Floorshow Rehearsals" curio you actually want). No logic gates
+-- them. And once the disc is on the shelf, the later "minus owned" step drops it
+-- automatically — a bought whitelist entry cleans itself up, no manual removal.
+CREATE TABLE whitelist_rgids (
+    rgid UUID PRIMARY KEY          -- MUSICBRAINZ_RELEASEGROUPID to force onto the wants
+);
