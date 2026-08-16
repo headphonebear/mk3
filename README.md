@@ -53,6 +53,40 @@ The stack:
 - Both run on **chick**, the dev server in my
   [homehill](https://github.com/headphonebear/homehill) homelab.
 
+## Running the indexer
+
+The runner ships as a small image and runs as a **one-shot**: it starts, makes
+one pass over the collection, and exits — nothing stays resident. Postgres keeps
+the facts; the container is gone when it's done.
+
+```bash
+# build (on chick, from the repo copy)
+docker build -t mk3-runner .
+
+# run: music mounted read-only, the local (gitignored) config.py mounted in,
+# host networking so the runner reaches the Postgres container on 127.0.0.1:5432
+docker run --rm \
+  -v /mnt/music:/mnt/music:ro \
+  -v ~/mk3/config.py:/app/config.py:ro \
+  --network host \
+  mk3-runner            # add --limit 200 for a smoke test on a subset
+```
+
+The entrypoint is `tools/index.py`; everything after the image name is passed to
+it:
+
+- `--limit N` — stop after N files (smoke test),
+- `--root /some/path` — index a different music root (default: `config.mk3_source`).
+
+`config.py` is **never** baked into the image — it carries the DB password and is
+mounted at runtime (see `config.py.example`). A clean run reports `ok / albums /
+skipped / errored`; files missing a Release Group or Release-Track ID are skipped
+by policy, not errored.
+
+> **Note:** on chick the repo currently lives as a hand-copied folder. The intended
+> path is a plain `git clone` (the repo is public) once chick has `git` — then a
+> pull replaces the copy step above.
+
 ## Status & roadmap
 
 **Works today:** the catalog. A full run indexes the whole collection cleanly —
