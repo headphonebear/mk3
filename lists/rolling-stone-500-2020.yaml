@@ -1,0 +1,1517 @@
+# ╔══════════════════════════════════════════════════════════════════════════╗
+# ║  Rolling Stone — 500 Greatest Albums of All Time, 2020 edition            ║
+# ╚══════════════════════════════════════════════════════════════════════════╝
+#
+# One edition = one list (one source). Taken 1:1 from the MusicBrainz
+# "Release group series", which already carries Release Group IDs and ranks —
+# no mapping needed.
+#
+# `pos` is the rank in the magazine (1 = best). `rgid` is the truth; `title`
+# is only there so humans (and git diffs) can read it.
+
+name: Rolling Stone – 500 Greatest Albums of All Time
+edition: 2020
+source: https://musicbrainz.org/series/6a4b53b9-2756-4afe-93f2-306039d41910
+fetched: 2026-11-01
+
+albums:
+  - pos: 1
+    rgid: c1fa4d2c-ec62-37d5-b01d-6df7f8fd2c90
+    title: "Marvin Gaye – What’s Going On"
+  - pos: 2
+    rgid: fdd96703-7b21-365e-bdea-38029fbeb84e
+    title: "The Beach Boys – Pet Sounds"
+  - pos: 3
+    rgid: 42d725fb-a8b7-388c-8866-3b02789af326
+    title: "Joni Mitchell – Blue"
+  - pos: 4
+    rgid: ea88b09b-fd34-33cf-a3e5-25a3a2fb4c6f
+    title: "Stevie Wonder – Songs in the Key of Life"
+  - pos: 5
+    rgid: 9162580e-5df4-32de-80cc-f45a8d8a9b1d
+    title: "The Beatles – Abbey Road"
+  - pos: 6
+    rgid: 1b022e01-4da6-387b-8658-8678046e4cef
+    title: "Nirvana – Nevermind"
+  - pos: 7
+    rgid: 416bb5e5-c7d1-3977-8fd7-7c9daf6c2be6
+    title: "Fleetwood Mac – Rumours"
+  - pos: 8
+    rgid: b93a7c47-a6d4-33f2-9034-53fdd991f4ba
+    title: "Prince and The Revolution – Purple Rain"
+  - pos: 9
+    rgid: 9c1b8072-eb1d-33d2-af8c-984d46e40902
+    title: "Bob Dylan – Blood on the Tracks"
+  - pos: 10
+    rgid: 8691d12c-abd8-385c-b1eb-d841190124f7
+    title: "Lauryn Hill – The Miseducation of Lauryn Hill"
+  - pos: 11
+    rgid: 72d15666-99a7-321e-b1f3-a3f8c09dff9f
+    title: "The Beatles – Revolver"
+  - pos: 12
+    rgid: f32fab67-77dd-3937-addc-9062e28e4c37
+    title: "Michael Jackson – Thriller"
+  - pos: 13
+    rgid: 7d8f07a7-4c64-3afb-8daf-8f1d4df89a78
+    title: "Aretha Franklin – I Never Loved a Man the Way I Love You"
+  - pos: 14
+    rgid: 4838a3c9-fd2b-30a5-83eb-e32545b5d7fc
+    title: "The Rolling Stones – Exile on Main St."
+  - pos: 15
+    rgid: 01921d99-9d15-3fce-8734-46e58327cfb7
+    title: "Public Enemy – It Takes a Nation of Millions to Hold Us Back"
+  - pos: 16
+    rgid: 8d73e45e-7ca1-3cb4-ae28-6da76196c17c
+    title: "The Clash – London Calling"
+  - pos: 17
+    rgid: 5d6e21e1-deb5-428e-bb42-c2a567f3619b
+    title: "Kanye West – My Beautiful Dark Twisted Fantasy"
+  - pos: 18
+    rgid: fb48b1dc-412f-36aa-8820-1023c08c46c6
+    title: "Bob Dylan – Highway 61 Revisited"
+  - pos: 19
+    rgid: d9103c72-3807-4378-9ce7-b6f3e8fdd547
+    title: "Kendrick Lamar – To Pimp a Butterfly"
+  - pos: 20
+    rgid: e75c0549-ad55-39e3-8025-c72c5d4a3c5d
+    title: "Radiohead – Kid A"
+  - pos: 21
+    rgid: 39b22944-7503-3937-8bba-09b17281cc6a
+    title: "Bruce Springsteen – Born to Run"
+  - pos: 22
+    rgid: 5afcfeac-118a-35e6-af0d-35ec9003354d
+    title: "The Notorious B.I.G. – Ready to Die"
+  - pos: 23
+    rgid: 5cbd9d7b-597a-3c5e-bfd1-c2b364215560
+    title: "The Velvet Underground & Nico – The Velvet Underground & Nico"
+  - pos: 24
+    rgid: 9f7a4c28-8fa2-3113-929c-c47a9f7982c3
+    title: "The Beatles – Sgt. Pepper’s Lonely Hearts Club Band"
+  - pos: 25
+    rgid: 6e4f39e6-3403-39d7-81c6-8e61a990d509
+    title: "Carole King – Tapestry"
+  - pos: 26
+    rgid: ff8f533c-3cb3-3877-9209-11f433edaad2
+    title: "Patti Smith – Horses"
+  - pos: 27
+    rgid: 610fb60f-900a-3c42-ac7d-f6b6aa8035f9
+    title: "Wu‐Tang Clan – Enter the Wu‐Tang (36 Chambers)"
+  - pos: 28
+    rgid: 9605c075-c64c-366b-ad7f-ec98523fc162
+    title: "D’Angelo – Voodoo"
+  - pos: 29
+    rgid: 055be730-dcad-31bf-b550-45ba9c202aa3
+    title: "The Beatles – The Beatles"
+  - pos: 30
+    rgid: da40e720-2097-3730-8a7f-0c2ddbff4a96
+    title: "The Jimi Hendrix Experience – Are You Experienced"
+  - pos: 31
+    rgid: 8e8a594f-2175-38c7-a871-abb68ec363e7
+    title: "Miles Davis – Kind of Blue"
+  - pos: 32
+    rgid: c1f22e07-7bdf-4a4f-8b50-7747c1091ef6
+    title: "Beyoncé – Lemonade"
+  - pos: 33
+    rgid: 6eac2e57-ee50-36f8-b0c4-c4c847a2c098
+    title: "Amy Winehouse – Back to Black"
+  - pos: 34
+    rgid: e626b377-74c5-3b97-8f16-8cef5e1c04ea
+    title: "Stevie Wonder – Innervisions"
+  - pos: 35
+    rgid: dca03435-8adb-30a5-ba82-5a162267ff38
+    title: "The Beatles – Rubber Soul"
+  - pos: 36
+    rgid: ee749c63-5699-38e0-b565-7e84414648d9
+    title: "Michael Jackson – Off the Wall"
+  - pos: 37
+    rgid: ad444843-7160-33d7-b0c9-fc99f2c14a99
+    title: "Dr. Dre – The Chronic"
+  - pos: 38
+    rgid: 329fb554-2a81-3d8a-8e22-ec2c66810019
+    title: "Bob Dylan – Blonde on Blonde"
+  - pos: 39
+    rgid: f6b1b900-6108-32f0-abbd-2855af9151eb
+    title: "Talking Heads – Remain in Light"
+  - pos: 40
+    rgid: 6c9ae3dd-32ad-472c-96be-69d0a3536261
+    title: "David Bowie – The Rise and Fall of Ziggy Stardust and the Spiders From Mars"
+  - pos: 41
+    rgid: 784c0edd-0f37-33a2-9ca5-dff87b4f999c
+    title: "The Rolling Stones – Let It Bleed"
+  - pos: 42
+    rgid: b1392450-e666-3926-a536-22c65f834433
+    title: "Radiohead – OK Computer"
+  - pos: 43
+    rgid: c3733436-fcba-3c08-b082-d548df5c5139
+    title: "A Tribe Called Quest – The Low End Theory"
+  - pos: 44
+    rgid: 28298e2c-4d70-3eed-a0f5-a3280c662b3d
+    title: "Nas – Illmatic"
+  - pos: 45
+    rgid: 90718403-7634-3786-84bf-2053a7bd4f4c
+    title: "Prince – Sign “☮︎” the Times"
+  - pos: 46
+    rgid: 19847822-1430-3380-9cf1-bc45545b34ac
+    title: "Paul Simon – Graceland"
+  - pos: 47
+    rgid: 7de1e321-4a53-3feb-b83e-f1dab88bf952
+    title: "Ramones – Ramones"
+  - pos: 48
+    rgid: 1a4c52cd-483a-347c-93f9-4d512767c7ba
+    title: "Bob Marley & The Wailers – Legend: The Best of Bob Marley and The Wailers"
+  - pos: 49
+    rgid: eb655897-6cc5-3fc1-b9ed-5008eb80c682
+    title: "OutKast – Aquemini"
+  - pos: 50
+    rgid: 11ae8c9c-27c1-3308-9761-edb87c8f54ea
+    title: "Jay‐Z – The Blueprint"
+  - pos: 51
+    rgid: d7da8113-a582-3656-9412-74e17a9a447e
+    title: "Chuck Berry – The Great Twenty‐Eight"
+  - pos: 52
+    rgid: 686cdbd1-b400-32d8-8cb8-9317a2e41a58
+    title: "David Bowie – Station to Station"
+  - pos: 53
+    rgid: 47ba2d59-5544-34a4-b108-dc08c0956298
+    title: "The Jimi Hendrix Experience – Electric Ladyland"
+  - pos: 54
+    rgid: 7f5132f0-1d58-3d83-be6a-e32d22219e17
+    title: "James Brown – Star Time"
+  - pos: 55
+    rgid: f5093c06-23e3-404f-aeaa-40f72885ee3a
+    title: "Pink Floyd – The Dark Side of the Moon"
+  - pos: 56
+    rgid: c186db82-9988-367e-8486-2e38e9b6c8db
+    title: "Liz Phair – Exile in Guyville"
+  - pos: 57
+    rgid: ea337405-285f-3846-9049-5e3addf149fc
+    title: "The Band – The Band"
+  - pos: 58
+    rgid: 2e61da88-39e9-3473-81d2-c964cb394952
+    title: "Led Zeppelin – [Led Zeppelin IV]"
+  - pos: 59
+    rgid: 58c6d809-bfa7-3b25-acf3-a99d53402b08
+    title: "Stevie Wonder – Talking Book"
+  - pos: 60
+    rgid: 7d568f14-d86e-3584-97d0-c1824599de04
+    title: "Van Morrison – Astral Weeks"
+  - pos: 61
+    rgid: e124668d-731c-3d2f-bd38-facf91df5e27
+    title: "Eric B. & Rakim – Paid in Full"
+  - pos: 62
+    rgid: a0b94d0a-210b-4b15-bd1d-93be2196c14a
+    title: "Guns N' Roses – Appetite for Destruction"
+  - pos: 63
+    rgid: 8588c5a5-b491-37a4-8d51-2227346a072e
+    title: "Steely Dan – Aja"
+  - pos: 64
+    rgid: 00d2cd53-21c9-3738-b683-56847b7b0040
+    title: "OutKast – Stankonia"
+  - pos: 65
+    rgid: a2bad96f-a572-38f2-b362-5865dedc0d35
+    title: "James Brown – The James Brown Show: Live At The Apollo"
+  - pos: 66
+    rgid: 77cf47ba-58cd-3f3d-a5f9-79bf89860421
+    title: "John Coltrane – A Love Supreme"
+  - pos: 67
+    rgid: a7f852ba-08bc-36f1-92f3-4dc127f4b70a
+    title: "Jaÿ‐Z – Reasonable Doubt"
+  - pos: 68
+    rgid: 017f2a37-a78f-3578-9611-fa40408e5d90
+    title: "Kate Bush – Hounds of Love"
+  - pos: 69
+    rgid: ee3d18ed-d6a8-37c7-a964-41bbdb6d59f1
+    title: "Alanis Morissette – Jagged Little Pill"
+  - pos: 70
+    rgid: fed1608d-80b7-38d2-aeb8-c6357f0d4c23
+    title: "N.W.A – Straight Outta Compton"
+  - pos: 71
+    rgid: c5650313-60f3-34d3-92e4-300545133792
+    title: "Bob Marley & The Wailers – Exodus"
+  - pos: 72
+    rgid: b25419cf-71bf-3a54-8cd4-2161c61056a0
+    title: "Neil Young – Harvest"
+  - pos: 73
+    rgid: cb76227e-3ac0-3002-9a10-615a5b73cc59
+    title: "my bloody valentine – Loveless"
+  - pos: 74
+    rgid: 8a01217e-6947-3927-a39b-6691104694f1
+    title: "Kanye West – The College Dropout"
+  - pos: 75
+    rgid: 05571372-5b11-39b7-89c5-1c02589a27c8
+    title: "Aretha Franklin – Lady Soul"
+  - pos: 76
+    rgid: 3f68cf91-b4f0-39ef-8318-93dc064a53ba
+    title: "Curtis Mayfield – Superfly"
+  - pos: 77
+    rgid: 9584e28b-66a7-3846-8d52-b3008a283539
+    title: "The Who – Who’s Next"
+  - pos: 78
+    rgid: 2ac479cc-0126-3709-bb55-7028e4c559ef
+    title: "Elvis Presley – The Sun Sessions"
+  - pos: 79
+    rgid: 0da340a0-6ad7-4fc2-a272-6f94393a7831
+    title: "Frank Ocean – Blonde"
+  - pos: 80
+    rgid: e959a4b3-6306-3c45-9df6-e7241dae9ea3
+    title: "Sex Pistols – Never Mind the Bollocks Here’s the Sex Pistols"
+  - pos: 81
+    rgid: 8596171e-23b2-4bdd-8f1c-11960df0ecbe
+    title: "Beyoncé – BEYONCÉ"
+  - pos: 82
+    rgid: d8b8448a-2634-3e92-ac86-cf55e018f825
+    title: "Sly & the Family Stone – There’s a Riot Goin’ On"
+  - pos: 83
+    rgid: aac8700b-8f62-30fc-ac2a-23b6cb37e3c3
+    title: "Dusty Springfield – Dusty in Memphis"
+  - pos: 84
+    rgid: d3bc1a64-7561-3787-b680-0003aa50f8f1
+    title: "AC/DC – Back in Black"
+  - pos: 85
+    rgid: 8be83468-4917-390d-82b6-d890f058cd22
+    title: "John Lennon / Plastic Ono Band – John Lennon/Plastic Ono Band"
+  - pos: 86
+    rgid: 8ebffd15-06c3-3b88-a761-ec18c5513287
+    title: "The Doors – The Doors"
+  - pos: 87
+    rgid: a9e30282-5b37-3f92-b897-b9659a1a312b
+    title: "Miles Davis – Bitches Brew"
+  - pos: 88
+    rgid: 743b0b2e-a23a-3182-950e-232f8cb0dfb7
+    title: "David Bowie – Hunky Dory"
+  - pos: 89
+    rgid: 45536412-c62c-34fc-9524-0bac1d2542c1
+    title: "Erykah Badu – Baduizm"
+  - pos: 90
+    rgid: b6a3952b-9977-351c-a80a-73e023143858
+    title: "Neil Young – After the Gold Rush"
+  - pos: 91
+    rgid: b613123b-a234-3f48-9c45-e05bf4e6b9e7
+    title: "Bruce Springsteen – Darkness on the Edge of Town"
+  - pos: 92
+    rgid: d0b1e21e-cef6-4575-8d92-1afea1894ca3
+    title: "The Jimi Hendrix Experience – Axis: Bold as Love"
+  - pos: 93
+    rgid: 45a68d94-6923-38c1-a6dd-4cfc1cdc193a
+    title: "Missy Misdemeanor Elliott – Supa Dupa Fly"
+  - pos: 94
+    rgid: edd57263-df77-3f1a-8803-8beb5d5b1a64
+    title: "The Stooges – Fun House"
+  - pos: 95
+    rgid: 47809021-4515-4215-beea-db3f5dfb6267
+    title: "Drake – Take Care"
+  - pos: 96
+    rgid: c86c6af9-d10e-3079-b34b-30b682a797eb
+    title: "R.E.M. – Automatic for the People"
+  - pos: 97
+    rgid: 3d00fb45-f8ab-3436-a8e1-b4bfc4d66913
+    title: "Metallica – Master of Puppets"
+  - pos: 98
+    rgid: 493de006-33bf-3404-9bb7-1f3b0c22ce05
+    title: "Lucinda Williams – Car Wheels on a Gravel Road"
+  - pos: 99
+    rgid: a73cecde-0923-40ad-aad1-e8c24ba6c3d2
+    title: "Taylor Swift – Red"
+  - pos: 100
+    rgid: 466fddac-8006-3e71-bbe7-7aa0f587aa88
+    title: "The Band – Music From Big Pink"
+  - pos: 101
+    rgid: 0f18ec88-aa87-38a9-8a65-f03d81763560
+    title: "Led Zeppelin – Led Zeppelin"
+  - pos: 102
+    rgid: ca91cb5a-7ecc-3c46-84a0-0d4951889374
+    title: "The Clash – The Clash"
+  - pos: 103
+    rgid: 5243f39c-c344-3989-a0f6-2a2f75a9d827
+    title: "De La Soul – 3 Feet High and Rising"
+  - pos: 104
+    rgid: 4a4213d0-f224-3d51-bcca-476f61162681
+    title: "The Rolling Stones – Sticky Fingers"
+  - pos: 105
+    rgid: d757b87e-4a3b-38ec-9246-548baeff5ceb
+    title: "The Allman Brothers Band – At Fillmore East"
+  - pos: 106
+    rgid: fe676d05-f97c-303a-890b-da53c69e5d42
+    title: "Hole – Live Through This"
+  - pos: 107
+    rgid: 2b9f99d8-becf-3fc3-86a6-2bdd4cef93fe
+    title: "Television – Marquee Moon"
+  - pos: 108
+    rgid: 3d3ff0b9-5858-33f3-9d67-8ba5977899a8
+    title: "Fiona Apple – When the Pawn Hits the Conflicts He Thinks Like a King What He Knows Throws the Blows When He Goes to the Fight and He’ll Win the Whole Thing ’Fore He Enters the Ring There’s No Body to Batter When Your Mind Is Your Might So When You Go Solo, You Hold Your Own Hand and Remember That Depth Is the Greatest of Heights and If You Know Where You Stand, Then You Know Where to Land and If You Fall It Won’t Matter, Cuz You’ll Know That You’re Right"
+  - pos: 109
+    rgid: 6c8345df-f822-33af-b64a-eff2e46941b9
+    title: "Lou Reed – Transformer"
+  - pos: 110
+    rgid: 3bd19e28-698e-3b7e-a8ec-f872bf001651
+    title: "Joni Mitchell – Court and Spark"
+  - pos: 111
+    rgid: b23d3137-df51-3047-a6a5-b5efbde50f22
+    title: "Janet Jackson – Control"
+  - pos: 112
+    rgid: 80df0f1b-4ce7-348a-aa1b-0d31ebff111a
+    title: "Elton John – Goodbye Yellow Brick Road"
+  - pos: 113
+    rgid: d8dde278-482c-3cc8-a530-fea70476f3a5
+    title: "The Smiths – The Queen Is Dead"
+  - pos: 114
+    rgid: efea26d1-a016-30f6-b8e2-bc8c02336b0a
+    title: "The Strokes – Is This It"
+  - pos: 115
+    rgid: 499c19c8-0dab-4824-884b-6191d145e95b
+    title: "Kendrick Lamar – good kid, m.A.A.d city"
+  - pos: 116
+    rgid: 494bf606-d2f7-36d0-8340-eadad8601d2b
+    title: "The Cure – Disintegration"
+  - pos: 117
+    rgid: c563d738-3841-31ce-b29d-ec6b40fd1e7b
+    title: "Kanye West – Late Registration"
+  - pos: 118
+    rgid: 836f349a-0434-3e8b-a0bc-261f77a9f99c
+    title: "Eagles – Hotel California"
+  - pos: 119
+    rgid: 86871123-60e4-30a5-aae3-36e810e0964b
+    title: "Sly and the Family Stone – Stand!"
+  - pos: 120
+    rgid: 16506432-d133-3b2f-a504-dc88966dad2a
+    title: "Van Morrison – Moondance"
+  - pos: 121
+    rgid: 5e8117f4-a87f-3732-be5f-313c7e5b308d
+    title: "Elvis Costello – This Year’s Model"
+  - pos: 122
+    rgid: 7c4cab8d-dead-3870-b501-93c90fd0a580
+    title: "Nine Inch Nails – The Downward Spiral"
+  - pos: 123
+    rgid: 33b4653d-006e-3cc1-8afb-386b15a6cd6e
+    title: "Led Zeppelin – Led Zeppelin II"
+  - pos: 124
+    rgid: 744c7a1b-ac79-35c4-bd92-7e2c6a24c8d8
+    title: "U2 – Achtung Baby"
+  - pos: 125
+    rgid: b534aa01-d621-31ba-9278-38a500e3cdca
+    title: "Beastie Boys – Paul’s Boutique"
+  - pos: 126
+    rgid: 49acb129-7958-3132-988c-bb85955b1c3c
+    title: "Mary J. Blige – My Life"
+  - pos: 127
+    rgid: 38671d62-32bd-399d-abbd-0f685c2fd4a3
+    title: "Ray Charles – Modern Sounds in Country and Western Music"
+  - pos: 128
+    rgid: 6b47c9a0-b9e1-3df9-a5e8-50a6ce0dbdbd
+    title: "Queen – A Night at the Opera"
+  - pos: 129
+    rgid: f2026101-945b-3d05-9ef4-aa718fc3feef
+    title: "Pink Floyd – The Wall"
+  - pos: 130
+    rgid: 561be5b7-a39c-3866-859d-d86f30816ae7
+    title: "Prince – 1999"
+  - pos: 131
+    rgid: 48140466-cff6-3222-bd55-63c27e43190d
+    title: "Portishead – Dummy"
+  - pos: 132
+    rgid: 4a48eaed-2b09-3147-b310-187bfc692849
+    title: "Hank Williams – 40 Greatest Hits"
+  - pos: 133
+    rgid: 039f2ae4-36dd-3608-9103-67ce7f6c9288
+    title: "Joni Mitchell – Hejira"
+  - pos: 134
+    rgid: dd2203dd-a149-316b-ad7f-a303dc4fc459
+    title: "Fugees (Refugee Camp) – The Score"
+  - pos: 135
+    rgid: 6f3e9fa6-be7a-3de8-a2b2-2072ece8a54d
+    title: "U2 – The Joshua Tree"
+  - pos: 136
+    rgid: a334e612-e736-3b4f-82b4-c4dfb774983c
+    title: "Funkadelic – Maggot Brain"
+  - pos: 137
+    rgid: e4174758-d333-4a8e-a31f-dd0edd51518e
+    title: "Adele – 21"
+  - pos: 138
+    rgid: b14e9927-081e-4a07-b0f7-8ddf22319b27
+    title: "Madonna – The Immaculate Collection"
+  - pos: 139
+    rgid: cc053745-c447-3566-8f27-bed5438c9133
+    title: "Black Sabbath – Paranoid"
+  - pos: 140
+    rgid: 63a3ac2f-5d63-3132-98d3-b00385d9a3a2
+    title: "The Wailers – Catch a Fire"
+  - pos: 141
+    rgid: 1aa41b19-5a72-341b-bd91-4cf61d1dab6b
+    title: "Pixies – Doolittle"
+  - pos: 142
+    rgid: 3c39a076-8e52-38f2-8076-260d0672fb23
+    title: "Bruce Springsteen – Born in the U.S.A."
+  - pos: 143
+    rgid: a616dcf5-7a1f-3afe-a53b-27281c2bf75e
+    title: "The Velvet Underground – The Velvet Underground"
+  - pos: 144
+    rgid: 116c9490-6af4-3827-8261-2d5b1f508fe7
+    title: "Led Zeppelin – Physical Graffiti"
+  - pos: 145
+    rgid: b0fa91c8-0996-38f1-ab84-797f58d7c4eb
+    title: "Eminem – The Marshall Mathers LP"
+  - pos: 146
+    rgid: 0c1a4d70-5926-3ae8-aa25-466fe65639fe
+    title: "Blondie – Parallel Lines"
+  - pos: 147
+    rgid: ea29c347-696f-3165-986d-7bad1394b178
+    title: "Jeff Buckley – Grace"
+  - pos: 148
+    rgid: f8f4167d-897c-4b25-a171-638374d1dfa4
+    title: "Frank Ocean – channel ORANGE"
+  - pos: 149
+    rgid: a13154a4-14a1-3344-ae14-3bea728ebe58
+    title: "John Prine – John Prine"
+  - pos: 150
+    rgid: 324aee0c-36ec-35c1-9c93-b67a1d428037
+    title: "Bruce Springsteen – Nebraska"
+  - pos: 151
+    rgid: 4e61585f-f341-3174-85cf-afad8df46fbe
+    title: "George Michael – Faith"
+  - pos: 152
+    rgid: 448c8d23-3118-397f-9b81-a560c799f27a
+    title: "Pretenders – Pretenders"
+  - pos: 153
+    rgid: c1bb54cc-751d-300c-ba29-d7502d571c2d
+    title: "PJ Harvey – Rid of Me"
+  - pos: 154
+    rgid: 9e9b6cb5-2398-3aa7-b0c3-80c73e30b663
+    title: "Aretha Franklin – Amazing Grace"
+  - pos: 155
+    rgid: 77befaa0-662e-3d84-ba45-c862e16dc109
+    title: "Jay‐Z – The Black Album"
+  - pos: 156
+    rgid: 2c644807-3b5d-39d4-8c65-dec603bf3f3a
+    title: "The Replacements – Let It Be"
+  - pos: 157
+    rgid: cc7e6348-cc55-31fa-aeb2-748a46a81cb3
+    title: "Oasis – (What’s the Story) Morning Glory?"
+  - pos: 158
+    rgid: 25bdfd28-72ca-3d1f-88fc-dcf67df91720
+    title: "Erykah Badu – Mama’s Gun"
+  - pos: 159
+    rgid: f6df6292-fd40-37c3-bd61-22c53abfe773
+    title: "The Police – Synchronicity"
+  - pos: 160
+    rgid: cea5d18a-1924-3cda-bebc-38933834b25d
+    title: "Pearl Jam – Ten"
+  - pos: 161
+    rgid: a2735d5f-27c0-3176-85df-e77f669dcca1
+    title: "Crosby, Stills & Nash – Crosby, Stills & Nash"
+  - pos: 162
+    rgid: 88f69eab-8f07-343b-847c-b944ad33dfcf
+    title: "Pulp – Different Class"
+  - pos: 163
+    rgid: 6e9a06a8-c8bb-3ea9-877a-417e74bb1c2e
+    title: "Various Artists – Saturday Night Fever: The Original Movie Sound Track"
+  - pos: 164
+    rgid: 6b4ea595-3378-3019-be5f-058412670791
+    title: "Johnny Cash – At Folsom Prison"
+  - pos: 165
+    rgid: de790d3d-a35c-364c-a8fb-adfb73084a45
+    title: "R.E.M. – Murmur"
+  - pos: 166
+    rgid: 5e762b33-2f63-3124-9912-251dbb1c0a83
+    title: "Buddy Holly – 20 Golden Greats"
+  - pos: 167
+    rgid: 71f1482e-e63f-3b2c-811b-939f62708f2a
+    title: "Depeche Mode – Violator"
+  - pos: 168
+    rgid: 9d73a864-2976-3286-b6c1-8aabc7407737
+    title: "Steely Dan – Can’t Buy a Thrill"
+  - pos: 169
+    rgid: 735bcee6-6be6-3957-af15-d21ba2bd355b
+    title: "Billy Joel – The Stranger"
+  - pos: 170
+    rgid: bbd66e31-ac27-3432-81a7-0d4b4b4c5de5
+    title: "Cream – Disraeli Gears"
+  - pos: 171
+    rgid: 24769a99-8189-3d8c-947e-dbc8574dad5c
+    title: "Sonic Youth – Daydream Nation"
+  - pos: 172
+    rgid: c39f7f80-d42f-3669-9653-230f8e922083
+    title: "Simon and Garfunkel – Bridge Over Troubled Water"
+  - pos: 173
+    rgid: 2a0981fb-9593-3019-864b-ce934d97a16e
+    title: "Nirvana – In Utero"
+  - pos: 174
+    rgid: 71188e04-90b4-35ff-81c0-06316efdc749
+    title: "Various Artists – The Harder They Come"
+  - pos: 175
+    rgid: b88655ba-7469-48b8-a296-b9011ab73ef3
+    title: "Kendrick Lamar – DAMN."
+  - pos: 176
+    rgid: 13cf2244-c850-304d-bc46-b30e3f10e0cc
+    title: "Public Enemy – Fear of a Black Planet"
+  - pos: 177
+    rgid: d4e7be0c-6db3-372e-aee6-e048dbb9ac51
+    title: "Rod Stewart – Every Picture Tells a Story"
+  - pos: 178
+    rgid: 2c8fd4f3-1523-3604-97dd-18ba222e2f3b
+    title: "Otis Redding – Otis Blue / Otis Redding Sings Soul"
+  - pos: 179
+    rgid: 132d78be-baa5-3301-aba5-933409e3f848
+    title: "The Notorious B.I.G. – Life After Death"
+  - pos: 180
+    rgid: c7035bc6-6101-326f-992c-401d451c1716
+    title: "Love – Forever Changes"
+  - pos: 181
+    rgid: 6cadda7c-fbd0-3b19-9546-56915e3305d8
+    title: "Bob Dylan – Bringing It All Back Home"
+  - pos: 182
+    rgid: a3a2756d-93b4-37c6-8b82-513070ef58d6
+    title: "James Taylor – Sweet Baby James"
+  - pos: 183
+    rgid: a4591f67-48d9-36ae-bc68-2deb954d0a15
+    title: "D’Angelo – Brown Sugar"
+  - pos: 184
+    rgid: 46d415e9-39b7-3978-9e3d-d9d8a32c6751
+    title: "Cyndi Lauper – She’s So Unusual"
+  - pos: 185
+    rgid: 6e672bbd-7c7f-32f8-8335-c603be99d13b
+    title: "The Rolling Stones – Beggars Banquet"
+  - pos: 186
+    rgid: 68bee70d-b425-3813-aca7-dd7b912c3d11
+    title: "Red Hot Chili Peppers – Blood Sugar Sex Magik"
+  - pos: 187
+    rgid: f7e8792d-4aaf-389c-b0e5-a4bbae2bacdf
+    title: "Ice Cube – AmeriKKKa’s Most Wanted"
+  - pos: 188
+    rgid: e53310bf-8ccc-3d7f-a0b7-5ca4dbababcb
+    title: "T. Rex – Electric Warrior"
+  - pos: 189
+    rgid: 209b45b7-8b2f-3e07-b194-efff9cde80dd
+    title: "Sleater‐Kinney – Dig Me Out"
+  - pos: 190
+    rgid: 0e587339-406a-3d21-8678-73e46e250379
+    title: "The Who – Tommy"
+  - pos: 191
+    rgid: 56933d06-34a0-3a49-8e42-7c39f8c356dd
+    title: "Etta James – At Last!"
+  - pos: 192
+    rgid: 57f5e7c8-2a6e-34a0-b4cd-0e77695bc36f
+    title: "Beastie Boys – Licensed to Ill"
+  - pos: 193
+    rgid: 5fdea541-32fc-3b17-b7c4-50b40f65203d
+    title: "Creedence Clearwater Revival – Willy and the Poor Boys"
+  - pos: 194
+    rgid: a5711a77-42d1-3f4c-830c-e27a96f0800f
+    title: "Michael Jackson – Bad"
+  - pos: 195
+    rgid: 34291a49-8df9-304e-bd39-16b11d829d5f
+    title: "Leonard Cohen – Songs of Leonard Cohen"
+  - pos: 196
+    rgid: 1e151a63-e906-4903-b108-b3ecf21218b4
+    title: "Robyn – Body Talk"
+  - pos: 197
+    rgid: c2c696fc-6beb-3dfb-bb15-7bb021ebeb5d
+    title: "The Beatles – Meet The Beatles!"
+  - pos: 198
+    rgid: 68699ffe-f5fd-337a-8bb9-8a196157afa8
+    title: "The B‐52s – The B‐52’s"
+  - pos: 199
+    rgid: 869f9eac-2a40-3a41-80a3-6bf2297a7cbc
+    title: "Pavement – Slanted and Enchanted"
+  - pos: 200
+    rgid: af2a0c41-e612-3232-949d-bdca340c407c
+    title: "Sade – Diamond Life"
+  - pos: 201
+    rgid: c2afedfb-034a-3683-ad47-e4404cd7c485
+    title: "A Tribe Called Quest – Midnight Marauders"
+  - pos: 202
+    rgid: 810272e0-aef1-3d85-b2d3-e512e87fc38c
+    title: "Björk – Homogenic"
+  - pos: 203
+    rgid: 740ec10a-e887-38a6-a04d-fe2069c9e2a7
+    title: "Nick Drake – Pink Moon"
+  - pos: 204
+    rgid: d44c50ad-61fd-3fce-95fc-27024d7f1d30
+    title: "Kanye West – Graduation"
+  - pos: 205
+    rgid: 418678e7-2807-3bed-a305-11b4181e533e
+    title: "Cat Stevens – Tea for the Tillerman"
+  - pos: 206
+    rgid: f6a51281-56c4-3538-b915-65a9d4eb29b5
+    title: "David Bowie – Low"
+  - pos: 207
+    rgid: 23eafc30-3978-37fb-bfa0-8058aa1eb81a
+    title: "Eagles – Eagles"
+  - pos: 208
+    rgid: cb688885-74b2-4e9b-a18c-6102866151f2
+    title: "Lil Wayne – Tha Carter III"
+  - pos: 209
+    rgid: a209c0a5-e9b2-37ff-a76d-df5bc405a0e8
+    title: "Run‐D.M.C. – Raising Hell"
+  - pos: 210
+    rgid: e4463406-ea59-39a6-a39b-aaa82a166633
+    title: "Ray Charles – The Birth of Soul"
+  - pos: 211
+    rgid: 42352def-1aab-3000-b548-895ebd869cb6
+    title: "Joy Division – Unknown Pleasures"
+  - pos: 212
+    rgid: b4433a3e-d5ad-3d99-965c-96bfb6a0f071
+    title: "Nina Simone – Wild Is the Wind"
+  - pos: 213
+    rgid: 6086062c-f943-4b85-b1cb-43558425ec1c
+    title: "Fiona Apple – The Idler Wheel Is Wiser Than the Driver of the Screw and Whipping Cords Will Serve You More Than Ropes Will Ever Do"
+  - pos: 214
+    rgid: 80a0451a-d135-3517-96e4-3629dc4f66b9
+    title: "Tom Petty – Wildflowers"
+  - pos: 215
+    rgid: 994c2c59-d32f-304e-8f53-bda17a254f52
+    title: "Grateful Dead – American Beauty"
+  - pos: 216
+    rgid: dfb85157-313b-3f5f-8739-a5162bcb6345
+    title: "Elliott Smith – Either/Or"
+  - pos: 217
+    rgid: 451dca98-c118-32e1-9244-c47ca9c3c0f9
+    title: "Oasis – Definitely Maybe"
+  - pos: 218
+    rgid: 3d886c06-a4c7-3431-be87-2b2940f07acd
+    title: "TLC – CrazySexyCool"
+  - pos: 219
+    rgid: ab981b48-9a7b-34c4-b46a-f6266317ce7c
+    title: "Raekwon – Only Built 4 Cuban Linx…"
+  - pos: 220
+    rgid: 3412fd44-c6e6-3a3b-b91a-964a055192ec
+    title: "Crosby, Stills, Nash & Young – Déjà vu"
+  - pos: 221
+    rgid: 1305859b-8937-397f-9c33-39f62eb672fb
+    title: "Rage Against the Machine – Rage Against the Machine"
+  - pos: 222
+    rgid: cb93e87f-5d21-3447-a6e8-22d44f9b0d7a
+    title: "Madonna – Ray of Light"
+  - pos: 223
+    rgid: f242f304-0f1f-33a5-81a2-7a965b30e3b5
+    title: "John Lennon – Imagine"
+  - pos: 224
+    rgid: e1fbdc3d-2aa4-345d-ae0e-40bfb1552431
+    title: "Dixie Chicks – Fly"
+  - pos: 225
+    rgid: 95f2ba4b-2dd9-38d1-8158-a416a391489c
+    title: "Wilco – Yankee Hotel Foxtrot"
+  - pos: 226
+    rgid: ba53dcbd-9328-3cf7-bc72-179b4512867e
+    title: "Derek and the Dominos – Layla and Other Assorted Love Songs"
+  - pos: 227
+    rgid: a987042b-4fe0-35bb-9cca-7ff44b1ff5b4
+    title: "Little Richard – Here’s Little Richard"
+  - pos: 228
+    rgid: 0be4cdd5-ed37-3842-82ba-7f9983a34473
+    title: "De La Soul – De La Soul Is Dead"
+  - pos: 229
+    rgid: c9557863-40a4-31ce-afba-6322dea9e254
+    title: "Patsy Cline – The Ultimate Collection"
+  - pos: 230
+    rgid: 0c482acd-35a2-466b-b833-ef5f2f1297d4
+    title: "Rihanna – ANTI"
+  - pos: 231
+    rgid: 871631b9-651c-3c2e-88ae-3a2491d9eb6b
+    title: "Tom Petty and the Heartbreakers – Damn the Torpedoes"
+  - pos: 232
+    rgid: 2cdca11d-3e45-3152-93e5-4d2a4ddb1bc6
+    title: "John Coltrane – Giant Steps"
+  - pos: 233
+    rgid: cb10018e-e795-3b62-b9d6-f143d188e496
+    title: "Tori Amos – Little Earthquakes"
+  - pos: 234
+    rgid: e51e9779-2edc-3b39-959c-299fdb5ed940
+    title: "Black Sabbath – Master of Reality"
+  - pos: 235
+    rgid: e8f70201-8899-3f0c-9e07-5d6495bc8046
+    title: "Metallica – Metallica"
+  - pos: 236
+    rgid: 48117b90-a16e-34ca-a514-19c702df1158
+    title: "Daft Punk – Discovery"
+  - pos: 237
+    rgid: b51ba291-2490-3132-a85d-2094de795b63
+    title: "Willie Nelson – Red Headed Stranger"
+  - pos: 238
+    rgid: 33101a28-ae05-3a69-873c-684e336fe2df
+    title: "Kraftwerk – Trans Europa Express"
+  - pos: 239
+    rgid: 420e3df4-6322-3399-8144-29ef7eb62e42
+    title: "Boogie Down Productions – Criminal Minded"
+  - pos: 240
+    rgid: 1c17ea9a-97d1-33ed-930f-f4c28222d37f
+    title: "Sam Cooke – Live at the Harlem Square Club, 1963"
+  - pos: 241
+    rgid: 8b6f133a-2fdf-3cc2-b84d-1c889adc0939
+    title: "Massive Attack – Blue Lines"
+  - pos: 242
+    rgid: 4be9d91f-6ed7-34b8-aa5e-45be79819273
+    title: "The Velvet Underground – Loaded"
+  - pos: 243
+    rgid: 9a4a9ebf-f4f7-3dba-9b80-0b274cbc80f9
+    title: "The Zombies – Odessey and Oracle"
+  - pos: 244
+    rgid: 1c1b50ec-828b-3d7c-9b1b-54cb1fe97d55
+    title: "Kanye West – 808s & Heartbreak"
+  - pos: 245
+    rgid: 12fab6b9-4eaf-33b0-963e-cae03ac332fe
+    title: "Cocteau Twins – Heaven or Las Vegas"
+  - pos: 246
+    rgid: a1440823-4a3f-38c3-8649-a346a86fe1ec
+    title: "L.L. Cool J – Mama Said Knock You Out"
+  - pos: 247
+    rgid: e4a67add-6aab-390c-bb82-53939fb9cd0a
+    title: "Sade – Love Deluxe"
+  - pos: 248
+    rgid: de9bf827-a9b0-348b-a7c9-556c03c3fb07
+    title: "Green Day – American Idiot"
+  - pos: 249
+    rgid: 131d12c0-e720-31df-a2f9-d9abd868ceaf
+    title: "Whitney Houston – Whitney Houston"
+  - pos: 250
+    rgid: 6a537b72-0bd3-38c5-8aa1-0527e6e9a2f3
+    title: "Buzzcocks – Singles Going Steady"
+  - pos: 251
+    rgid: e17f2d6e-7849-37f9-a6d8-cda4d59cea28
+    title: "Elton John – Honky Château"
+  - pos: 252
+    rgid: 60a754f9-50e1-346a-97db-925a1e2ad7e0
+    title: "DEVO – Q: Are We Not Men? A: We Are Devo!"
+  - pos: 253
+    rgid: 6792b6d1-4e65-3c3c-9d20-d08aa1dcfc60
+    title: "Pink Floyd – The Piper at the Gates of Dawn"
+  - pos: 254
+    rgid: 322f18bb-5491-38e9-9044-c0a468651eec
+    title: "Herbie Hancock – Head Hunters"
+  - pos: 255
+    rgid: 169b62aa-c3a5-3ed9-bed1-cc47c4bc51ad
+    title: "Bob Dylan – The Freewheelin’ Bob Dylan"
+  - pos: 256
+    rgid: a738bdf1-f610-30aa-9ae7-9a4f90d6f2d7
+    title: "Tracy Chapman – Tracy Chapman"
+  - pos: 257
+    rgid: 2c98f21a-e2af-3412-a253-de9a1e06d7f7
+    title: "Dolly Parton – Coat of Many Colors"
+  - pos: 258
+    rgid: 169a1a7e-f91e-3b10-a136-d94eba6eee2e
+    title: "Joni Mitchell – The Hissing of Summer Lawns"
+  - pos: 259
+    rgid: 99878359-e736-3cdc-a225-548ad17d1c76
+    title: "Janis Joplin – Pearl"
+  - pos: 260
+    rgid: 116b94a2-4361-3ec2-af92-270d97dc10f9
+    title: "The Slits – Cut"
+  - pos: 261
+    rgid: b0935b00-1380-3777-b79d-bd49ef5fb9c0
+    title: "Beastie Boys – Check Your Head"
+  - pos: 262
+    rgid: 16cc9dfc-594d-3fb9-b789-3e1bfcb6f9f8
+    title: "New Order – Power, Corruption & Lies"
+  - pos: 263
+    rgid: 06281c4d-112d-33b0-a25b-df63b420eae7
+    title: "The Beatles – A Hard Day’s Night"
+  - pos: 264
+    rgid: 1a272023-10d3-38ee-bab3-317b55fcc21d
+    title: "Pink Floyd – Wish You Were Here"
+  - pos: 265
+    rgid: fa79988d-62b5-3039-9169-ed0d17d53296
+    title: "Pavement – Wowee Zowee"
+  - pos: 266
+    rgid: 0d44e1cb-c6e0-3453-8b68-4d2082f05421
+    title: "The Beatles – Help!"
+  - pos: 267
+    rgid: 0bcb9f3e-e341-3ed5-ac5b-8ed5e17f9a7e
+    title: "Minutemen – Double Nickels on the Dime"
+  - pos: 268
+    rgid: d1c0b3db-6b93-3b9d-9479-0d60486120cb
+    title: "Randy Newman – Sail Away"
+  - pos: 269
+    rgid: 5d4d0f2d-9be7-4922-bc9a-cbd2880b12c2
+    title: "Kanye West – Yeezus"
+  - pos: 270
+    rgid: 56713bde-f9de-4097-bbe3-41d9d7af32c4
+    title: "Kacey Musgraves – Golden Hour"
+  - pos: 271
+    rgid: 8debe6e5-7fd1-35ee-9d3f-96523536b9f8
+    title: "Mary J. Blige – What’s the 411?"
+  - pos: 272
+    rgid: fc0885e0-0284-3f9d-81ee-17c5e7196346
+    title: "The Velvet Underground – White Light/White Heat"
+  - pos: 273
+    rgid: d0493944-992b-3534-9174-8320c1879837
+    title: "Gang of Four – Entertainment!"
+  - pos: 274
+    rgid: 2a02ea31-7a7f-3a46-8a46-aebfac434a81
+    title: "The Byrds – Sweetheart of the Rodeo"
+  - pos: 275
+    rgid: 0c24e81f-b710-3e24-a4fa-12950e153585
+    title: "Curtis Mayfield – Curtis"
+  - pos: 276
+    rgid: b8048f24-c026-3398-b23a-b5e50716cbc7
+    title: "Radiohead – The Bends"
+  - pos: 277
+    rgid: e53e291f-9a9c-38a0-96e0-86a9b63b776d
+    title: "Alicia Keys – The Diary of Alicia Keys"
+  - pos: 278
+    rgid: 9b5006e5-b276-3a05-bcdd-8d986842320b
+    title: "Led Zeppelin – Houses of the Holy"
+  - pos: 279
+    rgid: fb3770f6-83fb-32b7-85c4-1f522a92287e
+    title: "Nirvana – MTV Unplugged in New York"
+  - pos: 280
+    rgid: f624ead2-e4ba-4e52-bea5-4362b1c67b14
+    title: "50 Cent – Get Rich or Die Tryin’"
+  - pos: 281
+    rgid: 19a185f4-f683-3d00-9571-7378ea276068
+    title: "Nilsson – Nilsson Schmilsson"
+  - pos: 282
+    rgid: 5a5d9938-38a9-3f32-b03b-8f14f62b880a
+    title: "Frank Sinatra – In the Wee Small Hours"
+  - pos: 283
+    rgid: f7568cc7-4c09-3a47-abbc-593e7aaac7d6
+    title: "Donna Summer – Bad Girls"
+  - pos: 284
+    rgid: cea6248e-5d05-33be-b6c4-a8a284fe5b3e
+    title: "Merle Haggard – Down Every Road"
+  - pos: 285
+    rgid: c52726bf-b188-373a-8cf0-95c3ed422fba
+    title: "Big Star – 3rd"
+  - pos: 286
+    rgid: ca5dfcc3-83fb-3eee-9061-c27296b77b2c
+    title: "Red Hot Chili Peppers – Californication"
+  - pos: 287
+    rgid: 2b83d3e4-d461-31d6-9e2a-c99b69421e28
+    title: "The Byrds – Mr. Tambourine Man"
+  - pos: 288
+    rgid: 91e1f88a-f081-3639-9972-0d46b3d3b616
+    title: "The Modern Lovers – The Modern Lovers"
+  - pos: 289
+    rgid: b2a6e057-087d-3ae5-a6e5-7f5fa39808ff
+    title: "Björk – Post"
+  - pos: 290
+    rgid: fa64febd-61e0-346e-aaa2-04564ed4f0a3
+    title: "OutKast – Speakerboxxx / The Love Below"
+  - pos: 291
+    rgid: 7bfda0d3-5747-3f7c-a60f-065b6ea29db1
+    title: "Destiny’s Child – The Writing’s on the Wall"
+  - pos: 292
+    rgid: 43a0e8b5-6059-397f-81e6-b8df5a648496
+    title: "Van Halen – Van Halen"
+  - pos: 293
+    rgid: 7aaf0618-292c-3474-bfbc-d831baf710cf
+    title: "The Breeders – Last Splash"
+  - pos: 294
+    rgid: c7b245c9-8099-32ea-af95-893acedde2cf
+    title: "Weezer – Weezer"
+  - pos: 295
+    rgid: aa997ea0-2936-40bd-884d-3af8a0e064dc
+    title: "Daft Punk – Random Access Memories"
+  - pos: 296
+    rgid: a710c7c7-46e6-36ca-9c3c-87c8e79f8daf
+    title: "Neil Young & Crazy Horse – Rust Never Sleeps"
+  - pos: 297
+    rgid: be3cc3e7-bdb0-3c13-a60b-a985b30eb603
+    title: "Peter Gabriel – So"
+  - pos: 298
+    rgid: ffbef03e-3651-39db-8a2f-e140dc5aa219
+    title: "Tom Petty – Full Moon Fever"
+  - pos: 299
+    rgid: a4d2a86c-bbd6-352b-b9fa-f9da86df842c
+    title: "B.B. King – Live at the Regal"
+  - pos: 300
+    rgid: 45bcf3e0-a274-3bdd-9130-299a5ef780ea
+    title: "Shania Twain – Come On Over"
+  - pos: 301
+    rgid: 4cdd4c59-e38f-382b-b01c-e69829faa69c
+    title: "New York Dolls – New York Dolls"
+  - pos: 302
+    rgid: e0207e33-af06-3862-baba-f42ca722de0d
+    title: "Neil Young – Tonight’s the Night"
+  - pos: 303
+    rgid: e2996feb-86b9-3550-88ec-f1c9c9af3961
+    title: "ABBA – The Definitive Collection"
+  - pos: 304
+    rgid: a72ee504-15b5-343c-bfd7-e71f9272e0e5
+    title: "Bill Withers – Just As I Am"
+  - pos: 305
+    rgid: aa876c87-138c-339b-8176-abacb4e45259
+    title: "KISS – Alive!"
+  - pos: 306
+    rgid: 4a40960b-44b3-313c-8540-cde054d41bd9
+    title: "Al Green – I’m Still in Love With You"
+  - pos: 307
+    rgid: 38d697fd-bdf6-3800-bbff-2078456d4c4c
+    title: "Sam Cooke – Portrait of a Legend 1951–1964"
+  - pos: 308
+    rgid: 90d9be4c-30be-3e28-949a-66ee22c3a63a
+    title: "Brian Eno – Here Come the Warm Jets"
+  - pos: 309
+    rgid: 852f9715-24b3-37d5-b8a5-456f5e19b41e
+    title: "Joy Division – Closer"
+  - pos: 310
+    rgid: 9facb8b5-4b02-3f28-9f4a-61cb9b8fd7aa
+    title: "Wire – Pink Flag"
+  - pos: 311
+    rgid: f4174531-b783-3786-b75f-4fe61a8f6333
+    title: "Neil Young – On the Beach"
+  - pos: 312
+    rgid: 331a7ba1-fae2-4881-b434-554f46c13746
+    title: "Solange – A Seat at the Table"
+  - pos: 313
+    rgid: 71641af7-d122-326a-b0bb-f76a8d09810c
+    title: "PJ Harvey – Stories From the City, Stories From the Sea"
+  - pos: 314
+    rgid: 776a71f8-2071-3743-aab4-83436df1b366
+    title: "Aaliyah – One in a Million"
+  - pos: 315
+    rgid: bb525db3-81e4-4c05-b529-23fa05f35c12
+    title: "ROSALÍA – EL MAL QUERER"
+  - pos: 316
+    rgid: aa02a102-f7b5-3584-8d21-bd9c560effb6
+    title: "The Who – The Who Sell Out"
+  - pos: 317
+    rgid: cf7bc239-a3ba-3d87-80e5-261f750cb560
+    title: "Billie Holiday – Lady in Satin"
+  - pos: 318
+    rgid: 5bb501c6-2e78-393d-bcac-27d7d1b44a27
+    title: "Janet Jackson – The Velvet Rope"
+  - pos: 319
+    rgid: 88b86fe0-26f5-3949-817a-8082145e704d
+    title: "The Stone Roses – The Stone Roses"
+  - pos: 320
+    rgid: 700da083-bd95-3301-91f1-af571a001414
+    title: "X – Los Angeles"
+  - pos: 321
+    rgid: 24fd0887-9e83-42e3-b27e-e7f89ead4c03
+    title: "Lana Del Rey – Norman Fucking Rockwell!"
+  - pos: 322
+    rgid: 2a753764-89d5-3b72-8dff-8c599f1ea925
+    title: "Elvis Presley – From Elvis in Memphis"
+  - pos: 323
+    rgid: ff729e76-b7c5-3877-bf7d-bbad4fde43cb
+    title: "The Clash – Sandinista!"
+  - pos: 324
+    rgid: 120c786d-a3b2-3c19-b4ff-2b7b3b4435bf
+    title: "Coldplay – A Rush of Blood to the Head"
+  - pos: 325
+    rgid: d452a649-644b-326d-b9cf-418f39ac2902
+    title: "Jerry Lee Lewis – All Killer No Filler! The Jerry Lee Lewis Anthology"
+  - pos: 326
+    rgid: 4f19b946-6ecb-3801-9248-cc44e9e9a284
+    title: "Prince – Dirty Mind"
+  - pos: 327
+    rgid: 0ba3b960-9b4b-3191-bcc5-1e51169e5955
+    title: "The Who – Live at Leeds"
+  - pos: 328
+    rgid: eb143c5a-9a85-4bce-a78c-f7faf72c0169
+    title: "Vampire Weekend – Modern Vampires of the City"
+  - pos: 329
+    rgid: 4b2186f5-ff00-3227-ae11-783ba93e1089
+    title: "DJ Shadow – Endtroducing....."
+  - pos: 330
+    rgid: 26987c39-5914-483b-a897-d43ce6aad9b1
+    title: "The Rolling Stones – Aftermath"
+  - pos: 331
+    rgid: 1f75a8df-176c-3d23-8f1f-b0c8935682ec
+    title: "Madonna – Like a Prayer"
+  - pos: 332
+    rgid: 2ebeec96-6ef7-3d4d-943c-0b4a2af1d7cc
+    title: "Elvis Presley – Elvis Presley"
+  - pos: 333
+    rgid: 63544e97-de86-3096-8702-250590ae5f90
+    title: "Bill Withers – Still Bill"
+  - pos: 334
+    rgid: 43424c73-fc58-36b0-b9cf-f8b057ac0603
+    title: "Santana – Abraxas"
+  - pos: 335
+    rgid: 47873729-6db0-3431-99e7-0292e939dadf
+    title: "Bob Dylan & The Band – The Basement Tapes"
+  - pos: 336
+    rgid: 4b51d75c-ca0e-3ea7-9950-639eda1f7d1a
+    title: "Roxy Music – Avalon"
+  - pos: 337
+    rgid: 32981714-597a-32dd-9f29-b2f7566fed89
+    title: "Bob Dylan – John Wesley Harding"
+  - pos: 338
+    rgid: 7d5a684e-73a3-325c-a59c-34c9a941d8d6
+    title: "Eno – Another Green World"
+  - pos: 339
+    rgid: 20aaac17-e4e8-373c-99cc-211321b82832
+    title: "Janet Jackson – Rhythm Nation 1814"
+  - pos: 340
+    rgid: 649762c9-8785-3d9c-803d-2f0496f168e5
+    title: "Snoop Doggy Dogg – Doggystyle"
+  - pos: 341
+    rgid: a159e102-18bb-42ca-a59e-5f96a7eff241
+    title: "Smashing Pumpkins – Siamese Dream"
+  - pos: 342
+    rgid: bff544a7-56e0-3ed6-9e0f-3b676cca9111
+    title: "The Beatles – Let It Be"
+  - pos: 343
+    rgid: 320b576b-aa9c-3c5e-8631-178e81841866
+    title: "Sly & the Family Stone – Greatest Hits"
+  - pos: 344
+    rgid: dc7f2fc9-19ff-33e9-aa0d-3c81f91ca633
+    title: "Toots & The Maytals – Funky Kingston"
+  - pos: 345
+    rgid: 4b443e66-52a7-3cc9-a522-0dc64a6a51dc
+    title: "Bruce Springsteen – The Wild, the Innocent & The E Street Shuffle"
+  - pos: 346
+    rgid: a348ba2f-f8b3-4686-b928-e63d8d94d543
+    title: "Arctic Monkeys – AM"
+  - pos: 347
+    rgid: 6075a004-e983-3a00-8a13-50af32f0e200
+    title: "Genius/GZA – Liquid Swords"
+  - pos: 348
+    rgid: 4f9a9d35-b16d-3b7b-80d0-32b29683633f
+    title: "Gillian Welch – Time (The Revelator)"
+  - pos: 349
+    rgid: 44410403-45d3-30fa-ba48-d16664bf6fb3
+    title: "MC5 – Kick Out the Jams"
+  - pos: 350
+    rgid: 5a253b10-e9f8-334c-b343-7f14e92402c2
+    title: "Stevie Wonder – Music of My Mind"
+  - pos: 351
+    rgid: 72fd9993-17b8-3402-9f8d-c39cb3d2c27e
+    title: "Roxy Music – For Your Pleasure"
+  - pos: 352
+    rgid: be725de4-4633-3c8a-9a03-f2c4392b6e0d
+    title: "Eminem – The Slim Shady LP"
+  - pos: 353
+    rgid: 36172f3d-9b55-37f1-9fd4-0cbd2f3af0ce
+    title: "The Cars – The Cars"
+  - pos: 354
+    rgid: 02c1c972-b5a1-3b8f-be3f-83dfb9373def
+    title: "X‐Ray Spex – Germfree Adolescents"
+  - pos: 355
+    rgid: 826c9743-a3f0-3479-bf06-8df2e140ef1d
+    title: "Black Sabbath – Black Sabbath"
+  - pos: 356
+    rgid: 8ceb6d06-3a60-37eb-81de-9cc8fe538e16
+    title: "Dr. John, the Night Tripper – Gris-Gris"
+  - pos: 357
+    rgid: fb25a883-2270-3ec4-8c62-85c7ed857e6f
+    title: "Tom Waits – Rain Dogs"
+  - pos: 358
+    rgid: 8114542a-d659-3b5f-a11f-cf86ed7fa84d
+    title: "Sonic Youth – Goo"
+  - pos: 359
+    rgid: dea0867d-45d1-3366-8147-1b78f924a137
+    title: "Big Star – Radio City"
+  - pos: 360
+    rgid: 9d084107-b712-3599-ab62-ac76fe3756b5
+    title: "Funkadelic – One Nation Under a Groove"
+  - pos: 361
+    rgid: bcba43e7-2f72-3b60-b234-577e77fd2d9e
+    title: "My Chemical Romance – The Black Parade"
+  - pos: 362
+    rgid: 6e49186d-ce5c-3686-86cd-021f0ce1eda3
+    title: "Luther Vandross – Never Too Much"
+  - pos: 363
+    rgid: cb69bfc6-a15c-34cd-b1af-76b6481bf09a
+    title: "Parliament – Mothership Connection"
+  - pos: 364
+    rgid: 2cecb2c0-cac3-3c55-8083-577308746230
+    title: "Talking Heads – More Songs About Buildings and Food"
+  - pos: 365
+    rgid: ab570ccb-b06b-3746-8147-4903163ba895
+    title: "Madvillain – Madvillainy"
+  - pos: 366
+    rgid: 775d9a2d-effc-35c8-b80a-f9a4e4206d27
+    title: "Aerosmith – Rocks"
+  - pos: 367
+    rgid: 68d79778-aceb-486c-88a7-0abb3665344b
+    title: "Drake – If You’re Reading This It’s Too Late"
+  - pos: 368
+    rgid: d4b0f3e2-e3eb-3531-b305-ed8105cb5be4
+    title: "George Harrison – All Things Must Pass"
+  - pos: 369
+    rgid: 03f3c216-bd40-322b-ac8a-254816ff5573
+    title: "Mobb Deep – The Infamous…"
+  - pos: 370
+    rgid: d97d9f3b-3dc1-3330-a240-b84b74e62044
+    title: "Lil Wayne – Tha Carter II"
+  - pos: 371
+    rgid: 1df9d775-7593-4e0a-bb55-3035948de6c5
+    title: "The Temptations – Anthology"
+  - pos: 372
+    rgid: 02de8887-e93b-3ea6-8b6d-de072a159bba
+    title: "Big Brother & the Holding Company – Cheap Thrills"
+  - pos: 373
+    rgid: e76d4f75-f09b-3f5b-aca9-44ac4489e58d
+    title: "Isaac Hayes – Hot Buttered Soul"
+  - pos: 374
+    rgid: 2609603b-cd7d-3ccf-aa58-94c38defac2c
+    title: "Robert Johnson – King of the Delta Blues Singers"
+  - pos: 375
+    rgid: 314cffd4-daa5-3337-85e5-e54165a96113
+    title: "Green Day – Dookie"
+  - pos: 376
+    rgid: 8f310800-045b-3e12-8268-50b3d33a2267
+    title: "Neutral Milk Hotel – In the Aeroplane Over the Sea"
+  - pos: 377
+    rgid: e8e2d824-dd32-3b24-9c7c-24619fbe86a9
+    title: "Yeah Yeah Yeahs – Fever to Tell"
+  - pos: 378
+    rgid: eec6f4a7-b992-34df-8984-af0fe00550e0
+    title: "Run‐D.M.C. – Run‐D.M.C."
+  - pos: 379
+    rgid: 40e30dc1-55ac-33e1-85d3-1f1508140bfc
+    title: "Rush – Moving Pictures"
+  - pos: 380
+    rgid: 48ec720b-2fc2-35dd-8130-5b186c4abcbc
+    title: "Charles Mingus – Mingus Ah Um"
+  - pos: 381
+    rgid: 33446893-8c9f-30b6-aa73-d719df371430
+    title: "Lynyrd Skynyrd – (pronounced ’lĕh-’nérd ’skin-’nérd)"
+  - pos: 382
+    rgid: 08aa7a6c-3e43-4459-87b2-e47faf3a088a
+    title: "Tame Impala – Currents"
+  - pos: 383
+    rgid: 6f9f6899-c0d3-311d-ae87-a10ae6bc53a9
+    title: "Massive Attack – Mezzanine"
+  - pos: 384
+    rgid: 4516a30e-939c-3b2b-a8ea-f94ae418d3a6
+    title: "The Kinks – The Kinks Are the Village Green Preservation Society"
+  - pos: 385
+    rgid: dd959091-dba1-32b8-8159-0090959ce75b
+    title: "Ramones – Rocket to Russia"
+  - pos: 386
+    rgid: 6b78c33a-64c4-3472-99e9-be45a392acb4
+    title: "J Dilla – Donuts"
+  - pos: 387
+    rgid: 6e335887-60ba-38f0-95af-fae7774336bf
+    title: "Radiohead – In Rainbows"
+  - pos: 388
+    rgid: f62ec525-7158-37c1-8535-6eaac62435b3
+    title: "Aretha Franklin – Young, Gifted and Black"
+  - pos: 389
+    rgid: 2391debf-38aa-3a90-888e-51f857131e98
+    title: "Mariah Carey – The Emancipation of Mimi"
+  - pos: 390
+    rgid: 74e36cbc-a747-3ebf-a60e-51e656c87741
+    title: "Pixies – Surfer Rosa"
+  - pos: 391
+    rgid: 4ea68d9e-7e06-30ea-8b29-3d8195b302c7
+    title: "Kelis – Kaleidoscope"
+  - pos: 392
+    rgid: c504f95d-265a-3d94-b888-9571712351ec
+    title: "Ike & Tina Turner – Proud Mary: The Best of Ike and Tina Turner"
+  - pos: 393
+    rgid: 4d9ec1c2-58ec-48a4-aa0a-916718adead0
+    title: "Taylor Swift – 1989"
+  - pos: 394
+    rgid: fd07981b-fe56-3218-8df6-bcbe6992c96e
+    title: "Diana Ross – Diana"
+  - pos: 395
+    rgid: b3d96626-4d46-4012-b6cb-e8d8b192a4f1
+    title: "D’Angelo and The Vanguard – Black Messiah"
+  - pos: 396
+    rgid: edbaf38a-ba3c-3d21-981c-879fe4ac6c76
+    title: "Todd Rundgren – Something/Anything?"
+  - pos: 397
+    rgid: 72375978-a9a1-4254-b957-85565c716b7e
+    title: "Billie Eilish – WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?"
+  - pos: 398
+    rgid: 044a7a01-ab8f-4781-a4de-183718abb936
+    title: "The Raincoats – The Raincoats"
+  - pos: 399
+    rgid: 7eea3a40-7c24-34f9-aa48-958edb5145c5
+    title: "Brian Wilson – SMiLE"
+  - pos: 400
+    rgid: 8b64edc9-1a59-3840-8b12-85a4e19cf48a
+    title: "Go‐Go’s – Beauty and the Beat"
+  - pos: 401
+    rgid: e0400e1e-2dd9-3bed-9538-614998b3702c
+    title: "Blondie – Blondie"
+  - pos: 402
+    rgid: b16d9280-f25e-3648-8a8e-1141efd55669
+    title: "Fela Ransome Kuti – Expensive Shit"
+  - pos: 403
+    rgid: e54744e2-7646-304d-abb8-2952671da3bb
+    title: "Ghostface Killah – Supreme Clientele"
+  - pos: 404
+    rgid: b544c1b2-9190-34ac-8d03-348c86a77cb2
+    title: "Anita Baker – Rapture"
+  - pos: 405
+    rgid: 8692651e-a7df-3903-a47e-8a28bc1b492c
+    title: "Various Artists – Nuggets: Original Artyfacts From the First Psychedelic Era, 1965–1968"
+  - pos: 406
+    rgid: 5dfac852-1aed-35b2-93b6-e8f9c93fe521
+    title: "The Magnetic Fields – 69 Love Songs"
+  - pos: 407
+    rgid: f61603ab-ef6b-386b-a5e0-aaefc00543f1
+    title: "Neil Young with Crazy Horse – Everybody Knows This Is Nowhere"
+  - pos: 408
+    rgid: 51d51de2-0312-4798-8529-bed2ae2581c6
+    title: "Motörhead – Ace of Spades"
+  - pos: 409
+    rgid: 6fdb82d8-9aee-35ed-8092-8434866bab7f
+    title: "Grateful Dead – Workingman’s Dead"
+  - pos: 410
+    rgid: 25db75ad-e1e3-3941-85bd-291009a5f00d
+    title: "The Beach Boys – Wild Honey"
+  - pos: 411
+    rgid: 9980ffe5-c5b5-3a83-8c1e-1ec6618f97ca
+    title: "Bob Dylan – “Love and Theft”"
+  - pos: 412
+    rgid: 88762473-682d-3544-a9e7-1bb3c5dddaf1
+    title: "Smokey Robinson and The Miracles – Going to a Go‐Go"
+  - pos: 413
+    rgid: 3a31800f-1916-3f4c-a7ae-26b783d00670
+    title: "Creedence Clearwater Revival – Cosmo’s Factory"
+  - pos: 414
+    rgid: baa74317-3f23-3f0b-a996-c68f52c61f13
+    title: "Chic – Risqué"
+  - pos: 415
+    rgid: fb2a15ff-c773-3297-9d15-2dd4eee92e4c
+    title: "The Meters – Look‐Ka Py Py"
+  - pos: 416
+    rgid: 8f341430-85b9-3a66-875f-ed1202868393
+    title: "The Roots – Things Fall Apart"
+  - pos: 417
+    rgid: 5879cfca-e1d0-3ef4-8014-3b284832ed18
+    title: "Ornette Coleman – The Shape of Jazz to Come"
+  - pos: 418
+    rgid: b02f651e-32a1-30ae-bc23-070b59170278
+    title: "Dire Straits – Brothers in Arms"
+  - pos: 419
+    rgid: 979e5e4d-0c1d-46c0-9fda-fa9b6fce89a6
+    title: "Eric Church – Chief"
+  - pos: 420
+    rgid: e9845207-8ae3-36db-b0e1-2efcdb46687d
+    title: "Earth, Wind & Fire – That’s the Way of the World"
+  - pos: 421
+    rgid: 32d38e25-27e8-45bc-b79b-931f5a609546
+    title: "M.I.A. – Arular"
+  - pos: 422
+    rgid: 120c822e-3cd2-3652-975c-d687256a7931
+    title: "Marvin Gaye – Let’s Get It On"
+  - pos: 423
+    rgid: 901ddfef-b428-3022-a7b9-429f56513831
+    title: "Yo La Tengo – I Can Hear the Heart Beating as One"
+  - pos: 424
+    rgid: df0bfd42-78a9-40c3-a45f-a12e10d446f8
+    title: "Beck – Odelay"
+  - pos: 425
+    rgid: 602d0c54-2901-3469-a683-a5a50f3e5260
+    title: "Paul Simon – Paul Simon"
+  - pos: 426
+    rgid: 9868b6bf-6bf5-3d62-bdb9-a312694c34f1
+    title: "Lucinda Williams – Lucinda Williams"
+  - pos: 427
+    rgid: edafb37c-f392-3765-9dbd-80616dcb2ad7
+    title: "Al Green – Call Me"
+  - pos: 428
+    rgid: 5ae570d2-65c1-3da5-9a1b-dbb98ca7c3d2
+    title: "Hüsker Dü – New Day Rising"
+  - pos: 429
+    rgid: 6fdc3cfa-7bac-3b19-aa87-94947ef40ffa
+    title: "Four Tops – Reach Out"
+  - pos: 430
+    rgid: c7a4740f-2729-3895-8498-08c521886a95
+    title: "Elvis Costello – My Aim Is True"
+  - pos: 431
+    rgid: 2478de4b-9470-311b-be17-68fb79388e89
+    title: "Los Lobos – How Will the Wolf Survive?"
+  - pos: 432
+    rgid: 0ee013ee-5f59-35d5-b6b8-26a0cb3e4372
+    title: "Usher – Confessions"
+  - pos: 433
+    rgid: 5cbcdd9f-4b7d-3b3c-b9f2-6b0e75971157
+    title: "LCD Soundsystem – Sound of Silver"
+  - pos: 434
+    rgid: 4f348977-6f44-39f9-b243-071927ecc6a4
+    title: "Pavement – Crooked Rain, Crooked Rain"
+  - pos: 435
+    rgid: 6de9a233-13dd-30b5-ad30-61c5814774c5
+    title: "Pet Shop Boys – Actually"
+  - pos: 436
+    rgid: e2621417-9236-36b4-9f9e-376c416dc4b0
+    title: "2Pac – All Eyez on Me"
+  - pos: 437
+    rgid: 48a1839c-f4e0-3223-831f-fc36ca6ff7cf
+    title: "Primal Scream – Screamadelica"
+  - pos: 438
+    rgid: 67461c8e-d864-3910-9bf4-39e44357aac9
+    title: "Blur – Parklife"
+  - pos: 439
+    rgid: 640919d2-e786-354d-a9d5-3151e4621cb4
+    title: "James Brown – Sex Machine"
+  - pos: 440
+    rgid: edca17e1-d696-3fc8-a22a-06d232f1f48f
+    title: "Loretta Lynn – Coal Miner’s Daughter"
+  - pos: 441
+    rgid: 0b8e14e1-d44d-3770-8617-5c6137a444a8
+    title: "Britney Spears – Blackout"
+  - pos: 442
+    rgid: a85b8aff-fcbc-4431-95ba-d8c20bbfb77e
+    title: "The Weeknd – Beauty Behind the Madness"
+  - pos: 443
+    rgid: bb13cb45-254c-3a61-89a5-15d22a97e6d6
+    title: "David Bowie – Scary Monsters… and Super Creeps"
+  - pos: 444
+    rgid: 81c98a74-56ba-355e-8d63-83e12a63dace
+    title: "Fiona Apple – Extraordinary Machine"
+  - pos: 445
+    rgid: 5a59b948-1961-32ff-80d9-e970c7d4ebe9
+    title: "Yes – Close to the Edge"
+  - pos: 446
+    rgid: cf154081-2678-3778-95cf-cd31c4ea5dfe
+    title: "Alice Coltrane featuring Pharoah Sanders – Journey in Satchidananda"
+  - pos: 447
+    rgid: 68f8c63d-3e54-4f26-8ce3-41a7bc1ca7fd
+    title: "Bad Bunny – X 100PRE"
+  - pos: 448
+    rgid: aeea2d91-3d98-389e-92fc-ff0db34762be
+    title: "Otis Redding – Complete & Unbelievable: The Otis Redding Dictionary of Soul"
+  - pos: 449
+    rgid: d85b9684-4277-3565-b89b-115c8b4b7fd3
+    title: "The White Stripes – Elephant"
+  - pos: 450
+    rgid: 434d4068-8404-359a-9585-3376d3d1680d
+    title: "Paul & Linda McCartney – RAM"
+  - pos: 451
+    rgid: 4455c04d-9368-4dc5-b35d-6ff8c407921f
+    title: "Roberta Flack – First Take"
+  - pos: 452
+    rgid: 3fb673f7-3ced-4d78-8a05-0c550d1db6b0
+    title: "Diana Ross & The Supremes – Anthology"
+  - pos: 453
+    rgid: fcb872a2-7ef9-3ed0-bd4a-7c55c78179b6
+    title: "Nine Inch Nails – Pretty Hate Machine"
+  - pos: 454
+    rgid: a4b405a6-0577-3b77-b46d-06af1b98fbd2
+    title: "Can – Ege Bamyası"
+  - pos: 455
+    rgid: 8dfbac86-ac5f-320a-8fea-2c4f41f98af9
+    title: "Bo Diddley – Bo Diddley / Go Bo Diddley"
+  - pos: 456
+    rgid: 9421508e-362a-38e8-ba54-658513768862
+    title: "Al Green – Greatest Hits"
+  - pos: 457
+    rgid: 9747bcfe-7c42-35ac-8c3e-7ecac9f1227b
+    title: "Sinéad O’Connor – I Do Not Want What I Haven’t Got"
+  - pos: 458
+    rgid: 47e4fe0d-8be7-4bdc-b5e7-5b0409ed6afc
+    title: "Jason Isbell – Southeastern"
+  - pos: 459
+    rgid: 1b4bb003-db4c-4858-84ec-817aaca09501
+    title: "Kid Cudi – Man on the Moon: The End of Day"
+  - pos: 460
+    rgid: 668e80e0-b35e-4471-9788-0a3d797fe42c
+    title: "Lorde – Melodrama"
+  - pos: 461
+    rgid: 187935b5-a0a4-3e6f-9684-48b67a5190a1
+    title: "Bon Iver – For Emma, Forever Ago"
+  - pos: 462
+    rgid: ddc45051-45c3-3cdf-b213-c30c35df8639
+    title: "The Flying Burrito Bros. – The Gilded Palace of Sin"
+  - pos: 463
+    rgid: c5410670-fce4-3139-9fab-6806d79171c5
+    title: "Laura Nyro – Eli and the Thirteenth Confession"
+  - pos: 464
+    rgid: 4e71149d-e632-32f5-9d9f-83cb8d6e3757
+    title: "The Isley Brothers – 3+3"
+  - pos: 465
+    rgid: d66265fa-f8e3-3b79-ab11-23eddd92f3ce
+    title: "King Sunny Adé – The Best of the Classic Years"
+  - pos: 466
+    rgid: 2b581513-39cc-3a81-9c50-79a8dbf5c031
+    title: "The Beach Boys – The Beach Boys Today!"
+  - pos: 467
+    rgid: 65579f48-3ba4-489a-9b1a-6108925055c9
+    title: "Maxwell – BLACKsummers’night"
+  - pos: 468
+    rgid: b44bc358-a28f-3a1f-b07e-604910f12d37
+    title: "The Rolling Stones – Some Girls"
+  - pos: 469
+    rgid: 24a451c9-a8f3-33f9-a4fc-5e2d00cb7816
+    title: "Manu Chao – Clandestino"
+  - pos: 470
+    rgid: 08399f8b-c114-3080-b548-7599af1ebc5c
+    title: "Juvenile – 400 Degreez"
+  - pos: 471
+    rgid: e6440cd2-5e8e-367d-bc49-cc042b5ef524
+    title: "Jefferson Airplane – Surrealistic Pillow"
+  - pos: 472
+    rgid: 8f892c1b-0709-4cf4-9711-493892a9eb9b
+    title: "SZA – Ctrl"
+  - pos: 473
+    rgid: 5fa20be8-ea07-31bd-a915-f12a3ab8495e
+    title: "Daddy Yankee – Barrio fino"
+  - pos: 474
+    rgid: 18ec10a7-864f-3f1b-8d68-5cb622165b20
+    title: "Big Star – #1 Record"
+  - pos: 475
+    rgid: 9d95366b-4d7b-360a-a847-19286e55f98d
+    title: "Sheryl Crow – Sheryl Crow"
+  - pos: 476
+    rgid: 0539b843-2228-36f5-965d-f370d05f66c3
+    title: "Sparks – Kimono My House"
+  - pos: 477
+    rgid: 75d0f3a2-5938-3f4d-b845-174b81eace3b
+    title: "Howlin’ Wolf – Moanin’ in the Moonlight"
+  - pos: 478
+    rgid: ab0ea2d3-a273-3d7f-855b-f9930a1395cf
+    title: "The Kinks – Something Else by The Kinks"
+  - pos: 479
+    rgid: bc5e0495-4db9-3dae-9883-104d5df6b2cc
+    title: "Selena – Amor Prohibido"
+  - pos: 480
+    rgid: 6a9f6cf0-2316-46a7-b8e2-71d356ac737d
+    title: "Miranda Lambert – The Weight of These Wings"
+  - pos: 481
+    rgid: 66be5deb-75d5-3737-9037-1c745891d3ec
+    title: "Belle and Sebastian – If You’re Feeling Sinister"
+  - pos: 482
+    rgid: c799ef0c-f038-364b-972b-51f52d794781
+    title: "The Pharcyde – Bizarre Ride II the Pharcyde"
+  - pos: 483
+    rgid: 43c8d4a1-0e92-3600-ba93-d75359480498
+    title: "Muddy Waters – The Anthology"
+  - pos: 484
+    rgid: 2e3b231b-ab9f-4d85-950a-48708a1cc2fb
+    title: "Lady Gaga – Born This Way"
+  - pos: 485
+    rgid: b35625b1-200d-3692-b02a-08bd4f693ef8
+    title: "Richard & Linda Thompson – I Want to See the Bright Lights Tonight"
+  - pos: 486
+    rgid: 21e886f7-db66-3103-beb4-da9323adddc7
+    title: "John Mayer – Continuum"
+  - pos: 487
+    rgid: 2cf40300-0f67-3136-9b84-57104f1f7a50
+    title: "Black Flag – Damaged"
+  - pos: 488
+    rgid: 18037a41-2695-3a8f-a732-f6653a7f125b
+    title: "The Stooges – The Stooges"
+  - pos: 489
+    rgid: 683391cb-533a-3b66-a072-c62e735f167d
+    title: "Phil Spector – Back to Mono (1958–1969)"
+  - pos: 490
+    rgid: 3a026caf-ae4f-3b51-9d70-bb85ba6e1e7d
+    title: "Linda Ronstadt – Heart Like a Wheel"
+  - pos: 491
+    rgid: b9990da8-7953-4e64-aea5-065ca9cd3cb7
+    title: "Harry Styles – Fine Line"
+  - pos: 492
+    rgid: 182a8072-0513-3aa2-b812-9f7a9692731a
+    title: "Bonnie Raitt – Nick of Time"
+  - pos: 493
+    rgid: 225a6648-d4d2-3b89-986b-6e515e7a94f0
+    title: "Marvin Gaye – Here, My Dear"
+  - pos: 494
+    rgid: b24ffd1d-1cbc-32bd-bf45-b76b30792b8d
+    title: "The Ronettes – Presenting the Fabulous Ronettes Featuring Veronica"
+  - pos: 495
+    rgid: 6eaebb45-8911-3d0b-8ef3-914726356144
+    title: "Boyz II Men – II"
+  - pos: 496
+    rgid: 3197ee5d-696e-374f-8df3-042f1c0fd3a5
+    title: "Shakira – Dónde están los ladrones?"
+  - pos: 497
+    rgid: afa0750e-eee6-320f-845a-ad0ae891bd9b
+    title: "Various Artists – The Indestructible Beat of Soweto"
+  - pos: 498
+    rgid: 702d4a53-9f00-3f57-a723-e5e267518454
+    title: "Suicide – Suicide"
+  - pos: 499
+    rgid: cb6327b8-4ef5-3ca2-bbe2-260473c457cd
+    title: "Rufus featuring Chaka Khan – Ask Rufus"
+  - pos: 500
+    rgid: 05affa96-5959-32da-8d75-1c9eb985ca59
+    title: "Arcade Fire – Funeral"
