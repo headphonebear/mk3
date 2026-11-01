@@ -1,0 +1,3337 @@
+# ╔══════════════════════════════════════════════════════════════════════════╗
+# ║  1001 Albums You Must Hear Before You Die — every edition, combined       ║
+# ╚══════════════════════════════════════════════════════════════════════════╝
+#
+# Every album that has ever been in the book, first edition (2005) through the
+# 2026 edition: 1102 albums. One list = one source; this file is that source,
+# turned into MusicBrainz Release Group IDs.
+#
+# WHY Discogs and not the MusicBrainz series: MB has the book as "Release group
+# series", but only the 2005 edition is complete there (and even it misses the
+# White Album and American Idiot, with "It Takes a Nation of Millions" listed
+# twice). Later editions on MB hold only a handful of additions each.
+#
+# How the IDs were found (2026-11-01, Stefan + Claude, by hand — not mk3 code):
+#   - each Discogs master was mapped via MusicBrainz' OWN url relationship
+#     (release group -> discogs.com/master/<id>), so no title guessing;
+#   - 12 masters linked to two release groups (original + tribute / deluxe /
+#     single); the original was taken, confirmed by the MB 2005 series;
+#   - Mon Rovîa "Bloodline" had no link yet -> found by MB search;
+#   - Nusrat Fateh Ali Khan: Discogs lists "Devotional and Love Songs", Stefan
+#     chose "Devotional Songs" (1992), matching the MB 2005 series.
+#
+# No `pos`: the book is chronological, not a ranking, so file order is enough.
+# `rgid` is the truth; `title` is only there so humans (and git diffs) can read it.
+
+name: 1001 Albums You Must Hear Before You Die (all editions combined)
+editions: 2005–2026
+source: https://www.discogs.com/lists/1001-Albums-You-Must-Hear-Before-You-Die-All-editions-combined/991847
+fetched: 2026-11-01
+
+albums:
+  - rgid: 5a5d9938-38a9-3f32-b03b-8f14f62b880a
+    discogs: 96471
+    title: "Frank Sinatra – In The Wee Small Hours"
+  - rgid: 2ebeec96-6ef7-3d4d-943c-0b4a2af1d7cc
+    discogs: 107325
+    title: "Elvis Presley – Elvis Presley"
+  - rgid: 9dd87e9f-81d0-3d10-9a81-801083722273
+    discogs: 265066
+    title: "The Louvin Brothers – Tragic Songs Of Life"
+  - rgid: 2f643039-2fbc-3ed6-a283-97f90ecdd401
+    discogs: 254334
+    title: "Louis Prima Featuring Keely Smith With Sam Butera And The Witnesses – The Wildest!"
+  - rgid: a3d5e53b-9b31-3014-a9c7-b6bfacc7cad3
+    discogs: 187471
+    title: "Fats Domino – This Is Fats Domino!"
+  - rgid: c7af2ab6-81b0-3f92-8253-9417d00f1361
+    discogs: 136190
+    title: "Duke Ellington And His Orchestra – Ellington At Newport"
+  - rgid: 12421e82-3ca1-39c5-bbcf-bba54ba251e5
+    discogs: 144114
+    title: "Frank Sinatra – Songs For Swingin' Lovers!"
+  - rgid: d60a3486-7192-37ac-bbf0-d63c4c44377d
+    discogs: 148363
+    title: "The Crickets – The \"Chirping\" Crickets"
+  - rgid: 1b464368-017c-3aba-8a2d-437bcf43b5d0
+    discogs: 303975
+    title: "Count Basie Orchestra + Neal Hefti – Basie "
+  - rgid: 764d0d9e-68b1-39fe-b1d1-eda104926777
+    discogs: 120705
+    title: "Thelonious Monk – Brilliant Corners"
+  - rgid: 6f5ccb2e-12d6-39dc-9796-add20424200e
+    discogs: 18149
+    title: "Sabu – Palo Congo"
+  - rgid: 903d5fe8-ab43-33b2-9411-6738af50de19
+    discogs: 62308
+    title: "Miles Davis – Birth Of The Cool"
+  - rgid: 2b5535ee-adbe-33a5-8986-74eace9dd169
+    discogs: 409551
+    title: "Machito – Kenya (Afro Cuban Jazz)"
+  - rgid: a987042b-4fe0-35bb-9cca-7ff44b1ff5b4
+    discogs: 305832
+    title: "Little Richard – Here's Little Richard"
+  - rgid: 522f179f-7c31-3a7c-95ed-c22218eba84f
+    discogs: 306080
+    title: "Tito Puente And His Orchestra – Dance Mania"
+  - rgid: cf7bc239-a3ba-3d87-80e5-261f750cb560
+    discogs: 123567
+    title: "Billie Holiday With Ray Ellis And His Orchestra – Lady In Satin"
+  - rgid: 962e0e61-0566-331c-9b9c-515256ae1a89
+    discogs: 534898
+    title: "Jack Elliott – Jack Takes The Floor"
+  - rgid: 24e9df56-9799-3ebe-9e15-696403803781
+    discogs: 357064
+    title: "Sarah Vaughan And Her Trio – Sarah Vaughan At Mister Kelly's"
+  - rgid: 13379fdf-2974-3dd3-a69e-f50789e2184f
+    discogs: 303629
+    title: "Ella Fitzgerald – Ella Fitzgerald Sings The George And Ira Gershwin Song Books"
+  - rgid: 26ea6822-538d-3781-ac19-fd3575aa2688
+    discogs: 239635
+    title: "Ray Charles – The Genius Of Ray Charles"
+  - rgid: 8e8a594f-2175-38c7-a871-abb68ec363e7
+    discogs: 5460
+    title: "Miles Davis – Kind Of Blue"
+  - rgid: 81e9ea0b-e334-35b3-9d10-f9a5f8bea5ae
+    discogs: 151305
+    title: "Marty Robbins – Gunfighter Ballads And Trail Songs"
+  - rgid: 035a7881-3e2c-39d2-b110-fe26a4de94e5
+    discogs: 34081
+    title: "The Dave Brubeck Quartet – Time Out"
+  - rgid: 637441f0-6ca3-3557-96f7-68f6701893fb
+    discogs: 147980
+    title: "Joan Baez – Joan Baez"
+  - rgid: 4524e346-681e-364d-b975-bad70d71f2d7
+    discogs: 208429
+    title: "Elvis Presley – Elvis Is Back!"
+  - rgid: 64b75de0-e230-3421-8093-20338ccd6316
+    discogs: 175786
+    title: "Miriam Makeba – Miriam Makeba"
+  - rgid: 21ef891b-bc3a-3e0f-9fc2-9ca294818dbd
+    discogs: 375009
+    title: "The Everly Brothers – A Date With The Everly Brothers"
+  - rgid: 10bb15b0-2d55-369a-90c3-a5131406ac9e
+    discogs: 33187
+    title: "The Incredible Jimmy Smith – Back At The Chicken Shack"
+  - rgid: 2c1288fa-19c4-34d3-97a7-ff2fe9c96b57
+    discogs: 256935
+    title: "Muddy Waters – Muddy Waters At Newport 1960"
+  - rgid: 79a8fca9-2678-3c9c-a18f-b6f715d2375d
+    discogs: 104372
+    title: "Bill Evans Trio Featuring Scott La Faro – Sunday At The Village Vanguard"
+  - rgid: 38671d62-32bd-399d-abbd-0f685c2fd4a3
+    discogs: 141586
+    title: "Ray Charles – Modern Sounds In Country And Western Music"
+  - rgid: bb95b270-0fc0-3d64-b264-eb9f15343d57
+    discogs: 150002
+    title: "Booker T. & The M.G.s – Green Onions"
+  - rgid: ba062f3e-1d0c-37f2-b9f3-5a8e20c5ad45
+    discogs: 107195
+    title: "Stan Getz / Charlie Byrd – Jazz Samba"
+  - rgid: f1518424-9ed0-3418-b2c3-5a52050a76e5
+    discogs: 483213
+    title: "Ray Price – Night Life"
+  - rgid: a63dc65f-09f2-359b-a10e-648f00ecd96c
+    discogs: 45729
+    title: "The Beatles – With The Beatles"
+  - rgid: 169b62aa-c3a5-3ed9-bed1-cc47c4bc51ad
+    discogs: 4455
+    title: "Bob Dylan – The Freewheelin' Bob Dylan"
+  - rgid: 8f919a57-d6c1-3a57-86e6-28263607099e
+    discogs: 493221
+    title: "Various – A Christmas Gift For You From Philles Records"
+  - rgid: 1c17ea9a-97d1-33ed-930f-f4c28222d37f
+    discogs: 190386
+    title: "Sam Cooke – Live At The Harlem Square Club, 1963"
+  - rgid: 48070ee2-1865-3b11-ba36-360b1453a37a
+    discogs: 65019
+    title: "Mingus – The Black Saint And The Sinner Lady"
+  - rgid: a2bad96f-a572-38f2-b362-5865dedc0d35
+    discogs: 65036
+    title: "James Brown – The James Brown Show (Live At The Apollo)"
+  - rgid: b248d212-aace-3c3e-a23d-e13aaac1f87a
+    discogs: 85178
+    title: "Stan Getz & Joao Gilberto – Getz / Gilberto"
+  - rgid: 06281c4d-112d-33b0-a25b-df63b420eae7
+    discogs: 24003
+    title: "The Beatles – A Hard Day's Night"
+  - rgid: 3c332531-199c-3428-89ab-c25c52fa0a40
+    discogs: 142056
+    title: "Jacques Brel – Olympia 64"
+  - rgid: 57e22d34-0274-38f4-8036-6f98cb5a32d4
+    discogs: 423537
+    title: "Solomon Burke – Rock 'N Soul"
+  - rgid: 813ecf80-7a92-3188-8eda-915dbbdbd43d
+    discogs: 74368
+    title: "Dusty Springfield – A Girl Called Dusty"
+  - rgid: 919b8534-f40f-3a07-be48-0a9095ab5ada
+    discogs: 9715
+    title: "The Rolling Stones – The Rolling Stones"
+  - rgid: 6d86b87e-43e5-3631-bb46-84cb65b3f303
+    discogs: 298145
+    title: "Buck Owens And His Buckaroos – I've Got A Tiger By The Tail"
+  - rgid: 58e8a7a7-060e-32e0-97da-f4ccf039b3e2
+    discogs: 93910
+    title: "Jerry Lee Lewis – \"Live\" At The Star-Club, Hamburg"
+  - rgid: d03da025-4f5b-35fc-9add-cbdb583ba516
+    discogs: 54145
+    title: "The Sonics – Here Are The Sonics!!!"
+  - rgid: 6cadda7c-fbd0-3b19-9546-56915e3305d8
+    discogs: 3823
+    title: "Bob Dylan – Bringing It All Back Home"
+  - rgid: 2c8fd4f3-1523-3604-97dd-18ba222e2f3b
+    discogs: 1760
+    title: "Otis Redding – Otis Blue / Otis Redding Sings Soul"
+  - rgid: 2b581513-39cc-3a81-9c50-79a8dbf5c031
+    discogs: 268265
+    title: "The Beach Boys – The Beach Boys Today!"
+  - rgid: 77cf47ba-58cd-3f3d-a5f9-79bf89860421
+    discogs: 32287
+    title: "John Coltrane – A Love Supreme"
+  - rgid: a4d2a86c-bbd6-352b-b9fa-f9da86df842c
+    discogs: 107099
+    title: "B.B. King – Live At The Regal"
+  - rgid: dca03435-8adb-30a5-ba82-5a162267ff38
+    discogs: 45526
+    title: "The Beatles – Rubber Soul"
+  - rgid: bf40678e-67a3-304e-9c80-1eae9dc1940a
+    discogs: 82538
+    title: "Bert Jansch – Bert Jansch"
+  - rgid: 2b83d3e4-d461-31d6-9e2a-c99b69421e28
+    discogs: 29939
+    title: "The Byrds – Mr. Tambourine Man"
+  - rgid: fb48b1dc-412f-36aa-8820-1023c08c46c6
+    discogs: 3986
+    title: "Bob Dylan – Highway 61 Revisited"
+  - rgid: 00c3da9f-309b-3f78-ba23-6a753fd6313d
+    discogs: 68534
+    title: "The Who – My Generation"
+  - rgid: 72d15666-99a7-321e-b1f3-a3f8c09dff9f
+    discogs: 45284
+    title: "The Beatles – Revolver"
+  - rgid: fdd96703-7b21-365e-bdea-38029fbeb84e
+    discogs: 17217
+    title: "The Beach Boys – Pet Sounds"
+  - rgid: 43e95a39-7f85-3400-af58-03b800e63048
+    discogs: 214660
+    title: "Fred Neil – Fred Neil"
+  - rgid: 8b98a364-6551-379f-89ea-c3fed4d5552f
+    discogs: 29926
+    title: "The Byrds – Fifth Dimension"
+  - rgid: 329fb554-2a81-3d8a-8e22-ec2c66810019
+    discogs: 3773
+    title: "Bob Dylan – Blonde On Blonde"
+  - rgid: f0d042e6-6f09-4860-ae7c-d6c70cd613db
+    discogs: 47430
+    title: "Monks – Black Monk Time"
+  - rgid: 9e3bff06-c552-345b-a10b-aeb6061e1a8a
+    discogs: 36937
+    title: "The Kinks – Face To Face"
+  - rgid: 6399b0c8-a1a0-3674-92b5-585a574fdf20
+    discogs: 124850
+    title: "The Mama's And The Papa's – If You Can Believe Your Eyes And Ears"
+  - rgid: dee8221e-7d95-3927-a800-a44fdf1755cf
+    discogs: 174937
+    title: "Paul Revere & The Raiders – Midnight Ride"
+  - rgid: 44895ae9-5c04-3e65-8ead-672d1b24ac84
+    discogs: 36466
+    title: "The Mothers Of Invention – Freak Out!"
+  - rgid: 26987c39-5914-483b-a897-d43ce6aad9b1
+    discogs: 30194
+    title: "The Rolling Stones – Aftermath"
+  - rgid: 1e9428ef-9c74-3bb8-8b14-e53defab3b48
+    discogs: 27785
+    title: "Simon And Garfunkel – Parsley, Sage, Rosemary And Thyme"
+  - rgid: 6577ce2b-1be3-4ed0-92c6-f78175280bae
+    discogs: 54808
+    title: "The 13th Floor Elevators – The Psychedelic Sounds Of The 13th Floor Elevators"
+  - rgid: 2b031a2e-9d80-3240-b065-9445fb37f00b
+    discogs: 30199
+    title: "John Mayall With Eric Clapton – Blues Breakers"
+  - rgid: 051e7eb4-a90a-36fd-99aa-5db693ba3a07
+    discogs: 37173
+    title: "Yardbirds – Yardbirds"
+  - rgid: b4433a3e-d5ad-3d99-965c-96bfb6a0f071
+    discogs: 122235
+    title: "Nina Simone – Wild Is The Wind"
+  - rgid: 1b08b70f-61a6-3f78-880c-d0bc4d204d83
+    discogs: 111015
+    title: "Astrud Gilberto – Beach Samba"
+  - rgid: ffa420fb-1bb3-3b67-8577-165429008835
+    discogs: 35096
+    title: "Nico – Chelsea Girl"
+  - rgid: 9f7a4c28-8fa2-3113-929c-c47a9f7982c3
+    discogs: 23934
+    title: "The Beatles – Sgt. Pepper's Lonely Hearts Club Band"
+  - rgid: 11351784-a205-3a5c-a04c-712b645da99c
+    discogs: 108811
+    title: "Country Joe & The Fish – Electric Music For The Mind And Body"
+  - rgid: 28768f4d-dd43-382d-a56f-79ddfa6597a9
+    discogs: 14064
+    title: "Buffalo Springfield – Buffalo Springfield Again"
+  - rgid: 7e71ad8b-6cbd-3cc0-8087-3ab222e91c20
+    discogs: 77399
+    title: "Captain Beefheart And His Magic Band – Safe As Milk"
+  - rgid: 483f15b5-e784-3c78-ba40-1988f5f9c6a4
+    discogs: 76123
+    title: "Moby Grape – Moby Grape"
+  - rgid: 4cc16c40-ef3a-36d9-9f96-89cbf1c61ec6
+    discogs: 6233
+    title: "Love – Da Capo"
+  - rgid: 61b378ff-7f9b-3e89-9ee2-5069afc8c357
+    discogs: 109088
+    title: "The Beau Brummels – Triangle"
+  - rgid: 60ea3167-8594-3d42-9904-e48efaea09b3
+    discogs: 23582
+    title: "The Monkees – Headquarters"
+  - rgid: 2e569a55-d829-31c8-9016-0c9a56333288
+    discogs: 72158
+    title: "Tim Buckley – Goodbye And Hello"
+  - rgid: c7035bc6-6101-326f-992c-401d451c1716
+    discogs: 6215
+    title: "Love – Forever Changes"
+  - rgid: bbd66e31-ac27-3432-81a7-0d4b4b4c5de5
+    discogs: 35685
+    title: "Cream – Disraeli Gears"
+  - rgid: 6792b6d1-4e65-3c3c-9d20-d08aa1dcfc60
+    discogs: 19546
+    title: "Pink Floyd – The Piper At The Gates Of Dawn"
+  - rgid: aa02a102-f7b5-3584-8d21-bd9c560effb6
+    discogs: 68445
+    title: "The Who – The Who Sell Out"
+  - rgid: 5cbd9d7b-597a-3c5e-bfd1-c2b364215560
+    discogs: 35276
+    title: "The Velvet Underground & Nico – The Velvet Underground & Nico"
+  - rgid: 943461cc-377c-3f96-9d89-4d3ff5b03d25
+    discogs: 96346
+    title: "Francis Albert Sinatra & Antonio Carlos Jobim – Francis Albert Sinatra & Antonio Carlos Jobim"
+  - rgid: 8ebffd15-06c3-3b88-a761-ec18c5513287
+    discogs: 45347
+    title: "The Doors – The Doors"
+  - rgid: 4e4c1014-7c7b-397a-9c80-35b115a034fe
+    discogs: 30054
+    title: "The Byrds – Younger Than Yesterday"
+  - rgid: 56829851-672a-3921-827f-23252811f0e6
+    discogs: 265781
+    title: "The Young Rascals – Groovin'"
+  - rgid: e6440cd2-5e8e-367d-bc49-cc042b5ef524
+    discogs: 47868
+    title: "Jefferson Airplane – Surrealistic Pillow"
+  - rgid: ab0ea2d3-a273-3d7f-855b-f9930a1395cf
+    discogs: 73396
+    title: "The Kinks – Something Else By The Kinks"
+  - rgid: 092eedd3-b8e2-33a6-8a9b-e9788e060886
+    discogs: 6364
+    title: "Donovan – Sunshine Superman"
+  - rgid: 05cc7b39-86df-3a5a-9123-55a2108177ee
+    discogs: 178084
+    title: "Merle Haggard And The Strangers – I'm A Lonesome Fugitive"
+  - rgid: da40e720-2097-3730-8a7f-0c2ddbff4a96
+    discogs: 24497
+    title: "The Jimi Hendrix Experience – Are You Experienced"
+  - rgid: 01c812fa-3d8d-4a18-ac9b-b274d4b23952
+    discogs: 25231
+    title: "The Electric Prunes – The Electric Prunes"
+  - rgid: 4ba8b8c5-e417-3862-b718-0eae1cd4b212
+    discogs: 303217
+    title: "Loretta Lynn – Don't Come Home A Drinkin' (With Lovin' On Your Mind)"
+  - rgid: 6329db5a-77c2-30b4-9fa0-aca1151f7e26
+    discogs: 342115
+    title: "Shivkumar Sharma – Hariprasad Chaurasia - Brijbhushan Kabra* - Call Of The Valley"
+  - rgid: fc0885e0-0284-3f9d-81ee-17c5e7196346
+    discogs: 35320
+    title: "The Velvet Underground – White Light/White Heat"
+  - rgid: d0b1e21e-cef6-4575-8d92-1afea1894ca3
+    discogs: 24511
+    title: "The Jimi Hendrix Experience – Axis: Bold As Love"
+  - rgid: 7d8f07a7-4c64-3afb-8daf-8f1d4df89a78
+    discogs: 122933
+    title: "Aretha Franklin – I Never Loved A Man The Way I Love You"
+  - rgid: 6e672bbd-7c7f-32f8-8335-c603be99d13b
+    discogs: 30220
+    title: "Rolling Stones – Beggars Banquet"
+  - rgid: 7d426408-10e5-3c3b-b119-a72e81be8eba
+    discogs: 69053
+    title: "Traffic – Traffic"
+  - rgid: a057476f-ad3c-3b54-a763-30bad2497977
+    discogs: 65667
+    title: "The Incredible String Band – The Hangman's Beautiful Daughter"
+  - rgid: 4516a30e-939c-3b2b-a8ea-f94ae418d3a6
+    discogs: 101391
+    title: "The Kinks – The Kinks Are The Village Green Preservation Society"
+  - rgid: f1d60bab-675d-35e1-9804-a28b28cc96da
+    discogs: 184111
+    title: "Ravi Shankar – The Sounds Of India"
+  - rgid: f3578417-4c90-3891-a2cf-d1eab06cc084
+    discogs: 54526
+    title: "Os Mutantes – Os Mutantes"
+  - rgid: 47ba2d59-5544-34a4-b108-dc08c0956298
+    discogs: 24535
+    title: "The Jimi Hendrix Experience – Electric Ladyland"
+  - rgid: 34291a49-8df9-304e-bd39-16b11d829d5f
+    discogs: 3832
+    title: "Leonard Cohen – Songs Of Leonard Cohen"
+  - rgid: 6b4ea595-3378-3019-be5f-058412670791
+    discogs: 27795
+    title: "Johnny Cash – At Folsom Prison"
+  - rgid: c5410670-fce4-3139-9fab-6806d79171c5
+    discogs: 99400
+    title: "Laura Nyro – Eli And The Thirteenth Confession"
+  - rgid: 05571372-5b11-39b7-89c5-1c02589a27c8
+    discogs: 123018
+    title: "Aretha Franklin – Lady Soul"
+  - rgid: 97fd4dc6-6a19-3ae1-b063-6fcdcc061e6b
+    discogs: 17327
+    title: "Blue Cheer – Vincebus Eruptum"
+  - rgid: 5f8c3b00-bdfe-38ea-8a5d-61dc7e50882e
+    discogs: 29956
+    title: "The Byrds – The Notorious Byrd Brothers"
+  - rgid: 02de8887-e93b-3ea6-8b6d-de072a159bba
+    discogs: 72262
+    title: "Big Brother & The Holding Company – Cheap Thrills"
+  - rgid: 374ef16c-489b-3a3a-91f6-820827807469
+    discogs: 81600
+    title: "The United States Of America – The United States Of America"
+  - rgid: 8ceb6d06-3a60-37eb-81de-9cc8fe538e16
+    discogs: 49016
+    title: "Dr. John, The Night Tripper – Gris-Gris"
+  - rgid: 89a793a2-8a49-38f7-9a48-ae771b414198
+    discogs: 49058
+    title: "Iron Butterfly – In-A-Gadda-Da-Vida"
+  - rgid: 93181a2a-e241-3856-be77-e3c6885884f6
+    discogs: 59306
+    title: "Pretty Things – S.F. Sorrow"
+  - rgid: f4a26672-dcd8-342d-ad09-2b612d91c9fb
+    discogs: 27757
+    title: "Simon & Garfunkel – Bookends"
+  - rgid: 1c8d49cc-bcb0-3539-af12-26de5c4573fa
+    discogs: 16374
+    title: "Small Faces – Ogdens' Nut Gone Flake"
+  - rgid: 466fddac-8006-3e71-bbe7-7aa0f587aa88
+    discogs: 14468
+    title: "The Band – Music From Big Pink"
+  - rgid: e252eb67-26dd-3ed5-9809-92bebdbd9dcf
+    discogs: 68400
+    title: "Jeff Beck – Truth"
+  - rgid: 77547678-06fb-367e-b4f7-07cc201680bc
+    discogs: 127845
+    title: "Caetano Veloso – Caetano Veloso"
+  - rgid: e14cb590-dbcb-34fe-9860-881e1a0a1bda
+    discogs: 68195
+    title: "Scott Walker – Scott 2"
+  - rgid: 9a4a9ebf-f4f7-3dba-9b80-0b274cbc80f9
+    discogs: 60877
+    title: "The Zombies – Odessey And Oracle"
+  - rgid: 7d568f14-d86e-3584-97d0-c1824599de04
+    discogs: 14541
+    title: "Van Morrison – Astral Weeks"
+  - rgid: 2a02ea31-7a7f-3a46-8a46-aebfac434a81
+    discogs: 29947
+    title: "The Byrds – Sweetheart Of The Rodeo"
+  - rgid: 055be730-dcad-31bf-b550-45ba9c202aa3
+    discogs: 46402
+    title: "The Beatles – The Beatles"
+  - rgid: 6bf4d078-7bc6-32a1-8edf-0ef1bcb7a5df
+    discogs: 36738
+    title: "The Mothers Of Invention – We're Only In It For The Money"
+  - rgid: f61603ab-ef6b-386b-a5e0-aaefc00543f1
+    discogs: 38719
+    title: "Neil Young With Crazy Horse – Everybody Knows This Is Nowhere"
+  - rgid: e6a580bd-5d29-3acd-a959-0bfab002ee6f
+    discogs: 463963
+    title: "Captain Beefheart & His Magic Band – Trout Mask Replica"
+  - rgid: ef55850c-7b38-30fc-8f8d-d10f28784094
+    discogs: 55269
+    title: "Creedence Clearwater Revival – Bayou Country"
+  - rgid: a2735d5f-27c0-3176-85df-e77f669dcca1
+    discogs: 26121
+    title: "Crosby, Stills & Nash – Crosby, Stills & Nash"
+  - rgid: f92e55ef-e35d-3254-a627-191f3b3c9677
+    discogs: 35401
+    title: "Blood, Sweat And Tears – Blood, Sweat And Tears"
+  - rgid: ddc45051-45c3-3cdf-b213-c30c35df8639
+    discogs: 12299
+    title: "The Flying Burrito Bros – The Gilded Palace Of Sin"
+  - rgid: 50df1aa9-6c37-46da-90bd-140363ddf878
+    discogs: 27819
+    title: "Johnny Cash – Johnny Cash At San Quentin"
+  - rgid: 6c08878c-d6a1-37b6-84c3-9566748545c1
+    discogs: 55272
+    title: "Creedence Clearwater Revival – Green River"
+  - rgid: 9162580e-5df4-32de-80cc-f45a8d8a9b1d
+    discogs: 24047
+    title: "The Beatles – Abbey Road"
+  - rgid: 0e587339-406a-3d21-8678-73e46e250379
+    discogs: 68455
+    title: "The Who – Tommy"
+  - rgid: 7d0a9612-7636-34fe-84d9-445c8df9c0f3
+    discogs: 8408
+    title: "Miles Davis – In A Silent Way"
+  - rgid: b926b337-c2e1-3198-abeb-9a484b78cec9
+    discogs: 12770
+    title: "Bee Gees – Odessa"
+  - rgid: 4180c3fa-faf6-3945-b7e4-7f887c7c681f
+    discogs: 82516
+    title: "The Pentangle – Basket Of Light"
+  - rgid: 784c0edd-0f37-33a2-9ca5-dff87b4f999c
+    discogs: 52967
+    title: "Rolling Stones – Let It Bleed"
+  - rgid: b9c4fc17-0dc5-3aa5-b1b9-08e1446e5bea
+    discogs: 13924
+    title: "Nick Drake – Five Leaves Left"
+  - rgid: aac8700b-8f62-30fc-ac2a-23b6cb37e3c3
+    discogs: 74378
+    title: "Dusty Springfield – Dusty In Memphis"
+  - rgid: 2a753764-89d5-3b72-8dff-8c599f1ea925
+    discogs: 107505
+    title: "Elvis Presley – From Elvis In Memphis"
+  - rgid: a616dcf5-7a1f-3afe-a53b-27281c2bf75e
+    discogs: 35375
+    title: "The Velvet Underground – The Velvet Underground"
+  - rgid: 688f6d4d-c035-3454-b840-62d191d305e9
+    discogs: 12100
+    title: "Quicksilver Messenger Service – Happy Trails"
+  - rgid: 0f18ec88-aa87-38a9-8a65-f03d81763560
+    discogs: 4126
+    title: "Led Zeppelin – Led Zeppelin"
+  - rgid: ea337405-285f-3846-9049-5e3addf149fc
+    discogs: 14499
+    title: "The Band – The Band"
+  - rgid: 33b4653d-006e-3cc1-8afb-386b15a6cd6e
+    discogs: 4170
+    title: "Led Zeppelin – Led Zeppelin II"
+  - rgid: 44410403-45d3-30fa-ba48-d16664bf6fb3
+    discogs: 64011
+    title: "MC5 – Kick Out The Jams"
+  - rgid: e6c7e050-119b-3c99-92f6-039137c4a18d
+    discogs: 154548
+    title: "The Temptations – Cloud Nine"
+  - rgid: 86871123-60e4-30a5-aae3-36e810e0964b
+    discogs: 78501
+    title: "Sly And The Family Stone – Stand!"
+  - rgid: 50701e2b-a074-380e-82aa-cfb21421dbb4
+    discogs: 72173
+    title: "Tim Buckley – Happy Sad"
+  - rgid: 1eeb1e2c-ae11-3b2e-80fc-22233f0ca648
+    discogs: 83123
+    title: "Chicago Transit Authority – Chicago Transit Authority"
+  - rgid: a0a9d6a6-c3fe-367a-bc8c-449285c6c473
+    discogs: 41464
+    title: "Fairport Convention – Unhalfbricking"
+  - rgid: 321fe6af-3eef-30b1-a5c2-7b36b0a4aae1
+    discogs: 241570
+    title: "The Youngbloods – Elephant Mountain"
+  - rgid: e76d4f75-f09b-3f5b-aca9-44ac4489e58d
+    discogs: 52968
+    title: "Isaac Hayes – Hot Buttered Soul"
+  - rgid: 4c442102-c2d2-33ca-8c11-80db9e569420
+    discogs: 18472
+    title: "The Grateful Dead – Live/Dead"
+  - rgid: cd27ba91-162e-3d8a-8042-9451b84aa78e
+    discogs: 101386
+    title: "The Kinks – Arthur Or The Decline And Fall Of The British Empire"
+  - rgid: a50636b5-5233-3329-a7f3-dba3d0e00ef7
+    discogs: 406634
+    title: "King Crimson – In The Court Of The Crimson King (An Observation By King Crimson)"
+  - rgid: 0c0d5696-5d29-3809-8b79-4bf1320f0353
+    discogs: 3874
+    title: "Leonard Cohen – Songs From A Room"
+  - rgid: 3a6b89d1-ae82-3710-8e71-765405aa8a78
+    discogs: 41456
+    title: "Fairport Convention – Liege & Lief"
+  - rgid: c33d96bd-94fa-30ba-a83a-8809f34e9f76
+    discogs: 68197
+    title: "Scott Engel – Scott 4"
+  - rgid: 18037a41-2695-3a8f-a732-f6653a7f125b
+    discogs: 38215
+    title: "The Stooges – The Stooges"
+  - rgid: 95eb3295-0606-3f79-87ff-204faac15c6a
+    discogs: 48670
+    title: "Alexander Spence – Oar"
+  - rgid: 3f974fbd-9db8-3dff-9466-b9ae6fd9146c
+    discogs: 35600
+    title: "Frank Zappa – Hot Rats"
+  - rgid: 3a31800f-1916-3f4c-a7ae-26b783d00670
+    discogs: 55281
+    title: "Creedence Clearwater Revival – Cosmo's Factory"
+  - rgid: ba53dcbd-9328-3cf7-bc72-179b4512867e
+    discogs: 76678
+    title: "Derek And The Dominos – Layla And Other Assorted Love Songs"
+  - rgid: a9e30282-5b37-3f92-b897-b9659a1a312b
+    discogs: 8260
+    title: "Miles Davis – Bitches Brew"
+  - rgid: 86c7bfe0-b686-3c61-8ca3-0156d2735f4c
+    discogs: 101986
+    title: "Spirit – Twelve Dreams Of Dr. Sardonicus"
+  - rgid: 826c9743-a3f0-3479-bf06-8df2e140ef1d
+    discogs: 723
+    title: "Black Sabbath – Black Sabbath"
+  - rgid: deee6f92-2662-3095-8aea-6892b10b8265
+    discogs: 45415
+    title: "The Doors – Morrison Hotel"
+  - rgid: ca8d0ba2-f227-3665-9104-30e3c09eafae
+    discogs: 84990
+    title: "Carpenters – Close To You"
+  - rgid: 9bb9b77e-0a1a-3de1-bbc4-c31e3a61445c
+    discogs: 104115
+    title: "Stephen Stills – Stephen Stills"
+  - rgid: 8be83468-4917-390d-82b6-d890f058cd22
+    discogs: 72864
+    title: "John Lennon / Plastic Ono Band – John Lennon / Plastic Ono Band"
+  - rgid: 3412fd44-c6e6-3a3b-b91a-964a055192ec
+    discogs: 38712
+    title: "Crosby, Stills, Nash & Young – Déjà Vu"
+  - rgid: cc053745-c447-3566-8f27-bed5438c9133
+    discogs: 302
+    title: "Black Sabbath – Paranoid"
+  - rgid: b6a3952b-9977-351c-a80a-73e023143858
+    discogs: 38433
+    title: "Neil Young – After The Gold Rush"
+  - rgid: 53f80f76-f8af-3558-bfd5-e7221e055c75
+    discogs: 4199
+    title: "Led Zeppelin – Led Zeppelin III"
+  - rgid: ebdb53c3-fbae-34b1-81cb-f825c9a56822
+    discogs: 1439
+    title: "Deep Purple – Deep Purple In Rock"
+  - rgid: 16506432-d133-3b2f-a504-dc88966dad2a
+    discogs: 14520
+    title: "Van Morrison – Moondance"
+  - rgid: 994c2c59-d32f-304e-8f53-bda17a254f52
+    discogs: 18442
+    title: "Grateful Dead – American Beauty"
+  - rgid: d742fded-00e7-3746-a63d-aa2def3fdbcc
+    discogs: 13950
+    title: "Nick Drake – Bryter Layter"
+  - rgid: 984be675-d4d4-3e1a-b6ee-3872fa353c5c
+    discogs: 88359
+    title: "Ananda Shankar – Ananda Shankar"
+  - rgid: 0ba3b960-9b4b-3191-bcc5-1e51169e5955
+    discogs: 68451
+    title: "The Who – Live At Leeds"
+  - rgid: 9fabbd9f-c6a2-3773-91ce-6ef937d47daa
+    discogs: 16783
+    title: "Soft Machine – Third"
+  - rgid: a19460f8-19fa-3bd6-987a-799b32d701e2
+    discogs: 67513
+    title: "Rod Stewart – Gasoline Alley"
+  - rgid: d4b0f3e2-e3eb-3531-b305-ed8105cb5be4
+    discogs: 56036
+    title: "George Harrison – All Things Must Pass"
+  - rgid: c39f7f80-d42f-3669-9653-230f8e922083
+    discogs: 27765
+    title: "Simon And Garfunkel – Bridge Over Troubled Water"
+  - rgid: 418678e7-2807-3bed-a305-11b4181e533e
+    discogs: 37103
+    title: "Cat Stevens – Tea For The Tillerman"
+  - rgid: 3770d5ce-e0e1-3389-9acf-cd38f0722baf
+    discogs: 69017
+    title: "Traffic – John Barleycorn Must Die"
+  - rgid: edd57263-df77-3f1a-8803-8beb5d5b1a64
+    discogs: 38209
+    title: "The Stooges – Fun House"
+  - rgid: a3a2756d-93b4-37c6-8b82-513070ef58d6
+    discogs: 68202
+    title: "James Taylor – Sweet Baby James"
+  - rgid: d6a52dc7-f4fa-4d10-89d9-5a99d178dae9
+    discogs: 39887
+    title: "McCartney – McCartney"
+  - rgid: 43424c73-fc58-36b0-b9cf-f8b057ac0603
+    discogs: 31598
+    title: "Santana – Abraxas"
+  - rgid: f8d4bee5-0b74-3bb4-9010-2a454adbfbe7
+    discogs: 53480
+    title: "Syd Barrett – The Madcap Laughs"
+  - rgid: 204cc47e-2e1a-3877-8e1e-d14bfffd19aa
+    discogs: 38184
+    title: "Jethro Tull – Aqualung"
+  - rgid: c1d70ab6-f857-3aa2-b6f5-a8cb080b7844
+    discogs: 84859
+    title: "David Crosby – If I Could Only Remember My Name"
+  - rgid: d8b8448a-2634-3e92-ac86-cf55e018f825
+    discogs: 78507
+    title: "Sly & The Family Stone – There's A Riot Goin' On"
+  - rgid: c1fa4d2c-ec62-37d5-b01d-6df7f8fd2c90
+    discogs: 66631
+    title: "Marvin Gaye – What's Going On"
+  - rgid: 0fa03925-736c-3537-b0c6-201091543177
+    discogs: 34991
+    title: "Yes – The Yes Album"
+  - rgid: fe30770e-d417-3629-97ee-77d229c2d32f
+    discogs: 21072
+    title: "Bee Gees – Trafalgar"
+  - rgid: 9584e28b-66a7-3846-8d52-b3008a283539
+    discogs: 68469
+    title: "The Who – Who's Next"
+  - rgid: 6e4f39e6-3403-39d7-81c6-8e61a990d509
+    discogs: 104166
+    title: "Carole King – Tapestry"
+  - rgid: edb44be8-a63e-3ebf-bff0-959fd37c3bc5
+    discogs: 122050
+    title: "Isaac Hayes – Shaft"
+  - rgid: d757b87e-4a3b-38ec-9246-548baeff5ceb
+    discogs: 17243
+    title: "The Allman Brothers Band – The Allman Brothers Band At Fillmore East"
+  - rgid: 4a4213d0-f224-3d51-bcca-476f61162681
+    discogs: 23828
+    title: "The Rolling Stones – Sticky Fingers "
+  - rgid: f242f304-0f1f-33a5-81a2-7a965b30e3b5
+    discogs: 72879
+    title: "John Lennon – Imagine"
+  - rgid: a42b6a80-b542-344c-921d-15a07fdb580e
+    discogs: 78379
+    title: "The Beach Boys – Surf's Up"
+  - rgid: b1176e7b-fa2e-3b28-959a-d8f55b5b6ccf
+    discogs: 34934
+    title: "Yes – Fragile"
+  - rgid: 7be633bd-d1f6-3d89-8939-803ae0ed0de8
+    discogs: 45432
+    title: "Doors – L.A. Woman"
+  - rgid: 13d08c0e-14e2-30b2-9ad7-5f501761a8ea
+    discogs: 11512
+    title: "Can – Tago Mago"
+  - rgid: 9c371adb-37de-308c-88ea-8e52248ab1a1
+    discogs: 85550
+    title: "Elton John – Madman Across The Water"
+  - rgid: 2c98f21a-e2af-3412-a253-de9a1e06d7f7
+    discogs: 460976
+    title: "Dolly Parton – Coat Of Many Colors"
+  - rgid: 1189a8bc-f356-3c0a-a689-d8e0d1b5e4b8
+    discogs: 84646
+    title: "Don McLean – American Pie"
+  - rgid: e940f4e4-1b0a-3d83-9ccd-6ed712a55b3c
+    discogs: 11871
+    title: "Emerson, Lake & Palmer – Tarkus"
+  - rgid: 2e61da88-39e9-3473-81d2-c964cb394952
+    discogs: 4300
+    title: "Led Zeppelin – Untitled "
+  - rgid: 431ae137-315a-3faa-8005-c959fc0d57e9
+    discogs: 9382
+    title: "Serge Gainsbourg – Histoire De Melody Nelson"
+  - rgid: d4e7be0c-6db3-372e-aee6-e048dbb9ac51
+    discogs: 68324
+    title: "Rod Stewart – Every Picture Tells A Story"
+  - rgid: b1fff2ac-34eb-358b-9bf5-196b2a5fc288
+    discogs: 11839
+    title: "Emerson, Lake & Palmer – Pictures At An Exhibition"
+  - rgid: 964ccc52-2873-3bce-a806-73d71532c539
+    discogs: 3933
+    title: "Leonard Cohen – Songs Of Love And Hate"
+  - rgid: 42d725fb-a8b7-388c-8866-3b02789af326
+    discogs: 47744
+    title: "Joni Mitchell – Blue"
+  - rgid: a334e612-e736-3b4f-82b4-c4dfb774983c
+    discogs: 16158
+    title: "Funkadelic – Maggot Brain"
+  - rgid: 99878359-e736-3cdc-a225-548ad17d1c76
+    discogs: 72235
+    title: "Janis Joplin – Pearl"
+  - rgid: 90d7d3e2-d544-3c66-ab84-84a986476460
+    discogs: 56561
+    title: "Fela Ransome—Kuti And The Africa '70 With Ginger Baker – Live!"
+  - rgid: a2b03b50-18a9-3128-878f-24847392155a
+    discogs: 79729
+    title: "Faces – A Nod's As Good As A Wink...To A Blind Horse"
+  - rgid: 9ec6b178-14c4-35e9-b9bd-896aff95c17e
+    discogs: 81113
+    title: "The Flamin' Groovies – Teenage Head"
+  - rgid: b0bf102b-260b-34e7-b953-5cc8a1bc33e6
+    discogs: 125255
+    title: "Gene Clark – White Light"
+  - rgid: a13154a4-14a1-3344-ae14-3bea728ebe58
+    discogs: 133502
+    title: "John Prine – John Prine"
+  - rgid: 19a185f4-f683-3d00-9571-7378ea276068
+    discogs: 60680
+    title: "Nilsson – Nilsson Schmilsson"
+  - rgid: e53310bf-8ccc-3d7f-a0b7-5ca4dbababcb
+    discogs: 72458
+    title: "T. Rex – Electric Warrior"
+  - rgid: 743b0b2e-a23a-3182-950e-232f8cb0dfb7
+    discogs: 1718
+    title: "David Bowie – Hunky Dory"
+  - rgid: d1c0b3db-6b93-3b9d-9479-0d60486120cb
+    discogs: 81089
+    title: "Randy Newman – Sail Away"
+  - rgid: d00243c5-adcf-3018-9aa7-1957d7a5a774
+    discogs: 1843
+    title: "Deep Purple – Machine Head"
+  - rgid: 18ec10a7-864f-3f1b-8d68-5cb622165b20
+    discogs: 13825
+    title: "Big Star – #1 Record"
+  - rgid: 8c292627-3459-3852-8ebc-226c12db175d
+    discogs: 4894
+    title: "Black Sabbath – Black Sabbath Vol 4"
+  - rgid: 9d73a864-2976-3286-b6c1-8aabc7407737
+    discogs: 16883
+    title: "Steely Dan – Can't Buy A Thrill"
+  - rgid: b25419cf-71bf-3a54-8cd4-2161c61056a0
+    discogs: 37615
+    title: "Neil Young – Harvest"
+  - rgid: 3f68cf91-b4f0-39ef-8318-93dc064a53ba
+    discogs: 126717
+    title: "Curtis Mayfield – Super Fly (The Original Motion Picture Soundtrack)"
+  - rgid: 8455be77-292b-3699-81c4-c11dd6b9049f
+    discogs: 33006
+    title: "Slade – Slayed?"
+  - rgid: afab893b-4284-37c3-bf74-0139773c8c6d
+    discogs: 2133
+    title: "Deep Purple – Made In Japan"
+  - rgid: 5a59b948-1961-32ff-80d9-e970c7d4ebe9
+    discogs: 35006
+    title: "Yes – Close To The Edge"
+  - rgid: 6c8345df-f822-33af-b64a-eff2e46941b9
+    discogs: 44278
+    title: "Lou Reed – Transformer"
+  - rgid: 59f4a254-b66c-438d-adaa-d72feafaa6d6
+    discogs: 73425
+    title: "Hugh Masekela – Home Is Where The Music Is"
+  - rgid: b29e94e7-0b0b-3a66-ab06-e02f8fa5054f
+    discogs: 167258
+    title: "Milton Nascimento & Lô Borges – Clube Da Esquina"
+  - rgid: edbaf38a-ba3c-3d21-981c-879fe4ac6c76
+    discogs: 93827
+    title: "Todd Rundgren – Something / Anything?"
+  - rgid: 0ec57ce0-987b-3ea4-b3de-ba1db6488b4b
+    discogs: 120029
+    title: "Nitty Gritty Dirt Band – Will The Circle Be Unbroken"
+  - rgid: 58c6d809-bfa7-3b25-acf3-a99d53402b08
+    discogs: 87446
+    title: "Stevie Wonder – Talking Book"
+  - rgid: 5ee3fdb7-4ae4-3cd0-9a81-e42a60db76dd
+    discogs: 81052
+    title: "Stephen Stills – Manassas"
+  - rgid: bf12c581-95c6-3cde-8ac2-713e803fc9e9
+    discogs: 72462
+    title: "T. Rex – The Slider"
+  - rgid: 6f78435e-5d1b-3cc8-83ce-10f0a2f11ee5
+    discogs: 254556
+    title: "David Ackles – American Gothic"
+  - rgid: 23eafc30-3978-37fb-bfa0-8058aa1eb81a
+    discogs: 59496
+    title: "Eagles – Eagles"
+  - rgid: 864cb6a1-ede7-378d-9f1e-7d4fb3ceed71
+    discogs: 72175
+    title: "Tim Buckley – Greetings From L.A."
+  - rgid: 740ec10a-e887-38a6-a04d-fe2069c9e2a7
+    discogs: 13933
+    title: "Nick Drake – Pink Moon"
+  - rgid: 602d0c54-2901-3469-a683-a5a50f3e5260
+    discogs: 97959
+    title: "Paul Simon – Paul Simon"
+  - rgid: 3ff6284f-88b0-3285-895a-61c733e6d4ca
+    discogs: 58135
+    title: "Roxy Music – Roxy Music"
+  - rgid: 9e038b79-8be1-3cf1-bdd6-62f4842ab665
+    discogs: 52901
+    title: "Alice Cooper – School's Out"
+  - rgid: 1b715418-65d4-35d1-9fc1-b3b3a3087bcf
+    discogs: 36393
+    title: "The Temptations – All Directions"
+  - rgid: 6c9ae3dd-32ad-472c-96be-69d0a3536261
+    discogs: 1561
+    title: "David Bowie – The Rise And Fall Of Ziggy Stardust And The Spiders From Mars"
+  - rgid: ae18844a-d94e-380f-a558-78252d57dc9a
+    discogs: 116938
+    title: "War – The World Is A Ghetto"
+  - rgid: eed9ffe2-5731-3b9a-9906-01728a083d1d
+    discogs: 141257
+    title: "Al Green – Let's Stay Together"
+  - rgid: 4838a3c9-fd2b-30a5-83eb-e32545b5d7fc
+    discogs: 30303
+    title: "Rolling Stones – Exile On Main St."
+  - rgid: 33446893-8c9f-30b6-aa73-d719df371430
+    discogs: 70569
+    title: "Lynyrd Skynyrd – (Pronounced 'Lĕh-'nérd 'Skin-'nérd)"
+  - rgid: beeb6b52-d7f1-3cf4-9da4-eec7e1d59c02
+    discogs: 78511
+    title: "Michael Viner's Incredible Bongo Band – Bongo Rock"
+  - rgid: 50f8710f-3ae6-319b-85a7-afe783f13449
+    discogs: 2162
+    title: "David Bowie – Aladdin Sane"
+  - rgid: 6d655093-4a0b-32ca-8d0e-b497d6ac781d
+    discogs: 444
+    title: "King Crimson – Larks' Tongues In Aspic"
+  - rgid: 63a3ac2f-5d63-3132-98d3-b00385d9a3a2
+    discogs: 65824
+    title: "The Wailers – Catch A Fire"
+  - rgid: 42fb29f2-728b-3dbb-85cf-70468d7b8a24
+    discogs: 28163
+    title: "Hawkwind – Space Ritual"
+  - rgid: 56da088f-9d69-3af4-aeac-55649e19bffe
+    discogs: 44670
+    title: "John Cale – Paris 1919"
+  - rgid: aa41b178-9f16-3dc4-84b6-e9ad8b5be4b8
+    discogs: 11765
+    title: "Can – Future Days"
+  - rgid: c6190069-644f-3b41-92aa-1e771e451036
+    discogs: 44291
+    title: "Lou Reed – Berlin"
+  - rgid: 1fadec3d-7451-32e8-9194-ad7e5312cb9b
+    discogs: 29224
+    title: "Genesis – Selling England By The Pound"
+  - rgid: 120c822e-3cd2-3652-975c-d687256a7931
+    discogs: 66602
+    title: "Marvin Gaye – Let's Get It On"
+  - rgid: e1670336-f7b9-31b6-bd3c-77d8e8169cd9
+    discogs: 60337
+    title: "John Martyn – Solid Air"
+  - rgid: 72fd9993-17b8-3402-9f8d-c39cb3d2c27e
+    discogs: 58142
+    title: "Roxy Music – For Your Pleasure"
+  - rgid: 75ec1e72-cc7d-37b6-bebd-a1131b578e7b
+    discogs: 28060
+    title: "Faust – Faust IV"
+  - rgid: 322f18bb-5491-38e9-9044-c0a468651eec
+    discogs: 19493
+    title: "Herbie Hancock – Head Hunters"
+  - rgid: 4f213af5-f4f9-3129-ad7e-d34f1fd8abd1
+    discogs: 55718
+    title: "Mott The Hoople – Mott"
+  - rgid: d3f057b4-7e89-3018-9f84-9835ed9b4732
+    discogs: 15016
+    title: "Mike Oldfield – Tubular Bells"
+  - rgid: d6263c37-09b4-35f3-80db-3ffff1cf4252
+    discogs: 93839
+    title: "Todd Rundgren – A Wizard, A True Star"
+  - rgid: 80df0f1b-4ce7-348a-aa1b-0d31ebff111a
+    discogs: 30577
+    title: "Elton John – Goodbye Yellow Brick Road"
+  - rgid: 33726877-dd41-301b-9f1e-498ebbadc7d8
+    discogs: 16898
+    title: "Steely Dan – Countdown To Ecstasy"
+  - rgid: da8380ea-3bb4-3d48-ae4b-7dff8e82855a
+    discogs: 153344
+    title: "Waylon Jennings – Honky Tonk Heroes"
+  - rgid: f5093c06-23e3-404f-aeaa-40f72885ee3a
+    discogs: 10362
+    title: "Pink Floyd – The Dark Side Of The Moon"
+  - rgid: e626b377-74c5-3b97-8f16-8cef5e1c04ea
+    discogs: 86466
+    title: "Stevie Wonder – Innervisions"
+  - rgid: 3aee7fe4-813e-3f04-8280-8d25f066f143
+    discogs: 48131
+    title: "ZZ Top – Tres Hombres"
+  - rgid: 2b678170-1c4e-3e61-b18c-f889fc1537b3
+    discogs: 48878
+    title: "Paul McCartney And Wings – Band On The Run"
+  - rgid: 9821e041-4973-381a-a627-a02fd018f7e9
+    discogs: 92054
+    title: "The Sensational Alex Harvey Band – Next…"
+  - rgid: 0bfa0a07-16c5-3c8e-ab53-927d1e021791
+    discogs: 45013
+    title: "Alice Cooper – Billion Dollar Babies"
+  - rgid: 156cbf68-eaea-3f6a-852e-aa6afbd779db
+    discogs: 38175
+    title: "Iggy And The Stooges – Raw Power"
+  - rgid: 4e71149d-e632-32f5-9d9f-83cb8d6e3757
+    discogs: 82584
+    title: "The Isley Brothers – 3 + 3"
+  - rgid: 4cdd4c59-e38f-382b-b01c-e69829faa69c
+    discogs: 13185
+    title: "New York Dolls – New York Dolls"
+  - rgid: 90d9be4c-30be-3e28-949a-66ee22c3a63a
+    discogs: 6152
+    title: "Eno – Here Come The Warm Jets"
+  - rgid: 1f67788b-223d-3f28-b972-7f07c9418ed0
+    discogs: 37445
+    title: "Bad Company – Bad Co"
+  - rgid: f2e5d462-6ec1-3cf8-8ea8-06eab8fe51f5
+    discogs: 29256
+    title: "Genesis – The Lamb Lies Down On Broadway"
+  - rgid: 2bb3b259-5ea7-3773-96be-20d9a592358a
+    discogs: 54621
+    title: "Shuggie Otis – Inspiration Information"
+  - rgid: 95e58ee5-5421-38b0-a937-803b004c7ae8
+    discogs: 87463
+    title: "Stevie Wonder – Fulfillingness' First Finale"
+  - rgid: ced848a4-b94b-3f34-b08b-6dc8bf8aed8f
+    discogs: 69859
+    title: "Eric Clapton – 461 Ocean Boulevard"
+  - rgid: f73729e8-4501-3088-aa20-44945296036e
+    discogs: 2994
+    title: "Kraftwerk – Autobahn"
+  - rgid: 37ed1703-f12d-399d-9c36-58c72479fa58
+    discogs: 14584
+    title: "Van Morrison – It's Too Late To Stop Now"
+  - rgid: 3bd19e28-698e-3b7e-a8ec-f872bf001651
+    discogs: 47758
+    title: "Joni Mitchell – Court And Spark"
+  - rgid: 93d91bd6-1b55-3751-bca7-8b9d33beb7ef
+    discogs: 31526
+    title: "Queen – Queen II"
+  - rgid: b2d10ce6-bf86-3091-8c71-3e8330f4b748
+    discogs: 58320
+    title: "Roxy Music – Country Life"
+  - rgid: 866c88fa-a18b-3739-9814-2ad215e5e11a
+    discogs: 13354
+    title: "Tangerine Dream – Phaedra"
+  - rgid: 0539b843-2228-36f5-965d-f370d05f66c3
+    discogs: 87047
+    title: "Sparks – Kimono My House"
+  - rgid: c3749af5-0d0c-3ed1-b1c0-8b4a8f6c3436
+    discogs: 25374
+    title: "Supertramp – Crime Of The Century"
+  - rgid: b35625b1-200d-3692-b02a-08bd4f693ef8
+    discogs: 64214
+    title: "Richard And Linda Thompson – I Want To See The Bright Lights Tonight"
+  - rgid: 63b98f81-cdf4-3d6f-a062-7a435fd8b81c
+    discogs: 7849
+    title: "Gil Scott-Heron / Brian Jackson – Winter In America"
+  - rgid: 002ed683-3327-3df0-88c8-318746089925
+    discogs: 5303
+    title: "Queen – Sheer Heart Attack"
+  - rgid: 909e7c30-838a-32ac-bf8b-c65a7e101fec
+    discogs: 30571
+    title: "10cc – Sheet Music"
+  - rgid: f4174531-b783-3786-b75f-4fe61a8f6333
+    discogs: 38630
+    title: "Neil Young – On The Beach"
+  - rgid: e709a485-297f-37a4-a2ae-c405956dd5c1
+    discogs: 683613
+    title: "George Jones – The Grand Tour"
+  - rgid: 1a8984d7-503a-3a06-b02c-dad5e01b0d10
+    discogs: 69328
+    title: "Gene Clark – No Other"
+  - rgid: 5c938587-b4cd-3d6c-9f9e-a87492a2c9de
+    discogs: 16984
+    title: "Steely Dan – Pretzel Logic"
+  - rgid: bb1a6e55-7d0a-3d48-b447-49b86cdcca7a
+    discogs: 81090
+    title: "Randy Newman – Good Old Boys"
+  - rgid: e776533c-4132-3b63-bfaa-94fe901951b5
+    discogs: 65908
+    title: "Bob Marley & The Wailers – Natty Dread"
+  - rgid: 94a36264-ab82-34b7-ae9d-2320803c4516
+    discogs: 17021
+    title: "Robert Wyatt – Rock Bottom"
+  - rgid: eeb6a226-8323-327e-9116-1dc51e2fcb23
+    discogs: 12274
+    title: "Gram Parsons – Grievous Angel"
+  - rgid: 7d5a684e-73a3-325c-a59c-34c9a941d8d6
+    discogs: 6659
+    title: "Eno – Another Green World"
+  - rgid: 0fbf007d-981a-3455-85ec-e53a67cbfa4f
+    discogs: 125781
+    title: "The Dictators – Go Girl Crazy!"
+  - rgid: 34ec11b1-07d4-3a25-a5bf-d43097a91f35
+    discogs: 2610
+    title: "Neu! – Neu! '75"
+  - rgid: 116c9490-6af4-3827-8261-2d5b1f508fe7
+    discogs: 4392
+    title: "Led Zeppelin – Physical Graffiti"
+  - rgid: 516d4629-7bf3-3ac3-907a-ed9a022db840
+    discogs: 26241
+    title: "Keith Jarrett – The Köln Concert"
+  - rgid: d03bb6b1-d7b4-38ea-974e-847cbb31dca4
+    discogs: 36627
+    title: "Aerosmith – Toys In The Attic"
+  - rgid: 8c2a0eae-1359-3577-9127-e3d862acc2a2
+    discogs: 20174
+    title: "David Bowie – Young Americans"
+  - rgid: 2b649670-7d2d-3287-9b40-5b88fb4e1f35
+    discogs: 108153
+    title: "Burning Spear – Marcus Garvey"
+  - rgid: 39b22944-7503-3937-8bba-09b17281cc6a
+    discogs: 26725
+    title: "Bruce Springsteen – Born To Run"
+  - rgid: f735c43b-aa59-3855-8f4b-fa2cd6af7bbd
+    discogs: 119998
+    title: "Emmylou Harris – Pieces Of The Sky"
+  - rgid: 47256750-eca8-3d6c-91c4-33866caf4ea9
+    discogs: 738916
+    title: "Dion – Born To Be With You"
+  - rgid: 169a1a7e-f91e-3b10-a136-d94eba6eee2e
+    discogs: 47771
+    title: "Joni Mitchell – The Hissing Of Summer Lawns"
+  - rgid: ae446997-5355-3b5d-9dce-8a48ee1044ac
+    discogs: 13974
+    title: "Tom Waits – Nighthawks At The Diner"
+  - rgid: af2b2847-1378-306a-a4cc-0d3346c34ae9
+    discogs: 367982
+    title: "R. D. Burman – Shalimar"
+  - rgid: e0207e33-af06-3862-baba-f42ca722de0d
+    discogs: 38672
+    title: "Neil Young – Tonight's The Night"
+  - rgid: 9c1b8072-eb1d-33d2-af8c-984d46e40902
+    discogs: 3878
+    title: "Bob Dylan – Blood On The Tracks"
+  - rgid: ff8f533c-3cb3-3877-9209-11f433edaad2
+    discogs: 40109
+    title: "Patti Smith – Horses"
+  - rgid: 1a272023-10d3-38ee-bab3-317b55fcc21d
+    discogs: 11703
+    title: "Pink Floyd – Wish You Were Here"
+  - rgid: 6b47c9a0-b9e1-3df9-a5e8-50a6ce0dbdbd
+    discogs: 5863
+    title: "Queen – A Night At The Opera"
+  - rgid: b51ba291-2490-3132-a85d-2094de795b63
+    discogs: 97786
+    title: "Willie Nelson – Red Headed Stranger"
+  - rgid: e9845207-8ae3-36db-b0e1-2efcdb46687d
+    discogs: 99532
+    title: "Earth, Wind & Fire – That's The Way Of The World"
+  - rgid: 9b93bf1c-a61d-341e-8900-b305f3812c2c
+    discogs: 30107
+    title: "Curtis Mayfield – There's No Place Like America Today"
+  - rgid: 59cb1d59-e0c8-37f0-a2af-9bc8df64f6cd
+    discogs: 142787
+    title: "Tom Petty And The Heartbreakers – Tom Petty And The Heartbreakers"
+  - rgid: 91e1f88a-f081-3639-9972-0d46b3d3b616
+    discogs: 6689
+    title: "The Modern Lovers – The Modern Lovers"
+  - rgid: 686cdbd1-b400-32d8-8cb8-9317a2e41a58
+    discogs: 22420
+    title: "David Bowie – Station To Station"
+  - rgid: 039f2ae4-36dd-3608-9103-67ce7f6c9288
+    discogs: 47775
+    title: "Joni Mitchell – Hejira"
+  - rgid: f0371fc4-3e22-3d8d-8ce3-4af873ea6f1c
+    discogs: 59355
+    title: "Boston – Boston"
+  - rgid: 836f349a-0434-3e8b-a0bc-261f77a9f99c
+    discogs: 59501
+    title: "Eagles – Hotel California"
+  - rgid: e464e167-83ab-3b59-88bd-262cf552056e
+    discogs: 5649
+    title: "ABBA – Arrival"
+  - rgid: 541eb339-d0c6-3740-b665-8ad6c09da331
+    discogs: 41722
+    title: "Kiss – Destroyer"
+  - rgid: 9243ac59-9390-37e1-abee-fcf31fb8035f
+    discogs: 7315
+    title: "Rush – 2112"
+  - rgid: a5e2f270-c00e-3309-84d1-2c4285565ee3
+    discogs: 112296
+    title: "Jorge Ben – África Brasil"
+  - rgid: 0ac6d075-35ed-3ec4-8751-06533b8511ee
+    discogs: 59620
+    title: "Joan Armatrading – Joan Armatrading"
+  - rgid: 775d9a2d-effc-35c8-b80a-f9a4e4206d27
+    discogs: 36741
+    title: "Aerosmith – \"Rocks\""
+  - rgid: cb69bfc6-a15c-34cd-b1af-76b6481bf09a
+    discogs: 15841
+    title: "Parliament – Mothership Connection"
+  - rgid: d4ae4d1a-2fc6-3996-9d72-db5724280237
+    discogs: 25053
+    title: "Simon Jeffes – Performed By Members Of The Penguin Café Orchestra* - Music From The Penguin Café"
+  - rgid: 3055cd07-9b9d-34ed-b227-942ba6977174
+    discogs: 43980
+    title: "Jean Michel Jarre – Oxygène"
+  - rgid: 7de1e321-4a53-3feb-b83e-f1dab88bf952
+    discogs: 39341
+    title: "Ramones – Ramones"
+  - rgid: 517cbfb2-2279-4af9-8ca7-1c4c1a444925
+    discogs: 113995
+    title: "Fẹla And Afrika 70 – Zombie"
+  - rgid: 3f4929bc-c88d-3f41-910b-5c1c308da8f2
+    discogs: 99972
+    title: "Peter Tosh – Legalize It"
+  - rgid: ea88b09b-fd34-33cf-a3e5-25a3a2fb4c6f
+    discogs: 87440
+    title: "Stevie Wonder – Songs In The Key Of Life"
+  - rgid: cbf9819e-4a0b-35f1-9b1c-ab34764cf10c
+    discogs: 101332
+    title: "Peter Frampton – Frampton Comes Alive!"
+  - rgid: 6f9e2641-f79b-32f2-a752-f7212e9040e4
+    discogs: 6718
+    title: "Brian Eno – Before And After Science"
+  - rgid: 33101a28-ae05-3a69-873c-684e336fe2df
+    discogs: 2877
+    title: "Kraftwerk – Trans Europa Express"
+  - rgid: 735bcee6-6be6-3957-af15-d21ba2bd355b
+    discogs: 57029
+    title: "Billy Joel – The Stranger"
+  - rgid: c5650313-60f3-34d3-92e4-300545133792
+    discogs: 65858
+    title: "Bob Marley & The Wailers – Exodus"
+  - rgid: a720436f-9c8e-439a-a147-18e83441edab
+    discogs: 21680
+    title: "Electric Light Orchestra – Out Of The Blue"
+  - rgid: f1753c0a-50be-3591-8cbb-6848142e055f
+    discogs: 21748
+    title: "Weather Report – Heavy Weather"
+  - rgid: a77c72ce-c6d9-3ebd-a4c1-ced5d4ec0b4b
+    discogs: 29552
+    title: "Muddy Waters – Hard Again"
+  - rgid: 69cc7d7d-4405-3f65-b4e7-e35f216f6191
+    discogs: 24297
+    title: "The Stranglers – Stranglers IV (Rattus Norvegicus)"
+  - rgid: ca91cb5a-7ecc-3c46-84a0-0d4951889374
+    discogs: 24371
+    title: "The Clash – The Clash"
+  - rgid: f6a51281-56c4-3538-b915-65a9d4eb29b5
+    discogs: 22382
+    title: "David Bowie – Low"
+  - rgid: 8588c5a5-b491-37a4-8d51-2227346a072e
+    discogs: 16921
+    title: "Steely Dan – Aja"
+  - rgid: 9facb8b5-4b02-3f28-9f4a-61cb9b8fd7aa
+    discogs: 50645
+    title: "Wire – Pink Flag"
+  - rgid: a30af693-6896-3620-a603-2be0d0945584
+    discogs: 60345
+    title: "John Martyn – One World"
+  - rgid: d99084ee-de04-3ba1-8203-5f1a7e5355ee
+    discogs: 39365
+    title: "Talking Heads – Talking Heads: 77"
+  - rgid: 416bb5e5-c7d1-3977-8fd7-7c9daf6c2be6
+    discogs: 38722
+    title: "Fleetwood Mac – Rumours"
+  - rgid: 1f5ef8d3-10ca-30eb-b41e-85b16987d412
+    discogs: 22294
+    title: "David Bowie – \"Heroes\""
+  - rgid: 9aa1dc17-d89c-3969-8453-defec8fe0361
+    discogs: 95177
+    title: "Dennis Wilson – Pacific Ocean Blue"
+  - rgid: 702d4a53-9f00-3f57-a723-e5e267518454
+    discogs: 22168
+    title: "Suicide – Suicide"
+  - rgid: 09c88c6d-090e-378d-b104-7966eb5d33d2
+    discogs: 38306
+    title: "Iggy Pop – The Idiot"
+  - rgid: 4e6f2a81-ec6d-378c-a824-0cd0538bbb21
+    discogs: 29615
+    title: "Peter Gabriel – Peter Gabriel"
+  - rgid: 2b9f99d8-becf-3fc3-86a6-2bdd4cef93fe
+    discogs: 6202
+    title: "Television – Marquee Moon"
+  - rgid: 47616c4c-5d4b-30f6-83bc-60e1c696b099
+    discogs: 23069
+    title: "Meat Loaf – Bat Out Of Hell"
+  - rgid: c7a4740f-2729-3895-8498-08c521886a95
+    discogs: 39488
+    title: "Elvis Costello – My Aim Is True"
+  - rgid: 15dc9ccf-e33b-3f4d-8c81-8346388d0b29
+    discogs: 38128
+    title: "Iggy Pop – Lust For Life"
+  - rgid: 62c71c2a-ecd1-37be-9584-31cd4c746caa
+    discogs: 36641
+    title: "Ian Dury – New Boots And Panties!!"
+  - rgid: e959a4b3-6306-3c45-9df6-e7241dae9ea3
+    discogs: 30445
+    title: "Sex Pistols – Never Mind The Bollocks Here's The Sex Pistols"
+  - rgid: 565f5d6b-f487-39ef-a29e-23638b523c6f
+    discogs: 52557
+    title: "Pere Ubu – The Modern Dance"
+  - rgid: d147e89b-90ca-35b6-9f7b-3e34b8edf63f
+    discogs: 4010
+    title: "Kraftwerk – Die Mensch•Maschine"
+  - rgid: 0c1a4d70-5926-3ae8-aa25-466fe65639fe
+    discogs: 3337
+    title: "Blondie – Parallel Lines"
+  - rgid: e3f00603-c147-3810-ae0d-29cb2cc60992
+    discogs: 429610
+    title: "Elis Regina – Elis"
+  - rgid: e6cf6f53-43a8-3d00-9913-991cd8ae8f53
+    discogs: 52567
+    title: "Pere Ubu – Dub Housing"
+  - rgid: 393c7679-ee77-304f-a293-7d5167426333
+    discogs: 27922
+    title: "The Only Ones – The Only Ones"
+  - rgid: 5e8117f4-a87f-3732-be5f-313c7e5b308d
+    discogs: 455505
+    title: "Elvis Costello – This Year's Model"
+  - rgid: 68a97464-1449-331a-b32c-89e0b4658aa9
+    discogs: 20164
+    title: "The Jam – All Mod Cons"
+  - rgid: e94db330-743f-3cb2-81dd-eae73ebe7a47
+    discogs: 226078
+    title: "Joe Ely – Honky Tonk Masquerade"
+  - rgid: 7f32f3a7-2b4d-357d-a722-6943880ace45
+    discogs: 24968
+    title: "The Adverts – Crossing The Red Sea With The Adverts"
+  - rgid: c52726bf-b188-373a-8cf0-95c3ed422fba
+    discogs: 13848
+    title: "Big Star – 3rd"
+  - rgid: e11c5bd2-59c3-3cb2-a1e8-c1024d9c98a1
+    discogs: 47911
+    title: "The Residents – Duck Stab / Buster & Glen"
+  - rgid: 1a3d0d0c-38bd-3662-9e27-e507fc949aa6
+    discogs: 3425
+    title: "Public Image – Public Image (First Issue)"
+  - rgid: 5ef7ef5c-f9aa-3800-9f55-ec58130846ba
+    discogs: 43884
+    title: "Magazine – Real Life"
+  - rgid: b613123b-a234-3f48-9c45-e05bf4e6b9e7
+    discogs: 26738
+    title: "Bruce Springsteen – Darkness On The Edge Of Town"
+  - rgid: 9d084107-b712-3599-ab62-ac76fe3756b5
+    discogs: 54666
+    title: "Funkadelic – One Nation Under A Groove"
+  - rgid: a1b3bae2-0081-3266-a349-1297f50a3c78
+    discogs: 6832
+    title: "Throbbing Gristle – D.o.A. The Third And Final Report"
+  - rgid: e9ae496e-c750-3433-a35c-adfc50f83858
+    discogs: 52840
+    title: "Thin Lizzy – Live And Dangerous"
+  - rgid: 2cecb2c0-cac3-3c55-8083-577308746230
+    discogs: 39312
+    title: "Talking Heads – More Songs About Buildings And Food"
+  - rgid: 7a82f652-2300-3ce6-a6ae-dd0efa8e4b15
+    discogs: 13253
+    title: "Buzzcocks – Another Music In A Different Kitchen"
+  - rgid: 43a0e8b5-6059-397f-81e6-b8df5a648496
+    discogs: 29426
+    title: "Van Halen – Van Halen"
+  - rgid: 0efd12a2-2d31-3fa8-a76c-5f8af6613fca
+    discogs: 154683
+    title: "Willie Colon & Ruben Blades – Siembra"
+  - rgid: 36172f3d-9b55-37f1-9fd4-0cbd2f3af0ce
+    discogs: 69666
+    title: "The Cars – The Cars"
+  - rgid: 60a754f9-50e1-346a-97db-925a1e2ad7e0
+    discogs: 52654
+    title: "Devo – Q: Are We Not Men? A: We Are Devo!"
+  - rgid: 0c9bc273-a9e9-3290-b423-c61b9f8d20bc
+    discogs: 23759
+    title: "Dire Straits – Dire Straits"
+  - rgid: c0069416-d369-3453-b3b7-00774b9e698b
+    discogs: 62426
+    title: "The Saints – Eternally Yours"
+  - rgid: 225a6648-d4d2-3b89-986b-6e515e7a94f0
+    discogs: 66800
+    title: "Marvin Gaye – \"Here, My Dear.\""
+  - rgid: 196bb5cd-d3bf-3da8-9a6c-25c6212bda05
+    discogs: 97789
+    title: "Willie Nelson – Stardust"
+  - rgid: db46b19c-0e97-30de-ba53-7e823104d14a
+    discogs: 53087
+    title: "Chic – C'est Chic"
+  - rgid: 02c1c972-b5a1-3b8f-be3f-83dfb9373def
+    discogs: 53941
+    title: "X-Ray Spex – Germfree Adolescents"
+  - rgid: 5fdd6ba8-83c1-3a87-b378-d5f61dec5ddd
+    discogs: 6265
+    title: "Brian Eno – Ambient 1 (Music For Airports)"
+  - rgid: 67f24412-60c9-36f3-a1dc-e48e56098802
+    discogs: 42280
+    title: "Siouxsie And The Banshees – The Scream"
+  - rgid: f85647ec-a69b-3b0a-ad04-bb6076c4dcf1
+    discogs: 8522
+    title: "AC/DC – Highway To Hell"
+  - rgid: acb1aa80-3ede-3a65-a862-5b0730c92607
+    discogs: 108534
+    title: "Sister Sledge – We Are Family"
+  - rgid: a45dc179-ed49-3881-a322-6ed211bbd686
+    discogs: 47555
+    title: "Crusaders – Street Life"
+  - rgid: 1f66bd0f-4bbe-3eeb-8271-3a43972473ff
+    discogs: 38300
+    title: "Germs – (GI)"
+  - rgid: 68699ffe-f5fd-337a-8bb9-8a196157afa8
+    discogs: 53856
+    title: "The B-52's – The B-52's"
+  - rgid: b8daa1d3-3db4-3f71-93c2-762a58964264
+    discogs: 22873
+    title: "Holger Czukay – Movies"
+  - rgid: 2b98e6d7-a521-332f-961e-d281ba33ba3d
+    discogs: 39199
+    title: "The Police – Reggatta De Blanc"
+  - rgid: 26046710-088b-3188-996b-d9f654dfe0ef
+    discogs: 38998
+    title: "The Fall – Live At The Witch Trials"
+  - rgid: f378dcb1-841b-3be1-9d96-779036562de1
+    discogs: 39260
+    title: "Talking Heads – Fear Of Music"
+  - rgid: 42352def-1aab-3000-b548-895ebd869cb6
+    discogs: 4805
+    title: "Joy Division – Unknown Pleasures"
+  - rgid: baa74317-3f23-3f0b-a996-c68f52c61f13
+    discogs: 53111
+    title: "Chic – Risqué"
+  - rgid: d462b990-66d5-3c6b-bc67-4f3d152cdc45
+    discogs: 24562
+    title: "The Undertones – The Undertones"
+  - rgid: 8d73e45e-7ca1-3cb4-ae28-6da76196c17c
+    discogs: 19382
+    title: "The Clash – London Calling"
+  - rgid: c1a568c7-055c-374a-9d92-9ea077f2bf1f
+    discogs: 74108
+    title: "Japan – Quiet Life"
+  - rgid: 96e40648-a0e2-320b-9592-fff4a49d9395
+    discogs: 57119
+    title: "Marianne Faithfull – Broken English"
+  - rgid: 116b94a2-4361-3ec2-af92-270d97dc10f9
+    discogs: 42269
+    title: "The Slits – Cut"
+  - rgid: 8172d1b5-ffb8-3da7-a74a-a27eb4a0d3ff
+    discogs: 42659
+    title: "Elvis Costello And The Attractions – Armed Forces"
+  - rgid: a710c7c7-46e6-36ca-9c3c-87c8e79f8daf
+    discogs: 38738
+    title: "Neil Young & Crazy Horse – Rust Never Sleeps"
+  - rgid: d0493944-992b-3534-9174-8320c1879837
+    discogs: 6309
+    title: "Gang Of Four – Entertainment!"
+  - rgid: 2c3682e2-cc7b-32e0-ab48-d4dbbd458479
+    discogs: 116831
+    title: "Cheap Trick – Cheap Trick At Budokan"
+  - rgid: 22deeac8-6009-31ad-a069-26e85d246412
+    discogs: 38741
+    title: "Fleetwood Mac – Tusk"
+  - rgid: f2026101-945b-3d05-9ef4-aa718fc3feef
+    discogs: 11329
+    title: "Pink Floyd – The Wall"
+  - rgid: 57209d3f-f3ef-34db-82a7-ad633497b784
+    discogs: 4800
+    title: "PiL – Metal Box"
+  - rgid: ee749c63-5699-38e0-b565-7e84414648d9
+    discogs: 435524
+    title: "Michael Jackson – Off The Wall"
+  - rgid: 2e30aefe-004b-3680-8ad4-4b2398d8e0ed
+    discogs: 18842
+    title: "The Damned – Machine Gun Etiquette"
+  - rgid: 2ba66802-18a7-3bf4-958c-db871a6e7f34
+    discogs: 70133
+    title: "Gary Numan – The Pleasure Principle"
+  - rgid: 9c02ca99-df9a-3e48-8b7a-fabb599d19a3
+    discogs: 8179
+    title: "Specials – Specials"
+  - rgid: 8698397e-887c-3f78-9d95-6c6499a1daa8
+    discogs: 63446
+    title: "Adam And The Ants – Kings Of The Wild Frontier"
+  - rgid: eba92674-43f2-31f9-9a6c-ba7d3604da95
+    discogs: 68780
+    title: "Dexys Midnight Runners – Searching For The Young Soul Rebels"
+  - rgid: d3bc1a64-7561-3787-b680-0003aa50f8f1
+    discogs: 8471
+    title: "AC/DC – Back In Black"
+  - rgid: 4b60e6ef-b29a-3a26-9146-07f35c7e285d
+    discogs: 53333
+    title: "The Cramps – Songs The Lord Taught Us"
+  - rgid: 3495fca0-ce60-3342-93f2-23fd525d8069
+    discogs: 31756
+    title: "Dead Kennedys – Fresh Fruit For Rotting Vegetables"
+  - rgid: fe9f06cd-a160-3114-85fd-102726dddc0b
+    discogs: 29662
+    title: "Peter Gabriel – Peter Gabriel"
+  - rgid: d9046296-1811-3504-8199-4a557cf97872
+    discogs: 50152
+    title: "The Soft Boys – Underwater Moonlight"
+  - rgid: 7cd31244-186e-36bb-966f-fd6a90c0832c
+    discogs: 20278
+    title: "The Cure – Seventeen Seconds"
+  - rgid: 94b22dcb-4761-3655-975a-1a226e00a9c8
+    discogs: 27552
+    title: "Echo And The Bunnymen – Crocodiles"
+  - rgid: 51d51de2-0312-4798-8529-bed2ae2581c6
+    discogs: 38512
+    title: "Motörhead – Ace Of Spades"
+  - rgid: 30a8c233-66ab-3ceb-87e2-bda76f4164ca
+    discogs: 15387
+    title: "Killing Joke – Killing Joke"
+  - rgid: 5bd56af7-2bd6-392e-a815-b39354e3780d
+    discogs: 26170
+    title: "Judas Priest – British Steel"
+  - rgid: 8f5c4731-688f-3612-b5fe-318842359579
+    discogs: 50346
+    title: "Circle Jerks – Group Sex"
+  - rgid: f6b1b900-6108-32f0-abbd-2855af9151eb
+    discogs: 25688
+    title: "Talking Heads – Remain In Light"
+  - rgid: 852f9715-24b3-37d5-b8a5-456f5e19b41e
+    discogs: 4734
+    title: "Joy Division – Closer"
+  - rgid: 88a735ad-1f8a-3f96-b410-7e5058dff7f6
+    discogs: 14394
+    title: "Iron Maiden – Iron Maiden"
+  - rgid: 3b92033a-4d04-3e5d-9b8e-fb7e0da79a30
+    discogs: 24538
+    title: "The Undertones – Hypnotised"
+  - rgid: 720d64da-e200-3bea-ae34-9cc0ea83c66e
+    discogs: 20265
+    title: "The Jam – Sound Affects"
+  - rgid: 6a9906e1-1ab2-37e1-980b-5e4889661089
+    discogs: 14077
+    title: "Tom Waits – Heartattack And Vine"
+  - rgid: 73459ae1-a126-3f8b-ac59-a8a41fbda78f
+    discogs: 88745
+    title: "UB40 – Signing Off"
+  - rgid: 8bad0855-1673-393c-a247-1e88d856815d
+    discogs: 36225
+    title: "The Teardrop Explodes – Kilimanjaro"
+  - rgid: da095ec5-ca70-30ab-bd36-45ef961dced7
+    discogs: 8191
+    title: "The Specials – More Specials"
+  - rgid: 1e0b3c8b-9e48-30a1-a49d-5f8c433c960b
+    discogs: 76668
+    title: "Steve Winwood – Arc Of A Diver"
+  - rgid: 448c8d23-3118-397f-9b81-a560c799f27a
+    discogs: 69563
+    title: "Pretenders – Pretenders"
+  - rgid: 5fc08a84-d9f5-3795-bf98-0abb5a8428bd
+    discogs: 7313
+    title: "Einstürzende Neubauten – Kollaps"
+  - rgid: 844bfb05-2b51-35e2-8063-1c8e6746c781
+    discogs: 42327
+    title: "Siouxsie And The Banshees – Juju"
+  - rgid: 1353ea6d-1ec7-3171-9fe0-8a4199d74165
+    discogs: 62820
+    title: "Heaven 17 – Penthouse And Pavement"
+  - rgid: 8b64edc9-1a59-3840-8b12-85a4e19cf48a
+    discogs: 81550
+    title: "Go-Go's – Beauty And The Beat"
+  - rgid: 98a70d58-bbc1-328d-89ca-31850e74d678
+    discogs: 38576
+    title: "Motörhead – No Sleep 'Til Hammersmith"
+  - rgid: e5bc1607-7947-3044-8558-6b4eae334c51
+    discogs: 4095
+    title: "Soft Cell – Non-Stop Erotic Cabaret"
+  - rgid: c31b767b-97f0-3cb1-8b09-233a64683997
+    discogs: 30428
+    title: "Orchestral Manoeuvres In The Dark – Architecture & Morality"
+  - rgid: 0dd5a352-6ae0-3e0d-bf18-bec30e27807d
+    discogs: 6392
+    title: "Brian Eno – David Byrne - My Life In The Bush Of Ghosts"
+  - rgid: 2cf40300-0f67-3136-9b84-57104f1f7a50
+    discogs: 28654
+    title: "Black Flag – Damaged"
+  - rgid: 8aca1b90-9412-3a00-965c-fd1873f6b986
+    discogs: 52633
+    title: "X – Wild Gift"
+  - rgid: dd28f081-4d8c-34aa-afe3-a19b833954b5
+    discogs: 82407
+    title: "The Psychedelic Furs – Talk Talk Talk"
+  - rgid: e8e7999e-0b87-3298-947d-2ad22717fc27
+    discogs: 669
+    title: "The Human League – Dare"
+  - rgid: 95b4ac0b-3286-3208-8821-b292ab88dfac
+    discogs: 5841
+    title: "The Gun Club – Fire Of Love"
+  - rgid: b9478bd5-7b9a-326e-8bdf-ad8cf8978f54
+    discogs: 2463
+    title: "Bauhaus – Mask"
+  - rgid: 3921b79d-b1f3-3651-9a3b-6795940b168d
+    discogs: 154559
+    title: "Bobby Womack – The Poet"
+  - rgid: 9a01f6b5-61f6-3b10-b1ab-735359fc407b
+    discogs: 90465
+    title: "Tom Tom Club – Tom Tom Club"
+  - rgid: 40e30dc1-55ac-33e1-85d3-1f1508140bfc
+    discogs: 7532
+    title: "Rush – Moving Pictures"
+  - rgid: 76bb9f69-b5c1-31be-9bbf-b4b3d98988b0
+    discogs: 50014
+    title: "ABBA – The Visitors"
+  - rgid: 5bc5e6a3-4c24-33c3-9022-4b815d0c48d5
+    discogs: 71286
+    title: "ABC – The Lexicon Of Love"
+  - rgid: 561be5b7-a39c-3866-859d-d86f30816ae7
+    discogs: 55667
+    title: "Prince – 1999"
+  - rgid: 2348a270-ad78-30e1-b50f-82b2445c15f0
+    discogs: 51253
+    title: "Grandmaster Flash & The Furious Five – The Message"
+  - rgid: 8c7bf795-c1b7-3d84-8034-45fa568e1916
+    discogs: 42894
+    title: "Elvis Costello And The Attractions – Imperial Bedroom"
+  - rgid: 5d4f8f19-23cf-34cf-b225-8cd0339c37de
+    discogs: 20238
+    title: "The Cure – Pornography"
+  - rgid: b3865201-9889-3be7-bf42-146bd298cc6f
+    discogs: 52401
+    title: "Kevin Rowland & Dexys Midnight Runners – Too-Rye-Ay"
+  - rgid: c7126542-56ab-3d15-8a86-9caf5b3d4de1
+    discogs: 58825
+    title: "Simple Minds – New Gold Dream (81-82-83-84)"
+  - rgid: 7b3c2ec0-7390-39eb-a23c-f33d760f274a
+    discogs: 20041
+    title: "Madness – The Rise & Fall"
+  - rgid: a0f2615e-aebd-3300-99e3-626c4ea7bcae
+    discogs: 65826
+    title: "Donald Fagen – The Nightfly"
+  - rgid: a88e179b-7d6e-325d-b683-55158b439973
+    discogs: 81661
+    title: "Haircut One Hundred – Pelican West"
+  - rgid: d28777fc-f135-3394-a033-eafb9ebcffb4
+    discogs: 28613
+    title: "Kate Bush – The Dreaming"
+  - rgid: b29ee43a-2073-3b7d-add8-ad893be0ecc9
+    discogs: 220713
+    title: "Orange Juice – Rip It Up"
+  - rgid: f32fab67-77dd-3937-addc-9062e28e4c37
+    discogs: 8883
+    title: "Michael Jackson – Thriller"
+  - rgid: d2a8fe20-1bc1-309c-b6f0-77bbf6c3d089
+    discogs: 20060
+    title: "The Birthday Party – Junkyard"
+  - rgid: 84df033e-49e6-30aa-8331-11e4c0e161b6
+    discogs: 57707
+    title: "Venom – Black Metal"
+  - rgid: 324aee0c-36ec-35c1-9c93-b67a1d428037
+    discogs: 27192
+    title: "Bruce Springsteen – Nebraska"
+  - rgid: 10d81aea-8232-3277-87c2-36f5886bd400
+    discogs: 72576
+    title: "Associates – Sulk"
+  - rgid: 4ebfe175-e7ed-34cd-8e91-67c7e4a53579
+    discogs: 18742
+    title: "Iron Maiden – The Number Of The Beast"
+  - rgid: 3c638420-8208-3c01-b723-f061b10e3f3a
+    discogs: 79632
+    title: "Duran Duran – Rio"
+  - rgid: 616a1d80-83d0-3234-bf71-fe3de8109f99
+    discogs: 38959
+    title: "Violent Femmes – Violent Femmes"
+  - rgid: 54242604-882a-391c-b91b-d9af5a63db42
+    discogs: 68613
+    title: "Malcolm McLaren – Duck Rock"
+  - rgid: d77df681-b779-3d6d-b66a-3bfd15985e3e
+    discogs: 31037
+    title: "Def Leppard – Pyromania"
+  - rgid: de790d3d-a35c-364c-a8fb-adfb73084a45
+    discogs: 14515
+    title: "R.E.M. – Murmur"
+  - rgid: 923e256a-7bf0-31e0-bddc-ec76db526c32
+    discogs: 20901
+    title: "The The – Soul Mining"
+  - rgid: c791b365-0400-3926-be67-d1d9c71fc37e
+    discogs: 14006
+    title: "Tom Waits – Swordfishtrombones"
+  - rgid: f5bb7c5e-4153-3bcf-9a3b-14d59de5e875
+    discogs: 35779
+    title: "The Blue Nile – A Walk Across The Rooftops"
+  - rgid: 2f251736-952c-3d8d-b028-322a73ab826d
+    discogs: 117124
+    title: "Hanoi Rocks – Back To Mystery City"
+  - rgid: 46d415e9-39b7-3978-9e3d-d9d8a32c6751
+    discogs: 28859
+    title: "Cyndi Lauper – She's So Unusual"
+  - rgid: 1f99b3d9-8739-3a62-afa5-2abb8ff11ee0
+    discogs: 55670
+    title: "Paul Simon – Hearts And Bones"
+  - rgid: 931e971f-eb34-369f-b6a4-f5ef7c6a1c9e
+    discogs: 28547
+    title: "Echo & The Bunnymen – Porcupine"
+  - rgid: c58b50f0-d7a4-322c-b281-d86ebe3b8acf
+    discogs: 48605
+    title: "ZZ Top – Eliminator"
+  - rgid: b969f851-b5cf-3a3f-9bfe-1280eb271406
+    discogs: 52009
+    title: "Eurythmics – Sweet Dreams (Are Made Of This)"
+  - rgid: c6b36664-7e60-3b3e-a24d-d096c67a11e9
+    discogs: 48830
+    title: "U2 – War"
+  - rgid: f6df6292-fd40-37c3-bd61-22c53abfe773
+    discogs: 39248
+    title: "The Police – Synchronicity"
+  - rgid: d33dbcf6-ab44-3c91-872b-9563f724dc0f
+    discogs: 29825
+    title: "Meat Puppets – Meat Puppets II"
+  - rgid: 00490137-fa0b-3252-90f7-42b8eea8ae14
+    discogs: 48240
+    title: "Culture Club – Colour By Numbers"
+  - rgid: c734406b-3c8a-3214-98cc-dd553f82f813
+    discogs: 71134
+    title: "Frankie Goes To Hollywood – Welcome To The Pleasuredome"
+  - rgid: eec6f4a7-b992-34df-8984-af0fe00550e0
+    discogs: 63312
+    title: "Run-D.M.C. – Run-D.M.C."
+  - rgid: af2a0c41-e612-3232-949d-bdca340c407c
+    discogs: 43936
+    title: "Sade – Diamond Life"
+  - rgid: e0023081-c755-377d-9bbf-fd7551d5d14c
+    discogs: 5232
+    title: "Cocteau Twins – Treasure"
+  - rgid: db4d417f-8295-3843-829d-2b8c0b649517
+    discogs: 9654
+    title: "Minor Threat – Out Of Step"
+  - rgid: 5846f0c9-fec3-3b9e-a77c-fbe9a7bdf0e7
+    discogs: 29419
+    title: "Van Halen – 1984"
+  - rgid: b93a7c47-a6d4-33f2-9034-53fdd991f4ba
+    discogs: 16245
+    title: "Prince And The Revolution – Purple Rain"
+  - rgid: 2c644807-3b5d-39d4-8c65-dec603bf3f3a
+    discogs: 16193
+    title: "The Replacements – Let It Be"
+  - rgid: 49081a6f-8f76-3159-aba2-8527126d9384
+    discogs: 36703
+    title: "The Style Council – Café Bleu"
+  - rgid: cffc5347-3b75-37cc-9120-0ae98b2748dc
+    discogs: 91767
+    title: "Tina Turner – Private Dancer"
+  - rgid: ecbe6d07-c2e4-37fe-9a99-8484dd7f9a20
+    discogs: 27874
+    title: "Echo & The Bunnymen – Ocean Rain"
+  - rgid: 0bcb9f3e-e341-3ed5-ac5b-8ed5e17f9a7e
+    discogs: 29892
+    title: "Minutemen – Double Nickels On The Dime"
+  - rgid: 11dfe59e-068b-3390-8148-c0c08bfb0675
+    discogs: 35874
+    title: "Lloyd Cole And The Commotions – Rattlesnakes"
+  - rgid: 73cd8eec-b315-45c1-beb4-ca71207d3c0a
+    discogs: 254178
+    title: "Youssou Ndour & Le Super Etoile De Dakar – Immigrés / Bitim Rew"
+  - rgid: 3c39a076-8e52-38f2-8076-260d0672fb23
+    discogs: 26701
+    title: "Bruce Springsteen – Born In The U.S.A."
+  - rgid: e163ed54-842b-3114-9e98-a2d376029abd
+    discogs: 5241
+    title: "The Fall – This Nation's Saving Grace"
+  - rgid: 53926047-68bc-36a6-95f8-9209f285c95d
+    discogs: 254599
+    title: "Abdullah Ibrahim – Water From An Ancient Well"
+  - rgid: af7347df-ef5a-3c41-826d-d884f8916c17
+    discogs: 11134
+    title: "a-ha – Hunting High And Low"
+  - rgid: 475946e9-4b00-3f7c-9bd7-c11f55740262
+    discogs: 43063
+    title: "Tears For Fears – Songs From The Big Chair"
+  - rgid: b02f651e-32a1-30ae-bc23-070b59170278
+    discogs: 23684
+    title: "Dire Straits – Brothers In Arms"
+  - rgid: 7cd79fc6-5c15-3aa7-85af-87ea206712ca
+    discogs: 25619
+    title: "Prefab Sprout – Steve McQueen"
+  - rgid: e929100a-27b7-3d08-97a5-0fdd97f5a476
+    discogs: 153488
+    title: "Mekons – Fear And Whiskey"
+  - rgid: 94e3e968-4a8d-3d2f-9538-b96c0bfa2a06
+    discogs: 6398
+    title: "Big Black – Atomizer"
+  - rgid: ec8b40df-f243-30a6-a076-3691d7f851f2
+    discogs: 31638
+    title: "Suzanne Vega – Suzanne Vega"
+  - rgid: ba1f6641-9085-36a0-8962-65ad6e48afd1
+    discogs: 43758
+    title: "The Pogues – Rum Sodomy & The Lash"
+  - rgid: 017f2a37-a78f-3578-9611-fa40408e5d90
+    discogs: 28680
+    title: "Kate Bush – Hounds Of Love"
+  - rgid: 0d56a04c-045a-37db-bcc3-6c7099e94f16
+    discogs: 4186
+    title: "The Smiths – Meat Is Murder"
+  - rgid: fb25a883-2270-3ec4-8c62-85c7ed857e6f
+    discogs: 13960
+    title: "Tom Waits – Rain Dogs"
+  - rgid: 7534461f-d5ed-3ab0-b5a8-48d7f9b49c70
+    discogs: 5332
+    title: "The Jesus And Mary Chain – Psychocandy"
+  - rgid: 69be20bc-189f-3e40-8486-6fba8459f6a0
+    discogs: 3608
+    title: "New Order – Low-life"
+  - rgid: 7a80d7c7-94f0-302b-90d9-d5ae4cbe3dae
+    discogs: 25886
+    title: "Simply Red – Picture Book"
+  - rgid: 7fe24a11-378e-3c2a-ac4e-dd7e7fb0291e
+    discogs: 68502
+    title: "Dexys Midnight Runners – Don't Stand Me Down"
+  - rgid: e60795c6-96fb-3f5f-84db-9837a9dad179
+    discogs: 48969
+    title: "Scritti Politti – Cupid & Psyche 85"
+  - rgid: cbcc8fdf-180f-36b9-8c0a-e653d78fea2e
+    discogs: 42938
+    title: "Elvis Costello And The Attractions – Blood & Chocolate"
+  - rgid: 2dab7547-b12d-3124-8a92-0286986006e8
+    discogs: 19130
+    title: "Afrika Bambaataa & Soulsonic Force – Planet Rock - The Album"
+  - rgid: 57f5e7c8-2a6e-34a0-b4cd-0e77695bc36f
+    discogs: 20090
+    title: "Beastie Boys – Licensed To Ill"
+  - rgid: 3d00fb45-f8ab-3436-a8e1-b4bfc4d66913
+    discogs: 6495
+    title: "Metallica – Master Of Puppets"
+  - rgid: 1eb45345-2fee-3be5-8b0a-5b91238de4f4
+    discogs: 20915
+    title: "The The – Infected"
+  - rgid: 8c71b258-5d45-4eb4-b56e-4c3aa0894fe1
+    discogs: 369528
+    title: "Nanci Griffith – Last Of The True Believers"
+  - rgid: da57eed5-8b1c-36be-a644-bdb4b45660d0
+    discogs: 35493
+    title: "Billy Bragg – Talking With The Taxman About Poetry"
+  - rgid: 072ec17c-aa60-3070-99ab-fce9e9009d97
+    discogs: 26239
+    title: "Talk Talk – The Colour Of Spring"
+  - rgid: 4eea6bcc-3226-3c0d-a71d-af682a0a1dd8
+    discogs: 32923
+    title: "Megadeth – Peace Sells... But Who's Buying?"
+  - rgid: f07346e6-c889-33b8-83c8-ad987d7b14f6
+    discogs: 66798
+    title: "Bon Jovi – Slippery When Wet"
+  - rgid: 77641c44-b2d6-3cfb-a82c-37bbec30abfd
+    discogs: 9739
+    title: "Sonic Youth – Evol"
+  - rgid: dbf1b3c0-1efb-4e5f-9fe1-4c42b144aa24
+    discogs: 7728
+    title: "Slayer – Reign In Blood"
+  - rgid: 792e9843-1641-38b1-a099-88eb8bb5445c
+    discogs: 20805
+    title: "Throwing Muses – Throwing Muses"
+  - rgid: 19847822-1430-3380-9cf1-bc45545b34ac
+    discogs: 55658
+    title: "Paul Simon – Graceland"
+  - rgid: a209c0a5-e9b2-37ff-a76d-df5bc405a0e8
+    discogs: 37401
+    title: "Run DMC – Raising Hell"
+  - rgid: 507d4ab2-03f0-3b8a-a076-cb37d0f970c7
+    discogs: 71079
+    title: "XTC – Skylarking"
+  - rgid: 884d5172-4689-33b2-bc8b-592d9556d6c4
+    discogs: 87443
+    title: "Steve Earle – Guitar Town"
+  - rgid: 5772996a-d791-3d21-a62e-3efd2a24979c
+    discogs: 25150
+    title: "Bad Brains – I Against I"
+  - rgid: b544c1b2-9190-34ac-8d03-348c86a77cb2
+    discogs: 113203
+    title: "Anita Baker – Rapture"
+  - rgid: d8dde278-482c-3cc8-a530-fea70476f3a5
+    discogs: 20137
+    title: "The Smiths – The Queen Is Dead"
+  - rgid: be3cc3e7-bdb0-3c13-a60b-a985b30eb603
+    discogs: 35759
+    title: "Peter Gabriel – So"
+  - rgid: 413bc69f-9391-3fe3-802b-5bf4922f6066
+    discogs: 42920
+    title: "Anthrax – Among The Living"
+  - rgid: 40f8a16c-568b-3b94-9682-863c4dc7ab66
+    discogs: 5466
+    title: "Dinosaur – You're Living All Over Me"
+  - rgid: 7703474b-4953-385d-89de-66c1e0f0b156
+    discogs: 14721
+    title: "Dolly Parton, Linda Ronstadt, Emmylou Harris – Trio"
+  - rgid: 12fa3845-7c62-36e5-a8da-8be137155a72
+    discogs: 31048
+    title: "Def Leppard – Hysteria"
+  - rgid: 137385b2-b4cc-385e-9d59-781e7674f5bc
+    discogs: 21299
+    title: "R.E.M. – Document"
+  - rgid: 90718403-7634-3786-84bf-2053a7bd4f4c
+    discogs: 52497
+    title: "Prince – Sign \"O\" The Times"
+  - rgid: e9e740ec-a09f-3f29-802f-43af41b7e440
+    discogs: 626
+    title: "The Cult – Electric"
+  - rgid: e59021bd-1710-3c13-9449-b78560039592
+    discogs: 17967
+    title: "Depeche Mode – Music For The Masses"
+  - rgid: d1ae968e-ed20-35a2-9741-17f82e20bd28
+    discogs: 2836
+    title: "The Sisters Of Mercy – Floodland"
+  - rgid: 4e61585f-f341-3174-85cf-afad8df46fbe
+    discogs: 96689
+    title: "George Michael – Faith"
+  - rgid: c3375e84-7473-3623-8545-889f32cc6f2c
+    discogs: 30091
+    title: "Hüsker Dü – Warehouse: Songs And Stories"
+  - rgid: 505efa10-c8c9-3741-814f-9d9fe44e49cf
+    discogs: 4228
+    title: "Butthole Surfers – Locust Abortion Technician"
+  - rgid: 18a15c66-9681-3b6f-9915-7bbfa175bdca
+    discogs: 284735
+    title: "Astor Piazzolla & Gary Burton – The New Tango"
+  - rgid: 53bcf9cf-db1e-3887-80f5-9f23c87a0f64
+    discogs: 21143
+    title: "The Smiths – Strangeways, Here We Come"
+  - rgid: a0b94d0a-210b-4b15-bd1d-93be2196c14a
+    discogs: 9467
+    title: "Guns N' Roses – Appetite For Destruction"
+  - rgid: cda63ecb-5777-37e2-8aa6-32f5c93e0f9f
+    discogs: 5355
+    title: "The Jesus And Mary Chain – Darklands"
+  - rgid: a7db6b13-54c1-4628-9182-60d97d4e101c
+    discogs: 65008
+    title: "Ladysmith Black Mambazo – Shaka Zulu"
+  - rgid: 6c5d92c6-d16b-31ad-a424-2d18b058734e
+    discogs: 13417
+    title: "Laibach – Opus Dei"
+  - rgid: 28fde873-9dcd-35f7-9521-8d446ee2753b
+    discogs: 6599
+    title: "Napalm Death – Scum"
+  - rgid: e4256ddc-fa26-3e7f-933b-4de77b05f519
+    discogs: 9827
+    title: "The Sonic-Youth – Sister"
+  - rgid: ca5c8da9-4a92-3e50-aa16-4805c31b7acd
+    discogs: 87485
+    title: "The Triffids – Calenture"
+  - rgid: a5711a77-42d1-3f4c-830c-e27a96f0800f
+    discogs: 8517
+    title: "Michael Jackson – Bad"
+  - rgid: 6de9a233-13dd-30b5-ad30-61c5814774c5
+    discogs: 27976
+    title: "Pet Shop Boys – Actually"
+  - rgid: 6f3e9fa6-be7a-3de8-a2b2-2072ece8a54d
+    discogs: 64290
+    title: "U2 – The Joshua Tree"
+  - rgid: 8958b20d-ce4a-3fa3-95e3-cff2273211aa
+    discogs: 104399
+    title: "Terence Trent D'Arby – Introducing The Hardline According To Terence Trent D'Arby"
+  - rgid: 46451c52-7d69-3d8a-91f5-9d4b65488f59
+    discogs: 43765
+    title: "The Pogues – If I Should Fall From Grace With God"
+  - rgid: 7f073c9c-f64f-3a79-bbd8-5aa7668e5cd8
+    discogs: 3762
+    title: "Leonard Cohen – I'm Your Man"
+  - rgid: 6730eae2-cc75-3510-97fc-80df1e443aac
+    discogs: 60533
+    title: "The Waterboys – Fisherman's Blues"
+  - rgid: 98b3437a-6c67-34cb-bc5a-f808bb2b467c
+    discogs: 43064
+    title: "Fishbone – Truth And Soul"
+  - rgid: 8f9ef1de-e694-33ee-854a-ba5d0bb38dcc
+    discogs: 72558
+    title: "Everything But The Girl – Idlewild"
+  - rgid: 8ce498ba-26f5-3ea9-b499-9007212ae269
+    discogs: 16331
+    title: "Living Colour – Vivid"
+  - rgid: c92a05a8-c340-39aa-a912-e2927f2b49a6
+    discogs: 58252
+    title: "Mudhoney – Superfuzz Bigmuff"
+  - rgid: 16a9cef3-b470-3ae1-bf10-cc04232d3e21
+    discogs: 57809
+    title: "R.E.M. – Green"
+  - rgid: f13bfae5-5081-364b-97ca-acf0019e5940
+    discogs: 10516
+    title: "Happy Mondays – Bummed"
+  - rgid: 608977e4-5c3d-3254-af1a-7e46fe6674c5
+    discogs: 4744
+    title: "The Go-Betweens – 16 Lovers Lane"
+  - rgid: 585acc56-8d69-3282-9a1d-aafc6035895d
+    discogs: 68424
+    title: "Cowboy Junkies – The Trinity Session"
+  - rgid: a738bdf1-f610-30aa-9ae7-9a4f90d6f2d7
+    discogs: 105802
+    title: "Tracy Chapman – Tracy Chapman"
+  - rgid: 55a73423-bf7d-3969-b1b2-c34c43140e1a
+    discogs: 5939
+    title: "My Bloody Valentine – Isn't Anything"
+  - rgid: 74e36cbc-a747-3ebf-a60e-51e656c87741
+    discogs: 16731
+    title: "Pixies – Surfer Rosa"
+  - rgid: 67553e23-8dad-3792-b6f2-8fedd5650ff3
+    discogs: 6571
+    title: "Metallica – ...And Justice For All"
+  - rgid: b45028e5-c9d9-34cf-9d2f-0e90ce500c9a
+    discogs: 5481
+    title: "Dinosaur Jr. – Bug"
+  - rgid: 0ff9acaf-2710-316d-ba3c-37ded4372c0f
+    discogs: 180097
+    title: "Dagmar Krause – Tank Battles (The Songs Of Hanns Eisler)"
+  - rgid: 054a2fdf-1357-3dbf-89c3-af8f11735dda
+    discogs: 149183
+    title: "k.d. lang – Shadowland (The Owen Bradley Sessions)"
+  - rgid: 84042e46-4063-356e-85b5-0a576170351b
+    discogs: 137994
+    title: "American Music Club – California"
+  - rgid: 005909de-978b-3450-a820-c89b7dae787a
+    discogs: 4632
+    title: "Morrissey – Viva Hate"
+  - rgid: 24769a99-8189-3d8c-947e-dbc8574dad5c
+    discogs: 9768
+    title: "Sonic Youth – Daydream Nation"
+  - rgid: 972b3962-49dc-3bbc-ab11-c6b8f7f0838b
+    discogs: 35191
+    title: "The Sugarcubes – Life's Too Good"
+  - rgid: 31e2fb17-eaf1-3f7b-9d7d-58a1237d1a4a
+    discogs: 267897
+    title: "Dwight Yoakam – Buenas Noches From A Lonely Room"
+  - rgid: 97b7e291-8714-3e54-ac24-480be535ee8d
+    discogs: 32065
+    title: "Jane's Addiction – Nothing's Shocking"
+  - rgid: 01921d99-9d15-3fce-8734-46e58327cfb7
+    discogs: 30296
+    title: "Public Enemy – It Takes A Nation Of Millions To Hold Us Back"
+  - rgid: 1ba7c980-4882-31fb-9918-12791f59d303
+    discogs: 15642
+    title: "Faith No More – The Real Thing"
+  - rgid: afd82f3b-cab1-3fab-84dc-6c5c80919bd3
+    discogs: 12368
+    title: "Lenny Kravitz – Let Love Rule"
+  - rgid: 2de52330-f003-310c-bc99-94438bf5a904
+    discogs: 107069
+    title: "John Lee Hooker – The Healer"
+  - rgid: a0902fc4-e3d9-3b2b-bc94-cd4d0e59db29
+    discogs: 4442
+    title: "Neworder – Technique"
+  - rgid: 1f75a8df-176c-3d23-8f1f-b0c8935682ec
+    discogs: 34627
+    title: "Madonna – Like A Prayer"
+  - rgid: 7416a063-8697-37a5-af06-af4da329c398
+    discogs: 76529
+    title: "Queen Latifah – All Hail The Queen"
+  - rgid: 23e72d60-6199-3f19-b29d-21e460b997ac
+    discogs: 31540
+    title: "Spacemen 3 – Playing With Fire"
+  - rgid: 6118acdb-7f49-389b-80ec-50a9b12a1690
+    discogs: 30212
+    title: "fIREHOSE – fROMOHIO"
+  - rgid: b534aa01-d621-31ba-9278-38a500e3cdca
+    discogs: 20135
+    title: "Beastie Boys – Paul's Boutique"
+  - rgid: f0b690ac-01cf-321c-a639-3898e464d1af
+    discogs: 10872
+    title: "The Young Gods – L'Eau Rouge - Red Water"
+  - rgid: 77691ed4-949d-3487-9cec-00bd8d79fa26
+    discogs: 15595
+    title: "John Zorn – Spy Vs. Spy—The Music Of Ornette Coleman"
+  - rgid: 88b86fe0-26f5-3949-817a-8082145e704d
+    discogs: 12458
+    title: "The Stone Roses – The Stone Roses"
+  - rgid: daf52bf4-9abf-353e-b226-ef69e1f3e95d
+    discogs: 81932
+    title: "Neneh Cherry – Raw Like Sushi"
+  - rgid: 4c5e106d-a6bd-30d1-a946-879b267287e8
+    discogs: 226531
+    title: "Baaba Maal & Mansour Seck – Djam Leelii"
+  - rgid: ad555095-b0a6-42c8-87aa-8ba035d20e12
+    discogs: 5804
+    title: "Kate Bush – The Sensual World"
+  - rgid: 494bf606-d2f7-36d0-8340-eadad8601d2b
+    discogs: 31755
+    title: "The Cure – Disintegration"
+  - rgid: e600e8fe-df72-33ee-9bcc-131175187453
+    discogs: 25413
+    title: "808 State – 90"
+  - rgid: b576dcd9-b1db-3104-a730-f732a86ed60d
+    discogs: 19724
+    title: "Coldcut – What's That Noise?"
+  - rgid: f01b6754-e1bc-3064-a8ef-e6b359f9233d
+    discogs: 52717
+    title: "Barry Adamson – Moss Side Story"
+  - rgid: 8f174877-ffc4-39b9-b247-a39fff4097a1
+    discogs: 37145
+    title: "Aerosmith – Pump"
+  - rgid: 1aa41b19-5a72-341b-bd91-4cf61d1dab6b
+    discogs: 16764
+    title: "Pixies – Doolittle"
+  - rgid: 182a8072-0513-3aa2-b812-9f7a9692731a
+    discogs: 105857
+    title: "Bonnie Raitt – Nick Of Time"
+  - rgid: c7c2de8e-3c98-3923-a4d9-54c4295d20b4
+    discogs: 4119
+    title: "Fugazi – Repeater"
+  - rgid: cdc4e3e5-8366-3985-aa28-b23b836d2bcc
+    discogs: 79393
+    title: "Soul II Soul – Club Classics Vol. One"
+  - rgid: 5243f39c-c344-3989-a0f6-2a2f75a9d827
+    discogs: 8357
+    title: "De La Soul – 3 Feet High And Rising"
+  - rgid: 20aaac17-e4e8-373c-99cc-211321b82832
+    discogs: 92699
+    title: "Janet Jackson – Janet Jackson's Rhythm Nation 1814"
+  - rgid: 2cfffb56-98df-3718-8c8f-631904ca2554
+    discogs: 116800
+    title: "Jungle Brothers – Done By The Forces Of Nature"
+  - rgid: fed1608d-80b7-38d2-aeb8-c6357f0d4c23
+    discogs: 26117
+    title: "N.W.A – Straight Outta Compton"
+  - rgid: 12fab6b9-4eaf-33b0-963e-cae03ac332fe
+    discogs: 5104
+    title: "Cocteau Twins – Heaven Or Las Vegas"
+  - rgid: 0c06a420-01db-36ec-84e4-5371ee6390cc
+    discogs: 21468
+    title: "Shamen – En-Tact"
+  - rgid: 4f625d26-3d84-3d3b-8230-2c98e5d45100
+    discogs: 110415
+    title: "Deee-Lite – World Clique"
+  - rgid: f57d03ff-b0a5-3b73-a14c-a5ed5f8cd956
+    discogs: 6557
+    title: "The La's – The La's"
+  - rgid: 456a8f06-5f7f-3c30-9be9-111355526469
+    discogs: 52104
+    title: "The Black Crowes – Shake Your Money Maker"
+  - rgid: 71f1482e-e63f-3b2c-811b-939f62708f2a
+    discogs: 18080
+    title: "Depeche Mode – Violator"
+  - rgid: e062f23a-ed81-3baf-8f24-8979fef060cc
+    discogs: 16787
+    title: "Pixies – Bossanova"
+  - rgid: 19e7c9f3-7c4c-3a56-ba50-4156b39f76ca
+    discogs: 32937
+    title: "Megadeth – Rust In Peace"
+  - rgid: 84abec74-3b40-3a83-9449-46d7e420d4d7
+    discogs: 43551
+    title: "Digital Underground – Sex Packets"
+  - rgid: 751d3b2b-9b6d-3182-8ab5-9b231ab9a7fc
+    discogs: 28087
+    title: "Pet Shop Boys – Behaviour"
+  - rgid: f63a7c53-571f-3d4a-a942-053f56590605
+    discogs: 10610
+    title: "Happy Mondays – Pills 'N' Thrills And Bellyaches"
+  - rgid: a0467615-94c3-3268-a425-9285273adb24
+    discogs: 96742
+    title: "George Michael – Listen Without Prejudice Vol. 1"
+  - rgid: 91fdfd77-a868-3678-b9f2-11ad92118955
+    discogs: 38731
+    title: "Neil Young + Crazy Horse – Ragged Glory"
+  - rgid: f7e8792d-4aaf-389c-b0e5-a4bbae2bacdf
+    discogs: 97462
+    title: "Ice Cube – AmeriKKKa's Most Wanted"
+  - rgid: baeba3f5-a5aa-3e6e-944f-cca5374192e4
+    discogs: 32082
+    title: "Jane's Addiction – Ritual De Lo Habitual"
+  - rgid: a1440823-4a3f-38c3-8649-a346a86fe1ec
+    discogs: 79689
+    title: "L.L. Cool J – Mama Said Knock You Out"
+  - rgid: 13cf2244-c850-304d-bc46-b30e3f10e0cc
+    discogs: 30255
+    title: "Public Enemy – Fear Of A Black Planet"
+  - rgid: 9747bcfe-7c42-35ac-8c3e-7ecac9f1227b
+    discogs: 51591
+    title: "Sinéad O'Connor – I Do Not Want What I Haven't Got"
+  - rgid: 02adb8a7-496c-3a9a-a324-662df73fdba5
+    discogs: 45907
+    title: "A Tribe Called Quest – People's Instinctive Travels And The Paths Of Rhythm"
+  - rgid: 8114542a-d659-3b5f-a11f-cf86ed7fa84d
+    discogs: 9751
+    title: "Sonic Youth – Goo"
+  - rgid: 4ff18a50-33fa-37aa-a355-ea2a70e35ae3
+    discogs: 19469
+    title: "Ride – Nowhere"
+  - rgid: cb76227e-3ac0-3002-9a10-615a5b73cc59
+    discogs: 5948
+    title: "My Bloody Valentine – Loveless"
+  - rgid: 1b022e01-4da6-387b-8658-8678046e4cef
+    discogs: 13814
+    title: "Nirvana – Nevermind"
+  - rgid: e2d01440-4e91-3dac-8230-72b63992771e
+    discogs: 81160
+    title: "Crowded House – Woodface"
+  - rgid: 763b913e-e9b1-3a58-9725-291239e88d79
+    discogs: 16273
+    title: "Cypress Hill – Cypress Hill"
+  - rgid: aa40c6e4-466b-3f32-af95-1f10e6a24edc
+    discogs: 69000
+    title: "Julian Cope – Peggy Suicide"
+  - rgid: b66d223b-f057-3bba-9fee-92ee3db86257
+    discogs: 23758
+    title: "Gang Starr – Step In The Arena"
+  - rgid: 424d0675-f87c-3937-bc38-6b29810d1152
+    discogs: 46558
+    title: "MC Solaar – Qui Sème Le Vent Récolte Le Tempo"
+  - rgid: 0b2902de-d625-3090-a79c-92179202e9e2
+    discogs: 117398
+    title: "Jah Wobble's Invaders Of The Heart – Rising Above Bedlam"
+  - rgid: 68bee70d-b425-3813-aca7-dd7b912c3d11
+    discogs: 42522
+    title: "Red Hot Chili Peppers – Blood Sugar Sex Magik"
+  - rgid: 5efcd612-f7d0-3eaa-bd04-b712b80f25af
+    discogs: 107621
+    title: "Ice-T – O.G. Original Gangster"
+  - rgid: a06ea2e4-c2ff-3169-8af5-5625f0a6ed9a
+    discogs: 51334
+    title: "Mudhoney – Every Good Boy Deserves Fudge"
+  - rgid: b21f49a6-cd5f-3783-9302-6a727121e787
+    discogs: 30225
+    title: "Public Enemy – Apocalypse 91... The Enemy Strikes Black"
+  - rgid: c3733436-fcba-3c08-b082-d548df5c5139
+    discogs: 45922
+    title: "A Tribe Called Quest – The Low End Theory"
+  - rgid: cea5d18a-1924-3cda-bebc-38933834b25d
+    discogs: 73824
+    title: "Pearl Jam – Ten"
+  - rgid: 726170fb-e4ce-378a-bec4-c74e742920ab
+    discogs: 8981
+    title: "Saint Etienne – Foxbase Alpha"
+  - rgid: 6d9ffabb-233a-3cc1-9ac3-d2a8e4c99cdd
+    discogs: 57469
+    title: "Sepultura – Arise"
+  - rgid: e9f4b96a-94df-36be-9659-c9a811caead6
+    discogs: 38099
+    title: "Slint – Spiderland"
+  - rgid: 744c7a1b-ac79-35c4-bd92-7e2c6a24c8d8
+    discogs: 20774
+    title: "U2 – Achtung Baby"
+  - rgid: 30e20b6b-778b-3d6a-aa72-3f821a8dd538
+    discogs: 40608
+    title: "The KLF – The White Room"
+  - rgid: 8b6f133a-2fdf-3cc2-b84d-1c889adc0939
+    discogs: 32618
+    title: "Massive – Blue Lines"
+  - rgid: 48a1839c-f4e0-3223-831f-fc36ca6ff7cf
+    discogs: 28274
+    title: "Primal Scream – Screamadelica"
+  - rgid: 4119fd8b-9858-33c9-8256-fcc1570bc07f
+    discogs: 6041
+    title: "Teenage Fanclub – Bandwagonesque"
+  - rgid: e8f70201-8899-3f0c-9e07-5d6495bc8046
+    discogs: 6651
+    title: "Metallica – Metallica"
+  - rgid: 869f9eac-2a40-3a41-80a3-6bf2297a7cbc
+    discogs: 21660
+    title: "Pavement – Slanted And Enchanted"
+  - rgid: 6842c81d-ea77-3dfd-abf7-4323add3f4d4
+    discogs: 565
+    title: "Aphex Twin – Selected Ambient Works 85-92"
+  - rgid: ede793b4-4976-3b7a-ba3b-fde6801de64c
+    discogs: 77475
+    title: "Arrested Development – 3 Years, 5 Months & 2 Days In The Life Of..."
+  - rgid: c616d884-221b-34db-aa62-7603af3b2394
+    discogs: 944654
+    title: "Koffi Olomidé – Haut De Gamme Tcha-Tcho \"Echelon Ngomba\" - Koweït, Rive Gauche"
+  - rgid: 24ffe899-66f2-3e52-97ea-527531bf4680
+    discogs: 5294
+    title: "Morrissey – Your Arsenal"
+  - rgid: 7823bf97-2c4f-35a0-be77-977ae04fa0fb
+    discogs: 280370
+    title: "Baaba Maal & Daande Lenõl – Lam Toro"
+  - rgid: d8cf6f02-a68b-4b73-be3e-746fb5a5adf6
+    discogs: 14130
+    title: "Lemonheads – It's A Shame About Ray"
+  - rgid: 1305859b-8937-397f-9c33-39f62eb672fb
+    discogs: 7939
+    title: "Rage Against The Machine – Rage Against The Machine"
+  - rgid: 4b9127b6-60bb-373a-9460-f90327947ec4
+    discogs: 85641
+    title: "The Disposable Heroes Of Hiphoprisy – Hypocrisy Is The Greatest Luxury"
+  - rgid: fdad4a4d-8cfd-3a6c-a397-0f08861dc967
+    discogs: 128967
+    title: "k.d. lang – Ingénue"
+  - rgid: ad444843-7160-33d7-b0c9-fc99f2c14a99
+    discogs: 33951
+    title: "Dr. Dre – The Chronic"
+  - rgid: c86c6af9-d10e-3079-b34b-30b682a797eb
+    discogs: 57830
+    title: "R.E.M. – Automatic For The People"
+  - rgid: c799ef0c-f038-364b-972b-51f52d794781
+    discogs: 56074
+    title: "The Pharcyde – Bizarre Ride II The Pharcyde"
+  - rgid: e12a1258-c0cf-326d-80c4-782763ff3c46
+    discogs: 30278
+    title: "Spiritualized – Lazer Guided Melodies"
+  - rgid: 997a4855-3bd3-3e5c-81d0-656209b3aa74
+    discogs: 21630
+    title: "Sugar – Copper Blue"
+  - rgid: b65ca7b8-4069-3782-9c4c-b2353cc4bc04
+    discogs: 14119
+    title: "Tom Waits – Bone Machine"
+  - rgid: 30fef5ef-b1d4-36b5-8f75-f45b8e76c545
+    discogs: 9844
+    title: "Sonic Youth – Dirty"
+  - rgid: 069b2e51-c7a9-32f4-a5f1-704ad00f13da
+    discogs: 108368
+    title: "Stereo MC's – Connected"
+  - rgid: 15cfaf82-5a4b-3ee1-bcce-75561055d27a
+    discogs: 7376
+    title: "Ministry – ΚΕΦΑΛΗΞΘ"
+  - rgid: cb10018e-e795-3b62-b9d6-f143d188e496
+    discogs: 64690
+    title: "Tori Amos – Little Earthquakes"
+  - rgid: 2e904c43-e060-3a4c-aa6d-7e4cd8f7cde8
+    discogs: 97485
+    title: "Ice Cube – The Predator"
+  - rgid: 814e0b20-6884-31c5-9d99-d215f048cfd6
+    discogs: 34194
+    title: "Pantera – Vulgar Display Of Power"
+  - rgid: 92d8f0c4-8c64-3bee-bee1-812a70e77efa
+    discogs: 21666
+    title: "Alice In Chains – Dirt"
+  - rgid: 697785ad-05f6-3067-9618-796e811e4ec3
+    discogs: 17322
+    title: "Nick Cave & The Bad Seeds – Henry's Dream"
+  - rgid: dbfaec14-d410-3775-b538-2d5fbff4358f
+    discogs: 1426462
+    title: "Nusrat Fateh Ali Khan & Party – Devotional Songs"
+  - rgid: 78e2be48-6a07-31bf-b85f-3a1093177263
+    discogs: 52561
+    title: "P J Harvey – Dry"
+  - rgid: 85913ff9-f07e-34a9-85f4-eee5140a5881
+    discogs: 10056
+    title: "Suede – Suede"
+  - rgid: 2fb89402-6ed9-3f5b-b267-d77ac921b2d2
+    discogs: 80396
+    title: "Paul Weller – Wild Wood"
+  - rgid: a159e102-18bb-42ca-a59e-5f96a7eff241
+    discogs: 48681
+    title: "Smashing Pumpkins – Siamese Dream"
+  - rgid: 02e4e84f-5d06-3288-bcfd-32522ba23bd9
+    discogs: 17125
+    title: "The Auteurs – New Wave"
+  - rgid: c186db82-9988-367e-8486-2e38e9b6c8db
+    discogs: 26390
+    title: "Liz Phair – Exile In Guyville"
+  - rgid: 3b27e8ac-c904-3b1e-a4a9-920c79664dfa
+    discogs: 63984
+    title: "The Afghan Whigs – Gentlemen"
+  - rgid: a045be5a-5bc2-35f1-9860-6dc999ae64b9
+    discogs: 88957
+    title: "Aimee Mann – Whatever"
+  - rgid: 290cd1a5-22cc-3db4-817e-bf264be59fd0
+    discogs: 46823
+    title: "Grant Lee Buffalo – Fuzzy"
+  - rgid: 2a0981fb-9593-3019-864b-ce934d97a16e
+    discogs: 13859
+    title: "Nirvana – In Utero"
+  - rgid: 07d5dcac-a3a5-3691-9a88-44bff141aecb
+    discogs: 69938
+    title: "Jamiroquai – Emergency On Planet Earth"
+  - rgid: c56fbb2a-f0f2-370a-94aa-e3e2864f5847
+    discogs: 28399
+    title: "Pet Shop Boys – Very"
+  - rgid: c1bb54cc-751d-300c-ba29-d7502d571c2d
+    discogs: 52590
+    title: "P J Harvey – Rid Of Me"
+  - rgid: e7affd78-d157-4772-a468-675fa4309c61
+    discogs: 92102
+    title: "Blur – Modern Life Is Rubbish"
+  - rgid: 0f0ecd4f-1d20-34b9-9f67-5aaa785c7f11
+    discogs: 90311
+    title: "Sheryl Crow – Tuesday Night Music Club"
+  - rgid: ef245bd8-7937-313b-a787-f290653e0957
+    discogs: 39039
+    title: "The Fall – The Infotainment Scan"
+  - rgid: 610fb60f-900a-3c42-ac7d-f6b6aa8035f9
+    discogs: 25303
+    title: "Wu-Tang Clan – Enter The Wu-Tang (36 Chambers)"
+  - rgid: 6891a28c-5865-36e2-9e5f-c9fac1d3595f
+    discogs: 34486
+    title: "Björk – Debut"
+  - rgid: ce8ac428-e056-3c57-b80f-bf05c4cbc9ea
+    discogs: 8943
+    title: "Orbital – Orbital"
+  - rgid: 649762c9-8785-3d9c-803d-2f0496f168e5
+    discogs: 30129
+    title: "Snoop Doggy Dogg – Doggystyle"
+  - rgid: 41c08aa5-8de6-351b-aaca-f79d594e7793
+    discogs: 29734
+    title: "Sebadoh – Bubble & Scrape"
+  - rgid: dbcc977c-ddcf-3dc6-921a-e31ec1e7ab90
+    discogs: 20413
+    title: "The Boo Radleys – Giant Steps"
+  - rgid: 47629863-75ca-3a1e-a987-716736942e25
+    discogs: 91589
+    title: "William Orbit – Strange Cargo III"
+  - rgid: 85af95fb-f93d-30e9-b60e-9ee6eb00d42b
+    discogs: 25504
+    title: "Method Man – Tical"
+  - rgid: 0977c169-d4dc-37d3-89fa-2f2f60e4e43d
+    discogs: 32524
+    title: "Frank Black – Teenager Of The Year"
+  - rgid: 2354a012-7614-349e-9fa5-0ea5f2918cbc
+    discogs: 20626
+    title: "Girls Against Boys – Venus Luxure No.1 Baby"
+  - rgid: 4c1feb97-bc6c-32f9-8adb-bd85105fdaa0
+    discogs: 19908
+    title: "Jeru The Damaja – The Sun Rises In The East"
+  - rgid: 4f348977-6f44-39f9-b243-071927ecc6a4
+    discogs: 21662
+    title: "Pavement – Crooked Rain, Crooked Rain"
+  - rgid: 48140466-cff6-3222-bd55-63c27e43190d
+    discogs: 5542
+    title: "Portishead – Dummy"
+  - rgid: 61ec3e33-4f43-39bf-ae36-7869126d8285
+    discogs: 22859
+    title: "The Sabres Of Paradise – Haunted Dancehall"
+  - rgid: 28298e2c-4d70-3eed-a0f5-a3280c662b3d
+    discogs: 20148
+    title: "Nas – Illmatic"
+  - rgid: 1134696c-1078-3c38-bcaa-4ee7c320670a
+    discogs: 20173
+    title: "Beastie Boys – Ill Communication"
+  - rgid: 361a52d4-9656-307f-b7e4-480e3103a73c
+    discogs: 39460
+    title: "Elvis Costello – Brutal Youth"
+  - rgid: 627c18bf-ce65-3f4d-8695-cc0431933e3f
+    discogs: 5314
+    title: "Morrissey – Vauxhall And I"
+  - rgid: 3d886c06-a4c7-3431-be87-2b2940f07acd
+    discogs: 51777
+    title: "TLC – CrazySexyCool"
+  - rgid: 451dca98-c118-32e1-9244-c47ca9c3c0f9
+    discogs: 52255
+    title: "Oasis – Definitely Maybe"
+  - rgid: 8300fe9c-0022-3c55-8a3e-8dc61f282e8c
+    discogs: 11547
+    title: "Soundgarden – Superunknown"
+  - rgid: a55a5a03-0c0e-311b-85df-ec52f841715c
+    discogs: 77217
+    title: "Offspring – Smash"
+  - rgid: 532210d8-5101-3893-a2bb-f9cd8df6e303
+    discogs: 46594
+    title: "Drive Like Jehu – Yank Crime"
+  - rgid: 67461c8e-d864-3910-9bf4-39e44357aac9
+    discogs: 94761
+    title: "Blur – Parklife"
+  - rgid: d54dc508-1b22-3922-8839-6ddcfff10b7d
+    discogs: 59054
+    title: "G. Love And Special Sauce – G. Love And Special Sauce"
+  - rgid: a5a7a716-a039-3815-aee3-88ac135721c5
+    discogs: 54235
+    title: "Ali Farka Toure With Ry Cooder – Talking Timbuktu"
+  - rgid: fe676d05-f97c-303a-890b-da53c69e5d42
+    discogs: 43730
+    title: "Hole – Live Through This"
+  - rgid: ded46e46-788d-3c1f-b21b-9f5e9c37b1bc
+    discogs: 32634
+    title: "Massive Attack – Protection"
+  - rgid: 7882cea8-bd15-3ff7-a62a-f22f49c6a0c1
+    discogs: 102205
+    title: "Manic Street Preachers – The Holy Bible"
+  - rgid: da15737e-3eb3-31e4-97f0-fe46299f75fb
+    discogs: 10069
+    title: "Suede – Dog Man Star"
+  - rgid: 5afcfeac-118a-35e6-af0d-35ec9003354d
+    discogs: 57970
+    title: "The Notorious B.I.G. – Ready To Die"
+  - rgid: ea29c347-696f-3165-986d-7bad1394b178
+    discogs: 9298
+    title: "Jeff Buckley – Grace"
+  - rgid: 9f3f29eb-109b-3080-8705-a0be659e21cf
+    discogs: 22929
+    title: "Orbital – Snivilisation"
+  - rgid: fb3770f6-83fb-32b7-85c4-1f522a92287e
+    discogs: 22433
+    title: "Nirvana – MTV Unplugged In New York"
+  - rgid: 7c4cab8d-dead-3870-b501-93c90fd0a580
+    discogs: 3719
+    title: "Nine Inch Nails – The Downward Spiral"
+  - rgid: f9fa083f-db00-3048-99e7-5b186672bb09
+    discogs: 8596
+    title: "The Prodigy – Music For The Jilted Generation"
+  - rgid: 314cffd4-daa5-3337-85e5-e54165a96113
+    discogs: 33170
+    title: "Green Day – Dookie"
+  - rgid: 440c9ce8-8ce4-3103-a745-0b385ae70a34
+    discogs: 62100
+    title: "Foo Fighters – Foo Fighters"
+  - rgid: dcad245f-9d95-3751-9e69-d50ca399b46a
+    discogs: 26091
+    title: "Garbage – Garbage"
+  - rgid: c4482347-92da-3a29-8ed6-78655ed02f66
+    discogs: 80232
+    title: "Nightmares On Wax – Smokers Delight"
+  - rgid: 9fd2415f-182f-39c1-aa02-5acb36f99bef
+    discogs: 50297
+    title: "Tricky – Maxinquaye"
+  - rgid: ab981b48-9a7b-34c4-b46a-f6266317ce7c
+    discogs: 36531
+    title: "Chef Raekwon Guest Starring: Ghost Face Killer A/K/A Tony Starks – Only Built 4 Cuban Linx..."
+  - rgid: 1af599c9-0b44-3a5a-a06b-39e8db6b2b4e
+    discogs: 48721
+    title: "The Smashing Pumpkins – Mellon Collie And The Infinite Sadness"
+  - rgid: ef9bedc1-12c2-3f31-9712-059a4263e55f
+    discogs: 58810
+    title: "Rocket From The Crypt – Scream, Dracula, Scream!"
+  - rgid: 8fffd616-de95-3597-b1f2-211666cfc2dd
+    discogs: 23493
+    title: "The Chemical Brothers – Exit Planet Dust"
+  - rgid: cfc98a2a-6aaa-3dda-a01d-e034e56c4fec
+    discogs: 84798
+    title: "2Pac – Me Against The World"
+  - rgid: f1cbf448-c205-3642-a4c5-6042989d8ed4
+    discogs: 91194
+    title: "Elastica – Elastica"
+  - rgid: 6e796029-272d-3fe2-8ad0-d8a10ef80a66
+    discogs: 102437
+    title: "Supergrass – I Should Coco"
+  - rgid: b8048f24-c026-3398-b23a-b5e50716cbc7
+    discogs: 17008
+    title: "Radiohead – The Bends"
+  - rgid: 5cb308cd-3d5c-3682-b568-2fc374dc2ed7
+    discogs: 55999
+    title: "Guided By Voices – Alien Lanes"
+  - rgid: 4bf6210c-ecb3-3ad8-805f-a1ac55ebbe60
+    discogs: 234164
+    title: "Femi Kuti – Femi Kuti"
+  - rgid: 2e65b39d-405f-3b59-84ec-5f3e8e660b95
+    discogs: 20628
+    title: "The Verve – A Northern Soul"
+  - rgid: 6075a004-e983-3a00-8a13-50af32f0e200
+    discogs: 25167
+    title: "Genius / GZA – Liquid Swords"
+  - rgid: 88f69eab-8f07-343b-847c-b944ad33dfcf
+    discogs: 87137
+    title: "Pulp – Different Class"
+  - rgid: 9345480c-e2d2-3cb9-9205-88c8a70e911d
+    discogs: 66073
+    title: "Leftfield – Leftism"
+  - rgid: a4591f67-48d9-36ae-bc68-2deb954d0a15
+    discogs: 151760
+    title: "D'Angelo – Brown Sugar"
+  - rgid: cc7e6348-cc55-31fa-aeb2-748a46a81cb3
+    discogs: 52220
+    title: "Oasis – (What's The Story) Morning Glory?"
+  - rgid: 7a752bd0-8ef8-3811-96c9-5cf53535152e
+    discogs: 184569
+    title: "Goldie – Timeless"
+  - rgid: ee3d18ed-d6a8-37c7-a964-41bbdb6d59f1
+    discogs: 31513
+    title: "Alanis Morissette – Jagged Little Pill"
+  - rgid: 078d0c59-9b9b-3551-b2fa-dfa57a9fe9ae
+    discogs: 31954
+    title: "Screaming Trees – Dust"
+  - rgid: 69cadaa8-c952-3122-92d8-c4f41da065ac
+    discogs: 124773
+    title: "Super Furry Animals – Fuzzy Logic"
+  - rgid: 0af908c7-0ec7-3183-b677-1240f6e47b9c
+    discogs: 72881
+    title: "Fatboy Slim – Better Living Through Chemistry"
+  - rgid: b38e21f6-8f76-3f87-a021-e91afad9e7e5
+    discogs: 19375
+    title: "Dr. Octagon – Dr. Octagon"
+  - rgid: 1c51069d-4c59-4ddf-bd12-dacefada37c3
+    discogs: 30690
+    title: "Stereolab – Emperor Tomato Ketchup"
+  - rgid: 7bb7debb-bdcf-3991-aa19-2937a1ad4fa9
+    discogs: 3701
+    title: "Tortoise – Millions Now Living Will Never Die"
+  - rgid: df0bfd42-78a9-40c3-a45f-a12e10d446f8
+    discogs: 44998
+    title: "Beck! – Odelay"
+  - rgid: a36f3183-e862-3829-a4eb-b924264c76b6
+    discogs: 2543
+    title: "Belle And Sebastian – Tigermilk"
+  - rgid: 4b2186f5-ff00-3227-ae11-783ba93e1089
+    discogs: 15313
+    title: "DJ Shadow – Endtroducing....."
+  - rgid: 119a9488-9980-3645-be68-f50210a35a26
+    discogs: 111487
+    title: "Eels – Beautiful Freak"
+  - rgid: 4e972fc5-f217-378e-a0ff-ea8fa32d1d5e
+    discogs: 43787
+    title: "The Divine Comedy – Casanova"
+  - rgid: 82ba556e-99bf-380d-b9b5-5a97737f1cd1
+    discogs: 88829
+    title: "Fiona Apple – Tidal"
+  - rgid: 5aed5f2c-4b8a-35a7-9655-906e3ea72fa1
+    discogs: 81282
+    title: "Wilco – Being There"
+  - rgid: f625cd30-9427-360b-b63d-e294d23b1980
+    discogs: 57974
+    title: "Sepultura – Roots"
+  - rgid: bd3f1efd-d700-34e5-86f4-f528dcf25264
+    discogs: 52754
+    title: "Barry Adamson – Oedipus Schmoedipus"
+  - rgid: 3f7d2215-c754-3401-a9c6-4d3f8ec3dc03
+    discogs: 69493
+    title: "Fun Lovin' Criminals – Come Find Yourself"
+  - rgid: e8d49b88-b411-35f9-9e34-4370a9708ef2
+    discogs: 154280
+    title: "Maxwell – Maxwell's Urban Hang Suite"
+  - rgid: a9f71672-e2d5-304b-a6d9-348d9fdad11c
+    discogs: 70885
+    title: "The Charlatans – Tellin' Stories"
+  - rgid: c26969b8-13ce-3bb5-996a-eed9e21e1149
+    discogs: 102213
+    title: "Manic Street Preachers – Everything Must Go"
+  - rgid: d49f838a-5a6e-3f28-8984-269fc40a8a3c
+    discogs: 72865
+    title: "Everything But The Girl – Walking Wounded"
+  - rgid: 4030ac23-b953-33ee-9f31-35e9f3febf86
+    discogs: 18354
+    title: "Nick Cave And The Bad Seeds – Murder Ballads"
+  - rgid: 3ae18f4d-8a99-3dd1-b9d0-7275adc3bd92
+    discogs: 32062
+    title: "L.T.J Bukem – Logical Progression"
+  - rgid: c0b6864a-9de7-3a2e-897b-e07919cab0e4
+    discogs: 43556
+    title: "Underworld – Second Toughest In The Infants"
+  - rgid: 4c3b1b47-f80e-37da-a5a8-1fb1c0cb7cdd
+    discogs: 44140
+    title: "The Jon Spencer Blues Explosion – Now I Got Worry"
+  - rgid: 33a35fc0-1126-30c2-a046-b2803116f882
+    discogs: 50870
+    title: "The Cardigans – First Band On The Moon"
+  - rgid: 6cb17389-101a-3f0a-8864-bea548465406
+    discogs: 18009
+    title: "Marilyn Manson – Antichrist Superstar"
+  - rgid: dd2203dd-a149-316b-ad7f-a303dc4fc459
+    discogs: 124666
+    title: "Fugees – The Score"
+  - rgid: 2b87d240-123b-350c-a9e1-a4f6be883a99
+    discogs: 68092
+    title: "Ash – 1977"
+  - rgid: 66be5deb-75d5-3737-9037-1c745891d3ec
+    discogs: 2521
+    title: "Belle And Sebastian – If You're Feeling Sinister"
+  - rgid: fdd6c833-3c96-33cb-9917-72e15bcd34bc
+    discogs: 34508
+    title: "Blur – Blur"
+  - rgid: b1392450-e666-3926-a536-22c65f834433
+    discogs: 21491
+    title: "Radiohead – OK Computer"
+  - rgid: 3944908c-c3a3-30a3-9ec8-35262721184c
+    discogs: 47804
+    title: "Finley Quaye – Maverick A Strike"
+  - rgid: 45a68d94-6923-38c1-a6dd-4cfc1cdc193a
+    discogs: 81249
+    title: "Missy \"Misdemeanor\" Elliott – Supa Dupa Fly"
+  - rgid: 69f4aa7f-d760-3890-bd2a-902fb9abe40b
+    discogs: 23583
+    title: "The Chemical Brothers – Dig Your Own Hole"
+  - rgid: ed585ebf-919f-3a78-a985-c261f67b0aa4
+    discogs: 28345
+    title: "Primal Scream – Vanishing Point"
+  - rgid: aa501697-af7b-34c2-9276-03118977f9fe
+    discogs: 23627
+    title: "Robert Wyatt – Shleep"
+  - rgid: 65ee6fe4-2f93-3ec4-afca-801bc8fe6a3f
+    discogs: 31215
+    title: "David Holmes – Lets Get Killed"
+  - rgid: 209b45b7-8b2f-3e07-b194-efff9cde80dd
+    discogs: 64435
+    title: "Sleater-Kinney – Dig Me Out"
+  - rgid: ac9138ce-6331-3f8d-86d7-69f13e4ab4f4
+    discogs: 12165
+    title: "Prodigy – The Fat Of The Land"
+  - rgid: 32bbab8e-02c0-30d2-9e23-a19739864b84
+    discogs: 64210
+    title: "Buena Vista Social Club – Buena Vista Social Club"
+  - rgid: af11e225-96a0-3b42-8645-54d9e8906054
+    discogs: 18393
+    title: "Nick Cave & The Bad Seeds – The Boatman's Call"
+  - rgid: 381bcdcb-ec75-37b0-8201-f7bb16fa6583
+    discogs: 43775
+    title: "The Divine Comedy – A Short Album About Love"
+  - rgid: 070fb0a3-76ff-34fb-a892-19f6c7d303f6
+    discogs: 105359
+    title: "Cornershop – When I Was Born For The 7th Time"
+  - rgid: 00054665-89fa-33d5-a8f0-1728ea8c32c3
+    discogs: 26629
+    title: "Daft Punk – Homework"
+  - rgid: 1cd3a513-be39-373c-b56d-54a3fed5b928
+    discogs: 153584
+    title: "Robbie Williams – Life Thru A Lens"
+  - rgid: 1ea6ffaa-df4f-31cc-955f-0fc57a9cf864
+    discogs: 78000
+    title: "Mariah Carey – Butterfly"
+  - rgid: 67c36698-2a14-3f95-b9ea-75804a7f5a8e
+    discogs: 102447
+    title: "Supergrass – In It For The Money"
+  - rgid: dad1dada-1fda-3186-beb7-3bc80e90f9e0
+    discogs: 28277
+    title: "Bob Dylan – Time Out Of Mind"
+  - rgid: 70fe8c14-6a76-33d5-a4f4-e2cb5556611f
+    discogs: 73148
+    title: "Roni Size / Reprazent – New Forms"
+  - rgid: dfb85157-313b-3f5f-8739-a5162bcb6345
+    discogs: 6126
+    title: "Elliott Smith – Either / Or"
+  - rgid: 3dd0c8e4-af53-3605-9c20-f27c7635fb60
+    discogs: 20634
+    title: "The Verve – Urban Hymns"
+  - rgid: c88c77da-b9f9-34b9-abdf-ad3cec875aca
+    discogs: 30270
+    title: "Spiritualized® – Ladies And Gentlemen We Are Floating In Space"
+  - rgid: 53cd5789-ae30-3bee-9aeb-377265aaecad
+    discogs: 63604
+    title: "The Dandy Warhols – ...The Dandy Warhols Come Down"
+  - rgid: 49da924d-13fd-32be-8e22-7093f5ef400e
+    discogs: 28288
+    title: "Bob Dylan – Live 1966 (The \"Royal Albert Hall\" Concert)"
+  - rgid: 24a451c9-a8f3-33f9-a4fc-5e2d00cb7816
+    discogs: 92309
+    title: "Manu Chao – Clandestino"
+  - rgid: 9ae4e54c-ec74-3f15-823a-8302fc9a832d
+    discogs: 9603
+    title: "Billy Bragg & Wilco – Mermaid Avenue"
+  - rgid: fd350da8-c2a9-3f67-8ed8-91d0c40060c7
+    discogs: 14267
+    title: "Turbonegro – Apocalypse Dudes"
+  - rgid: 435fe38e-404c-3887-8300-cc94420a121c
+    discogs: 73726
+    title: "Fatboy Slim – You've Come A Long Way, Baby"
+  - rgid: 67c151dc-4702-3fdc-9bea-9b6256758e11
+    discogs: 152326
+    title: "David Gray – White Ladder"
+  - rgid: 493de006-33bf-3404-9bb7-1f3b0c22ce05
+    discogs: 87369
+    title: "Lucinda Williams – Car Wheels On A Gravel Road"
+  - rgid: 1ab343e8-490d-32a6-a6c8-1e56cf33c888
+    discogs: 87172
+    title: "Pulp – This Is Hardcore"
+  - rgid: cb93e87f-5d21-3447-a6e8-22d44f9b0d7a
+    discogs: 67803
+    title: "Madonna – Ray Of Light"
+  - rgid: 8691d12c-abd8-385c-b1eb-d841190124f7
+    discogs: 57279
+    title: "Lauryn Hill – The Miseducation Of Lauryn Hill"
+  - rgid: bdf37fad-7332-3efb-8e7e-073d1c756c7e
+    discogs: 43750
+    title: "Hole – Celebrity Skin"
+  - rgid: 09c61550-5780-3fb4-b5ec-8b873fe4e8a9
+    discogs: 21353
+    title: "Mercury Rev – Deserter's Songs"
+  - rgid: 97f37409-b91a-3495-8e70-56fd9f7658c2
+    discogs: 35599
+    title: "System Of A Down – System Of A Down"
+  - rgid: 17ee0d7f-4a9d-317f-a0b0-8ca528a34b19
+    discogs: 3209
+    title: "Queens Of The Stone Age – Queens Of The Stone Age"
+  - rgid: b0bf2b77-b8cf-32f6-8893-9741d757b400
+    discogs: 1622
+    title: "AIR French Band – Moon Safari"
+  - rgid: 1a203a3e-4663-3a09-a9d1-b3673f8949e5
+    discogs: 138752
+    title: "Talvin Singh – OK"
+  - rgid: e47ad139-89f6-39e8-aa84-fe84c45aeb7d
+    discogs: 32568
+    title: "Korn – Follow The Leader"
+  - rgid: 6d098cc2-5165-367e-9200-7afa2d019485
+    discogs: 328001
+    title: "Khaled – Kenza"
+  - rgid: 4a8ff174-fcd8-38d4-8ed3-a46334759251
+    discogs: 145988
+    title: "Kid Rock – Devil Without A Cause"
+  - rgid: 17d74d52-c92b-3b8d-9f87-218ab2d1c4a0
+    discogs: 1893
+    title: "Boards Of Canada – Music Has The Right To Children"
+  - rgid: 9fc9bf6f-4bb9-3b73-98b5-66f89bff6c82
+    discogs: 129782
+    title: "Suba – São Paulo Confessions"
+  - rgid: 955bc23e-4ae3-3623-a1ea-0f0ee6043055
+    discogs: 70042
+    title: "XTC – Apple Venus Volume 1"
+  - rgid: fd11c3c2-6f11-3a79-b6b4-f4256b899fa6
+    discogs: 47384
+    title: "Skunk Anansie – Post Orgasmic Chill"
+  - rgid: 387aca0c-d34a-3d0c-b7e4-c1b0f73e2dae
+    discogs: 59132
+    title: "Incubus – Make Yourself"
+  - rgid: 5dfac852-1aed-35b2-93b6-e8f9c93fe521
+    discogs: 22493
+    title: "The Magnetic Fields – 69 Love Songs"
+  - rgid: d96bd9ec-329a-3740-9eb5-e65257445afa
+    discogs: 33515
+    title: "Travis – The Man Who"
+  - rgid: 5140eef4-5b5d-309c-a3aa-5c5da107b1da
+    discogs: 53314
+    title: "Slipknot – Slipknot"
+  - rgid: e11d0dc5-1fff-3eec-bcea-803bee9578d9
+    discogs: 74454
+    title: "Beth Orton – Central Reservation"
+  - rgid: 4a65b47b-8ef9-3295-ad4e-a7c93294259b
+    discogs: 46677
+    title: "Nitin Sawhney – Beyond Skin"
+  - rgid: 3b74156f-e774-37bb-b4b9-a820a145d865
+    discogs: 92398
+    title: "Death In Vegas – The Contino Sessions"
+  - rgid: 7f6a4e72-9fee-39db-8817-63425f97a0f5
+    discogs: 82202
+    title: "Moby – Play"
+  - rgid: 1a021034-95d1-3a2d-bdca-73b25e455e49
+    discogs: 114223
+    title: "The Flaming Lips – The Soft Bulletin"
+  - rgid: 6d267ba8-89c3-3eef-84bd-a225e6f59000
+    discogs: 12628
+    title: "Les Rythmes Digitales – Darkdancer"
+  - rgid: 116d142c-e7fd-3902-8ca5-0d4999abd00e
+    discogs: 96921
+    title: "Le Tigre – Le Tigre"
+  - rgid: be725de4-4633-3c8a-9a03-f2c4392b6e0d
+    discogs: 12172
+    title: "Eminem – The Slim Shady LP"
+  - rgid: faeb8741-2ca0-3ca6-8a1a-70bab1e67c82
+    discogs: 27117
+    title: "Britney Spears – ...Baby One More Time"
+  - rgid: 49371adc-871d-38f6-bb60-fd9e5af6795f
+    discogs: 8928
+    title: "Metallica With Michael Kamen Conducting The San Francisco Symphony Orchestra – S&M"
+  - rgid: ed247591-9a60-3d95-906c-2d1eae52639b
+    discogs: 8028
+    title: "Bonnie 'Prince' Billy – I See A Darkness"
+  - rgid: cf351133-87b1-3f74-9ee4-97bd3fb6956a
+    discogs: 35084
+    title: "Shack – H.M.S. Fable"
+  - rgid: 3ce95abe-66f2-4e21-a365-0a4766e33e30
+    discogs: 31132
+    title: "Basement Jaxx – Remedy"
+  - rgid: ca5dfcc3-83fb-3eee-9061-c27296b77b2c
+    discogs: 42546
+    title: "Red Hot Chili Peppers – Californication"
+  - rgid: 62b427b8-1c52-34e7-b250-da2aa3e44860
+    discogs: 9621
+    title: "Sigur Rós – Ágætis Byrjun"
+  - rgid: ae6595fb-a53c-340f-97a1-cff821300fec
+    discogs: 109874
+    title: "Doves – Lost Souls"
+  - rgid: 80aa8257-7bc5-39c0-87e1-95941e4c746c
+    discogs: 58634
+    title: "AIR – Original Motion Picture Score For The Virgin Suicides"
+  - rgid: 66571bda-46b6-3384-8ebb-7d09a1b1f169
+    discogs: 20701
+    title: "Ryan Adams – Heartbreaker"
+  - rgid: 84afe68c-10a8-38cd-9157-3a327257449d
+    discogs: 81920
+    title: "Bebel Gilberto – Tanto Tempo"
+  - rgid: b2bcd09d-d66b-36c8-afcb-0d448b1127d9
+    discogs: 8298
+    title: "MJ Cole – Sincere"
+  - rgid: c09bf526-416d-3f9c-8291-8794cef83d87
+    discogs: 154841
+    title: "Emmylou Harris – Red Dirt Girl"
+  - rgid: 55203b2f-314b-39c2-9e48-56a95e41a337
+    discogs: 65448
+    title: "Limp Bizkit – Chocolate Starfish And The Hot Dog Flavored Water"
+  - rgid: e75c0549-ad55-39e3-8025-c72c5d4a3c5d
+    discogs: 21501
+    title: "Radiohead – Kid A"
+  - rgid: 88c59b55-200d-3ac1-beff-8eb99830807e
+    discogs: 32791
+    title: "U2 – All That You Can't Leave Behind"
+  - rgid: b5b4bb4b-8ba5-3acf-88cb-4cae2699d8da
+    discogs: 74519
+    title: "Linkin Park – Hybrid Theory"
+  - rgid: 2fd75c21-7a92-3bcc-b045-d5bab5c36d11
+    discogs: 6163
+    title: "Elliott Smith – Figure 8"
+  - rgid: b53623c2-266f-393f-9bc5-71eaac3b5a31
+    discogs: 55605
+    title: "Badly Drawn Boy – The Hour Of Bewilderbeast"
+  - rgid: 71641af7-d122-326a-b0bb-f76a8d09810c
+    discogs: 52673
+    title: "P J Harvey – Stories From The City, Stories From The Sea"
+  - rgid: 25bdfd28-72ca-3d1f-88fc-dcf67df91720
+    discogs: 68130
+    title: "eryKahBadu – Mama's Gun"
+  - rgid: 1dc4c347-a1db-32aa-b14f-bc9cc507b843
+    discogs: 3334
+    title: "Coldplay – Parachutes"
+  - rgid: fabc3ec9-2656-3a98-8fdd-4bc40a9ca8ba
+    discogs: 32409
+    title: "Common – Like Water For Chocolate"
+  - rgid: c0ea5f23-70ad-373e-9ca5-5eaeaf00c0ce
+    discogs: 137222
+    title: "Mike Ladd – Welcome To The Afterfuture"
+  - rgid: 8249245b-4379-3ec5-8c12-fb07cc664267
+    discogs: 45260
+    title: "Red Snapper – Our Aim Is To Satisfy Red Snapper"
+  - rgid: b0fa91c8-0996-38f1-ab84-797f58d7c4eb
+    discogs: 12236
+    title: "Eminem – The Marshall Mathers LP"
+  - rgid: 4999b316-bacf-3bf9-9cf9-07c4ebae470a
+    discogs: 37121
+    title: "Goldfrapp – Felt Mountain"
+  - rgid: 2b10653e-655d-34fe-9db4-77242d817a17
+    discogs: 145506
+    title: "Giant Sand – Chore Of Enchantment"
+  - rgid: 4ae785f1-e986-3909-ab99-30e32024f94a
+    discogs: 35062
+    title: "Lambchop – Nixon"
+  - rgid: c1117d6c-1d65-3321-a3de-530834adf338
+    discogs: 237860
+    title: "Ute Lemper – Punishing Kiss"
+  - rgid: 0a0808d5-8f78-382f-87af-f9d6fedf3f68
+    discogs: 34721
+    title: "Madonna – Music"
+  - rgid: 28438e4f-3710-459f-a332-a1eba9dd1f26
+    discogs: 94960
+    title: "The Avalanches – Since I Left You"
+  - rgid: 00d2cd53-21c9-3738-b683-56847b7b0040
+    discogs: 26124
+    title: "OutKast – Stankonia"
+  - rgid: bca9280e-28b4-327f-8fe0-fd918579e486
+    discogs: 2507
+    title: "Radiohead – Amnesiac"
+  - rgid: 3a7abbe0-2134-34f3-ae51-811b783e0f26
+    discogs: 91227
+    title: "Silver Jews – Bright Flight"
+  - rgid: 271faeb3-fdd1-3ebb-80aa-97b3116e9341
+    discogs: 37082
+    title: "Björk – Vespertine"
+  - rgid: b0405d2a-5720-340a-bb56-4e135d031cc2
+    discogs: 57988
+    title: "Gorillaz – Gorillaz"
+  - rgid: 4c7d8cfb-0678-38a4-ac3b-8ff98705a6b5
+    discogs: 20691
+    title: "Ryan Adams – Gold"
+  - rgid: 9def6672-e304-36f1-9d32-59ab846d1da8
+    discogs: 41046
+    title: "Destiny's Child – Survivor"
+  - rgid: efea26d1-a016-30f6-b8e2-bc8c02336b0a
+    discogs: 12347
+    title: "The Strokes – Is This It"
+  - rgid: 4f9a9d35-b16d-3b7b-80d0-32b29683633f
+    discogs: 87360
+    title: "Gillian Welch – Time (The Revelator)"
+  - rgid: 1866c2af-03f2-3bb1-a61b-41f68951ee25
+    discogs: 124770
+    title: "Gotan Project – La Revancha Del Tango"
+  - rgid: c5a0411f-374e-360d-9364-3ddec3007162
+    discogs: 10332
+    title: "The White Stripes – White Blood Cells"
+  - rgid: 34c62e23-de6c-36ba-afa0-8d91086d22c2
+    discogs: 148445
+    title: "The Beta Band – Hot Shots II"
+  - rgid: 11ae8c9c-27c1-3308-9761-edb87c8f54ea
+    discogs: 46989
+    title: "Jay-Z – The Blueprint"
+  - rgid: 95d72e72-55b2-3408-8d76-cce7abad3836
+    discogs: 30112
+    title: "Röyksopp – Melody A.M."
+  - rgid: 1974b728-bad0-3406-9863-5da1094ed243
+    discogs: 210513
+    title: "Drive-By Truckers – Southern Rock Opera"
+  - rgid: 53463422-40a6-36d1-a637-43c1f233bbcf
+    discogs: 124780
+    title: "Super Furry Animals – Rings Around The World"
+  - rgid: 3ec846cc-e07a-3734-836c-822d10ab10d0
+    discogs: 19553
+    title: "Jurassic 5 – Power In Numbers"
+  - rgid: 95f2ba4b-2dd9-38d1-8158-a416a391489c
+    discogs: 10363
+    title: "Wilco – Yankee Hotel Foxtrot"
+  - rgid: 40716dae-d035-3e99-aded-581a1c811945
+    discogs: 153558
+    title: "Ms. Dynamite – A Little Deeper"
+  - rgid: 56d42e63-7052-325d-a46d-adf95ca55747
+    discogs: 141397
+    title: "The Bees – Sunshine Hit Me"
+  - rgid: 6ccac9d2-22ed-33de-bd5d-f2aadcacf7f8
+    discogs: 102288
+    title: "Norah Jones – Come Away With Me"
+  - rgid: 120c786d-a3b2-3c19-b4ff-2b7b3b4435bf
+    discogs: 3354
+    title: "Coldplay – A Rush Of Blood To The Head"
+  - rgid: 1bc78730-eb94-311e-ab40-969c29619ef1
+    discogs: 30398
+    title: "The Coral – The Coral"
+  - rgid: aca4ccc8-5d1b-361e-ab21-396b2c6d42d3
+    discogs: 27768
+    title: "Johnny Cash – American IV: The Man Comes Around"
+  - rgid: 54b1ad4e-7e86-308d-b053-a0843f6abbdb
+    discogs: 114267
+    title: "The Flaming Lips – Yoshimi Battles The Pink Robots"
+  - rgid: 91b37425-6d27-3cbc-b8a4-589e44cd968f
+    discogs: 109902
+    title: "Doves – The Last Broadcast"
+  - rgid: 596090bc-cdfa-347e-96a5-d253848d3b37
+    discogs: 136443
+    title: "Missy Elliott – Under Construction"
+  - rgid: d19453c0-cd72-3468-b110-0f898c111e5e
+    discogs: 27201
+    title: "Bruce Springsteen – The Rising"
+  - rgid: 46feff2b-8218-3432-8a01-a6082b4c93d4
+    discogs: 101315
+    title: "Christina Aguilera – Stripped"
+  - rgid: 98277141-0f63-3796-894a-11409d1377c4
+    discogs: 39900
+    title: "The Roots – Phrenology"
+  - rgid: 5f84e8b9-b8e5-3fbf-b514-0192a62d88b6
+    discogs: 45312
+    title: "Beck – Sea Change"
+  - rgid: 424620c6-e416-3ce8-bfcc-d5c59952456d
+    discogs: 90819
+    title: "Justin Timberlake – Justified"
+  - rgid: e7981a9a-bec8-33a3-b803-de187aa67f14
+    discogs: 127910
+    title: "The Vines – Highly Evolved"
+  - rgid: 1a6ebdb6-bfac-34cd-8d76-7a887ab27ded
+    discogs: 29269
+    title: "The Hives – Your New Favourite Band"
+  - rgid: 5c14fd50-a2f1-3672-9537-b0dad91bea2f
+    discogs: 16962
+    title: "Radiohead – Hail To The Thief"
+  - rgid: 9a9d41e9-2080-3293-8676-9e26f44a05b1
+    discogs: 51290
+    title: "Amy Winehouse – Frank"
+  - rgid: a22417bc-7068-3caa-8572-52af24a486eb
+    discogs: 64032
+    title: "Calexico – Feast Of Wire"
+  - rgid: 00edead2-61f0-3122-9f23-7c741c1f39cf
+    discogs: 52484
+    title: "The Darkness – Permission To Land"
+  - rgid: d85b9684-4277-3565-b89b-115c8b4b7fd3
+    discogs: 10341
+    title: "The White Stripes – Elephant"
+  - rgid: 01ac6115-0ea4-346d-b022-5bcde31c6264
+    discogs: 37683
+    title: "Dizzee Rascal – Boy In Da Corner"
+  - rgid: dd793060-5ae7-3353-8586-16c94c32171c
+    discogs: 123916
+    title: "Kings Of Leon – Youth & Young Manhood"
+  - rgid: 03937e2a-9143-3bce-87d3-08bd392f2800
+    discogs: 154687
+    title: "The Thrills – So Much For The City"
+  - rgid: e8e2d824-dd32-3b24-9c7c-24619fbe86a9
+    discogs: 33406
+    title: "Yeah Yeah Yeahs – Fever To Tell"
+  - rgid: fa64febd-61e0-346e-aaa2-04564ed4f0a3
+    discogs: 26106
+    title: "OutKast – Speakerboxxx / The Love Below"
+  - rgid: f624ead2-e4ba-4e52-bea5-4362b1c67b14
+    discogs: 34201
+    title: "50 Cent – Get Rich Or Die Tryin'"
+  - rgid: 605124dd-0f2a-382b-a8ba-720658c1fe45
+    discogs: 9154
+    title: "The Mars Volta – De-Loused In The Comatorium"
+  - rgid: 8eecdf24-c5a4-3d74-8a81-80b59cd8e7aa
+    discogs: 20737
+    title: "Lightning Bolt – Wonderful Rainbow"
+  - rgid: b226aaa9-f69a-3fd9-b31b-c3ada1ea2870
+    discogs: 102411
+    title: "Rufus Wainwright – Want One"
+  - rgid: 9235cafc-3083-33c7-bfee-ed9f0828b6de
+    discogs: 78220
+    title: "Scissor Sisters – Scissor Sisters"
+  - rgid: a7b797f2-7ada-30be-9d94-7b4687a3e450
+    discogs: 4586
+    title: "Morrissey – You Are The Quarry"
+  - rgid: 4b2ee53c-6527-30e5-940c-c426a7a6f618
+    discogs: 39459
+    title: "Björk – Medúlla"
+  - rgid: 78b95d1b-47b5-3247-a10f-c46318354e05
+    discogs: 53063
+    title: "Mylo – Destroy Rock & Roll"
+  - rgid: 7eea3a40-7c24-34f9-aa48-958edb5145c5
+    discogs: 116628
+    title: "Brian Wilson – Smile"
+  - rgid: cd30b700-b873-347d-a666-36e2790195fd
+    discogs: 47041
+    title: "The Icarus Line – Penance Soirée"
+  - rgid: 05affa96-5959-32da-8d75-1c9eb985ca59
+    discogs: 1945
+    title: "Arcade Fire – Funeral"
+  - rgid: 964fe50c-8bb3-3086-98ac-88f92cbec56a
+    discogs: 39802
+    title: "Devendra Banhart – Rejoicing In The Hands"
+  - rgid: f0ffb9ec-fcb5-3e03-9a1b-3f018472d831
+    discogs: 23104
+    title: "Nick Cave & The Bad Seeds – Abattoir Blues / The Lyre Of Orpheus"
+  - rgid: c145ca26-2556-3780-828f-82729de51f7b
+    discogs: 4334
+    title: "Franz Ferdinand – Franz Ferdinand"
+  - rgid: 0dd2b372-622f-3f4e-843e-456b0d1da815
+    discogs: 138227
+    title: "NERD – Fly Or Die"
+  - rgid: e0721394-af15-3e16-a3bd-2a8cb1b9740d
+    discogs: 148450
+    title: "The Beta Band – Heroes To Zeros"
+  - rgid: 75e20106-9ce2-3145-ad87-e4f17bea575c
+    discogs: 51552
+    title: "Ozomatli – Street Signs"
+  - rgid: 95524ec1-dfa4-3da0-8e45-6ef9d229a2e2
+    discogs: 12351
+    title: "The Libertines – The Libertines"
+  - rgid: 8a01217e-6947-3927-a39b-6691104694f1
+    discogs: 6983
+    title: "Kanye West – The College Dropout"
+  - rgid: 9a839f47-ad2b-32bd-b794-b339d0b3b587
+    discogs: 100887
+    title: "Cee-Lo Green – Cee-Lo Green... Is The Soul Machine"
+  - rgid: e73c84f5-8d7f-3518-901f-e345296ce59a
+    discogs: 38412
+    title: "TV On The Radio – Desperate Youth, Blood Thirsty Babes"
+  - rgid: 315cb93b-deab-3b3a-b3df-763060807feb
+    discogs: 43399
+    title: "Liars – They Were Wrong, So We Drowned"
+  - rgid: 606032a2-ec19-32ca-a7c9-17a32dea72ae
+    discogs: 44299
+    title: "The Streets – A Grand Don't Come For Free"
+  - rgid: 8ce746e3-85f3-32b9-a8f9-b15942504549
+    discogs: 102413
+    title: "Rufus Wainwright – Want Two"
+  - rgid: 54c4a19d-f8ef-376f-a927-df3e1c5f0a06
+    discogs: 98516
+    title: "The Zutons – Who Killed...... The Zutons"
+  - rgid: e8c09b4e-33ae-368b-8f70-24b4e14fb9ad
+    discogs: 71471
+    title: "The Killers – Hot Fuss"
+  - rgid: d8dcba72-fe4f-314e-ab75-c96f51137be2
+    discogs: 123919
+    title: "Kings Of Leon – Aha Shake Heartbreak"
+  - rgid: de9bf827-a9b0-348b-a7c9-556c03c3fb07
+    discogs: 33161
+    title: "Green Day – American Idiot"
+  - rgid: 32d38e25-27e8-45bc-b79b-931f5a609546
+    discogs: 80899
+    title: "M.I.A. – Arular"
+  - rgid: e49e2f8a-94c0-3dcf-8ce6-9bc52a1a7867
+    discogs: 45392
+    title: "Beck – Guero"
+  - rgid: e6960f09-7b61-370e-9f42-71bb4be41af1
+    discogs: 10348
+    title: "The White Stripes – Get Behind Me Satan"
+  - rgid: 93b891c9-4fc4-3085-960e-5da4c7fe8113
+    discogs: 32461
+    title: "Common – Be"
+  - rgid: c16b9d8e-60e5-3947-a13f-cb9233138510
+    discogs: 146714
+    title: "Richard Hawley – Coles Corner"
+  - rgid: 63373d83-a96e-355c-aa44-837db92c2193
+    discogs: 3569
+    title: "Antony And The Johnsons – I Am A Bird Now"
+  - rgid: 1fb75447-c513-38c4-ad8f-1bfc441aa74c
+    discogs: 14863
+    title: "Sufjan Stevens – Illinois"
+  - rgid: 4d484e44-90eb-364a-8175-b9afe668a716
+    discogs: 169613
+    title: "Ali Farka Toure – Savane"
+  - rgid: af2e8e23-e9c3-4e67-8ad8-66387c5898fd
+    discogs: 11079
+    title: "Muse – Black Holes & Revelations"
+  - rgid: 6c9c4985-3628-3070-b956-b538f30c9bea
+    discogs: 76279
+    title: "Arctic Monkeys – Whatever People Say I Am, That's What I'm Not"
+  - rgid: 6eac2e57-ee50-36f8-b0c4-c4c847a2c098
+    discogs: 51256
+    title: "Amy Winehouse – Back To Black"
+  - rgid: 3d19dd5c-9a0e-35c4-aeb8-c64ea898f1b6
+    discogs: 114546
+    title: "Lupe Fiasco – Lupe Fiasco's Food & Liquor"
+  - rgid: 67de538c-a1e0-39d0-91dd-c9d29e72e06c
+    discogs: 24966
+    title: "Ghostface Killah – Fishscale"
+  - rgid: 909875a2-dced-346f-a341-b0c3bbd4b8b7
+    discogs: 101325
+    title: "Christina Aguilera – Back To Basics"
+  - rgid: 34315f68-08a5-3637-8da7-deaad8f45514
+    discogs: 9309
+    title: "Joanna Newsom – Ys"
+  - rgid: c091b282-aa91-3bc0-9c95-938db1f1f930
+    discogs: 5410
+    title: "Arcade Fire – Neon Bible"
+  - rgid: a2c5066c-eed0-374d-b259-59420f2cfa23
+    discogs: 43941
+    title: "The Good, The Bad & The Queen – The Good, The Bad & The Queen"
+  - rgid: 5cbcdd9f-4b7d-3b3c-b9f2-6b0e75971157
+    discogs: 42446
+    title: "LCD Soundsystem – Sound Of Silver"
+  - rgid: 6e335887-60ba-38f0-95af-fae7774336bf
+    discogs: 21520
+    title: "Radiohead – In Rainbows"
+  - rgid: 44261ea6-06cf-3fd3-a05c-42dee49c295a
+    discogs: 80900
+    title: "MIA – Kala"
+  - rgid: 867d4882-4e8e-3acd-8134-66f19bcca915
+    discogs: 35065
+    title: "Justice – †"
+  - rgid: e46c2970-bc74-3f6e-add9-fcf8e87a5c4f
+    discogs: 41642
+    title: "Klaxons – Myths Of The Near Future"
+  - rgid: 079898f3-6d37-3244-8669-7e963606d798
+    discogs: 37229
+    title: "Goldfrapp – Seventh Tree"
+  - rgid: e7750214-a944-370f-a68e-99e63cda4758
+    discogs: 81185
+    title: "Elbow – The Seldom Seen Kid"
+  - rgid: 163339ab-813b-3d29-bba8-e1d5acf63cab
+    discogs: 5496
+    title: "Portishead – Third"
+  - rgid: 6a75b970-84c9-3794-bafd-261f82f1343c
+    discogs: 53293
+    title: "Slipknot – All Hope Is Gone"
+  - rgid: 572aeb84-6e76-3dc6-aea0-bf37ae6584c6
+    discogs: 43214
+    title: "TV On The Radio – Dear Science"
+  - rgid: af9a5099-04c5-3aaf-b0d1-fa160bd92e02
+    discogs: 72463
+    title: "Fleet Foxes – Fleet Foxes"
+  - rgid: d2d0a1a8-aafc-3f92-93b9-a327f23590cb
+    discogs: 46293
+    title: "Q-Tip – The Renaissance"
+  - rgid: f7da2770-bf72-3dea-8904-ff6135822724
+    discogs: 26303
+    title: "MGMT – Oracular Spectacular"
+  - rgid: 67caf928-e13e-35fb-9faf-2777c007d59f
+    discogs: 170653
+    title: "Bill Callahan – Sometimes I Wish We Were An Eagle"
+  - rgid: 7a23bc7e-d7bd-3a22-a38d-7d1f793bae1c
+    discogs: 123931
+    title: "Kings Of Leon – Only By The Night"
+  - rgid: 9978ebdd-ac50-34ac-af53-c926aca854a5
+    discogs: 149187
+    title: "The Last Shadow Puppets – The Age Of The Understatement"
+  - rgid: 02cfef8f-1d10-49b5-976d-dcbe5376e8b0
+    discogs: 208670
+    title: "Wild Beasts – Two Dancers"
+  - rgid: 94d5731b-1240-38f2-b232-2ad9ffa5442d
+    discogs: 107989
+    title: "Grizzly Bear – Veckatimest"
+  - rgid: 5ed697c6-32fe-3ef1-a4ba-adc295304a13
+    discogs: 8182
+    title: "Fever Ray – Fever Ray"
+  - rgid: b059890c-d415-3e65-aaed-52c810565922
+    discogs: 5248
+    title: "Animal Collective – Merriweather Post Pavilion"
+  - rgid: 08e1a593-cbce-3943-8a90-79c4d8c2b693
+    discogs: 33496
+    title: "Yeah Yeah Yeahs – It's Blitz!"
+  - rgid: 3e7bd1f6-f27d-3514-bb34-955d00eb6533
+    discogs: 190511
+    title: "Dirty Projectors – Bitte Orca"
+  - rgid: 23355caf-a543-4b5f-80fe-449101868fc1
+    discogs: 175869
+    title: "The XX – xx"
+  - rgid: 1ce57f6a-62c8-4017-ad38-3339f542faae
+    discogs: 246228
+    title: "The National – High Violet"
+  - rgid: 4114f899-a9d2-48a8-b597-8a5ca8bb6847
+    discogs: 220456
+    title: "Beach House – Teen Dream"
+  - rgid: 2a2b851c-bba6-4584-80c0-19af4a55e286
+    discogs: 248620
+    title: "The Black Keys – Brothers"
+  - rgid: 5d6e21e1-deb5-428e-bb42-c2a567f3619b
+    discogs: 288153
+    title: "Kanye West – My Beautiful Dark Twisted Fantasy"
+  - rgid: 35ff2371-1c51-4556-a6a7-4430418f67af
+    discogs: 252986
+    title: "John Grant – Queen Of Denmark"
+  - rgid: 7c5bb286-ac24-443c-81cc-4f5f6261c343
+    discogs: 260095
+    title: "Janelle Monáe – The ArchAndroid"
+  - rgid: d03a3ae3-4a33-4c50-8501-00710070549c
+    discogs: 278175
+    title: "Deerhunter – Halcyon Digest"
+  - rgid: bf306022-c851-449d-a619-7864caddf5c7
+    discogs: 264742
+    title: "Arcade Fire – The Suburbs"
+  - rgid: 9d504fde-1b02-4c14-b484-bcf94570153a
+    discogs: 310242
+    title: "PJ Harvey – Let England Shake"
+  - rgid: e4174758-d333-4a8e-a31f-dd0edd51518e
+    discogs: 303567
+    title: "Adele – 21"
+  - rgid: d691cc08-459b-49a5-beb2-3a73530ae23e
+    discogs: 342678
+    title: "White Denim – D"
+  - rgid: 499c19c8-0dab-4824-884b-6191d145e95b
+    discogs: 484590
+    title: "Kendrick Lamar – Good Kid, M.A.A.D City"
+  - rgid: f2ff04ec-0e7f-4c3c-bee4-ccb32a597f2c
+    discogs: 444800
+    title: "Hot Chip – In Our Heads"
+  - rgid: f8f4167d-897c-4b25-a171-638374d1dfa4
+    discogs: 454284
+    title: "Frank Ocean – Channel Orange"
+  - rgid: dd7f2b3e-dcc6-4b7c-b8fd-7f73eb4bd66a
+    discogs: 416564
+    title: "Django Django – Django Django"
+  - rgid: 37f48931-e5e6-488f-a531-ad2db311158d
+    discogs: 429037
+    title: "Jack White – Blunderbuss"
+  - rgid: 46211613-b2c8-4a00-a5ac-c6a8c8226119
+    discogs: 518127
+    title: "My Bloody Valentine – m b v"
+  - rgid: c20be759-d767-4a7c-96c5-7a870ebc3a30
+    discogs: 530238
+    title: "David Bowie – The Next Day"
+  - rgid: 5d4d0f2d-9be7-4922-bc9a-cbd2880b12c2
+    discogs: 567491
+    title: "Kanye West – Yeezus"
+  - rgid: b2cbaa83-cb77-4961-8ca3-816b24e5204f
+    discogs: 599191
+    title: "Chvrches – The Bones Of What You Believe"
+  - rgid: 8596171e-23b2-4bdd-8f1c-11960df0ecbe
+    discogs: 631282
+    title: "Beyoncé – Beyoncé"
+  - rgid: 4d9ec1c2-58ec-48a4-aa0a-916718adead0
+    discogs: 750386
+    title: "Taylor Swift – 1989"
+  - rgid: c390b47b-71c0-461d-b563-e5344b4f84e5
+    discogs: 718519
+    title: "FKA Twigs – LP1"
+  - rgid: 5537624c-3d2f-4f5c-8099-df916082c85c
+    discogs: 912912
+    title: "Adele – 25"
+  - rgid: 943b191f-616f-4091-8516-0979987b5eef
+    discogs: 664824
+    title: "The War On Drugs – Lost In The Dream"
+  - rgid: 73efadfc-07db-42bd-81ab-7a35a2601990
+    discogs: 789040
+    title: "Björk – Vulnicura"
+  - rgid: f7f190c5-85fd-45af-a7a2-825804d53ee4
+    discogs: 803405
+    title: "Songhoy Blues – Music In Exile"
+  - rgid: d9103c72-3807-4378-9ce7-b6f3e8fdd547
+    discogs: 810214
+    title: "Kendrick Lamar – To Pimp A Butterfly"
+  - rgid: 1fd18f5b-9a92-41fd-a590-da6b5cc60d85
+    discogs: 939598
+    title: "David Bowie – ★ (Blackstar)"
+  - rgid: 99599db8-0e36-4a93-b0e8-350e9d7502a9
+    discogs: 1076867
+    title: "Leonard Cohen – You Want It Darker"
+  - rgid: 8f7e23d4-8b15-491f-b006-4a9ff5a41229
+    discogs: 1116486
+    title: "The XX – I See You"
+  - rgid: 7f10475f-794c-4612-9f9c-71446a5c3fdf
+    discogs: 1061011
+    title: "Skepta – Konnichiwa"
+  - rgid: 331a7ba1-fae2-4881-b434-554f46c13746
+    discogs: 1071880
+    title: "Solange – A Seat At The Table"
+  - rgid: eafc91d4-5a7d-4563-beb8-5019de5c2397
+    discogs: 1183211
+    title: "Jane Weaver – Modern Kosmology"
+  - rgid: bfedb7ca-9067-4cdb-8921-1f0cd920f2e9
+    discogs: 1230243
+    title: "LCD Soundsystem – American Dream"
+  - rgid: 668e80e0-b35e-4471-9788-0a3d797fe42c
+    discogs: 1196330
+    title: "Lorde – Melodrama"
+  - rgid: f0c89a63-6cb0-4b5f-9ced-79396b58a191
+    discogs: 1140592
+    title: "Thundercat – Drunk"
+  - rgid: 72ff5e97-05c4-493a-8aea-3bad435a6fd0
+    discogs: 1247478
+    title: "Kelela – Take Me Apart"
+  - rgid: 8f892c1b-0709-4cf4-9711-493892a9eb9b
+    discogs: 1193369
+    title: "SZA – Ctrl"
+  - rgid: 512befc1-b7a3-416d-b44c-684810fb1ab8
+    discogs: 1308213
+    title: "Hookworms – Microshift"
+  - rgid: 1fb1b4bf-2148-4dc1-84c3-ae846933b8c6
+    discogs: 1426086
+    title: "Christine And The Queens – Chris"
+  - rgid: 56713bde-f9de-4097-bbe3-41d9d7af32c4
+    discogs: 1338231
+    title: "Kacey Musgraves – Golden Hour"
+  - rgid: c41347b7-c93c-42d8-825b-529c7de0bed2
+    discogs: 1510205
+    title: "Little Simz – Grey Area"
+  - rgid: 042fe94f-5846-469c-a739-38a9e0574d5c
+    discogs: 1628873
+    title: "Michael Kiwanuka – Kiwanuka"
+  - rgid: 99fc75a4-3ff2-4248-9ae2-65d7026c7296
+    discogs: 1619220
+    title: "Nick Cave And The Bad Seeds – Ghosteen"
+  - rgid: 882db6d8-e28b-46ba-8a30-277e86fbddf7
+    discogs: 1719775
+    title: "Fiona Apple – Fetch The Bolt Cutters"
+  - rgid: 3024784e-af94-4ff7-9755-d5df24556e37
+    discogs: 1759932
+    title: "Sault – Untitled (Black Is)"
+  - rgid: e86d6219-f5a2-4edd-bf2b-3f9eab190ae0
+    discogs: 1863903
+    title: "Taylor Swift – Evermore"
+  - rgid: b76289b0-605e-495e-b9f4-80437b70c94e
+    discogs: 2030455
+    title: "Lana Del Rey – Chemtrails Over The Country Club"
+  - rgid: 912cb15a-5f34-46cd-b59b-ab1912ab6e45
+    discogs: 2411860
+    title: "Jazmine Sullivan – Heaux Tales"
+  - rgid: d2be3115-311a-406c-ae69-873e26dec3cf
+    discogs: 2677310
+    title: "Nova Twins – Supernova"
+  - rgid: 0e68df76-a5fc-4d70-9ff6-e71e2ad83330
+    discogs: 2813969
+    title: "Alvvays – Blue Rev"
+  - rgid: 26b9191a-d4e5-4c92-a3c5-6749a5ac83a2
+    discogs: 3267886
+    title: "Rolling Stones – Hackney Diamonds"
+  - rgid: 0eb13d65-b2a3-4b1b-9a2e-da61d6ba55e5
+    discogs: 3231511
+    title: "The Chemical Brothers – For That Beautiful Feeling"
+  - rgid: 9eae5bc4-4c1c-4a6c-9aeb-145eb02f2a03
+    discogs: 3468085
+    title: "St. Vincent – All Born Screaming"
+  - rgid: 97650540-f489-40e1-957c-6fd67baa739d
+    discogs: 3642207
+    title: "The Cure – Songs Of A Lost World"
+  - rgid: e0fdb431-0109-420d-8a37-f99eaeb4d671
+    discogs: 3505440
+    title: "Charli XCX – Brat"
+  - rgid: 02a544b3-0459-42c7-bd9c-047162e7b67a
+    discogs: 3487663
+    title: "Billie Eilish – Hit Me Hard And Soft"
+  - rgid: 460cc582-3374-4517-8196-79b0b8889ded
+    discogs: 3737931
+    title: "jasmine.4.t – You Are The Morning"
+  - rgid: fa50502f-1746-4299-b56a-2f8340b9ae46
+    discogs: 3722559
+    title: "Ela Minus – Día"
+  - rgid: b317fe27-f11b-4a15-b9fa-40c26e0888e5
+    discogs: 4098406
+    title: "Mon Rovîa – Bloodline"
+  - rgid: c0420634-f27d-4d43-a07d-a8d6dafc83a4
+    discogs: 4108093
+    title: "Poppy – Empty Hands"
+  - rgid: 8a03034e-d5be-4d37-a32c-da9858b3cf59
+    discogs: 4130530
+    title: "Charli XCX – Wuthering Heights"
